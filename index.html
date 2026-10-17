@@ -9,32 +9,71 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Bible Tag Explorer</h1>
-    <p>Explore Scripture through your own tags.</p>
+  <header class="topbar">
+    <div>
+      <h1>Bible Tag Explorer</h1>
+      <p>Explore Scripture through your own tag system.</p>
+    </div>
+    <span class="version-badge">KJV</span>
   </header>
 
-  <main>
-    <section class="sidebar">
+  <main class="workspace">
+    <aside class="sidebar">
       <h2>Tags</h2>
-      <input id="tagSearch" type="search" placeholder="Search tags...">
-      <div id="tagList"></div>
-    </section>
+      <input
+        id="tagSearch"
+        type="search"
+        placeholder="Search tags..."
+        aria-label="Search tags"
+      >
+      <div id="tagList" class="tag-list"></div>
+    </aside>
 
     <section class="content">
       <div class="toolbar">
-        <h2 id="resultTitle">All Chapters</h2>
-        <input id="chapterSearch" type="search"
-          placeholder="Search books or chapters...">
+        <div>
+          <h2 id="resultTitle">All Chapters</h2>
+          <p id="resultCount">Loading chapters...</p>
+        </div>
+        <input
+          id="chapterSearch"
+          type="search"
+          placeholder="Search books or chapters..."
+          aria-label="Search books or chapters"
+        >
       </div>
 
-      <p id="resultCount"></p>
-      <div id="chapterList"></div>
+      <div id="statusMessage" class="status" role="status">
+        Loading your Bible index...
+      </div>
+
+      <section id="chapterView">
+        <div id="chapterList" class="chapter-list"></div>
+      </section>
+
+      <section id="readerView" hidden>
+        <button id="backButton" class="back-button" type="button">
+          ← Back to chapters
+        </button>
+
+        <div class="reader-heading">
+          <h2 id="readerTitle">Bible Passage</h2>
+          <p id="readerSubtitle">King James Version</p>
+        </div>
+
+        <div id="verseList" class="verse-list"></div>
+
+        <section id="verseDetail" class="verse-detail" hidden>
+          <p id="selectedVerseReference" class="verse-reference"></p>
+          <p id="selectedVerseText" class="verse-text"></p>
+          <button id="closeVerseButton" class="back-button" type="button">
+            Close verse
+          </button>
+        </section>
+
+        <p id="copyrightNotice" class="copyright"></p>
+      </section>
     </section>
   </main>
-
-  <script>
-    // The main script is loaded from script.js.
-  </script>
 </body>
 </html>
