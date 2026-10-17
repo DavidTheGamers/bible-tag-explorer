@@ -1,0 +1,5349 @@
+
+[
+  {
+    "book": "Genesis",
+    "chapter": 1,
+    "tags": ["Creation", "Realms", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 2,
+    "tags": ["Creation", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 3,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "Fruit", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 4,
+    "tags": ["Relationship", "Sin", "Fruit", "Creature's Wall", "God's Wall", "Genealogy"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 5,
+    "tags": ["Genealogy", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 6,
+    "tags": ["Sin", "Judgment", "God's Wall", "Creature's Wall", "Covenant"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 7,
+    "tags": ["God's Wall", "Judgment", "Realms", "Creature's Wall", "Covenant"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 8,
+    "tags": ["God's Wall", "Realms", "Creature's Wall", "Relationship", "Covenant", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 9,
+    "tags": ["Covenant", "God's Wall", "Relationship", "Creature's Wall", "Fruit", "People", "Blessing"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 10,
+    "tags": ["Genealogy", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 11,
+    "tags": ["Genealogy", "People", "Creature's Wall", "God's Wall", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 12,
+    "tags": ["Calling", "Covenant", "God's Wall", "Relationship", "Creature's Wall", "Fruit", "People"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 13,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Covenant", "People"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 14,
+    "tags": ["Battle", "Victory", "People", "Relationship", "God's Wall", "Creature's Wall", "Blessing"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 15,
+    "tags": ["Covenant", "God's Wall", "Realms", "People"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 16,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Outer Being", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 17,
+    "tags": ["Covenant", "God's Wall", "Creature's Wall", "Relationship", "People", "Genealogy"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 18,
+    "tags": ["God's Wall", "Outer Being", "Covenant", "Relationship", "People", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 19,
+    "tags": ["Judgment", "Creature's Wall", "Relationship", "Fruit", "God's Wall", "Outer Being", "People", "Sin"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 20,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Fruit", "People"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 21,
+    "tags": ["Relationship", "Covenant", "God's Wall", "Fruit", "People", "Blessing"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 22,
+    "tags": ["Calling", "God's Wall", "Relationship", "Covenant", "Creature's Wall", "Fruit", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 23,
+    "tags": ["Relationship", "Creature's Wall", "People"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 24,
+    "tags": ["Calling", "God's Wall", "Relationship", "Creature's Wall", "Covenant", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 25,
+    "tags": ["Genealogy", "Relationship", "Creature's Wall", "Covenant", "People", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 26,
+    "tags": ["Covenant", "God's Wall", "Relationship", "Creature's Wall", "People", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 27,
+    "tags": ["Relationship", "Creature's Wall", "Fruit", "God's Wall", "Covenant"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 28,
+    "tags": ["God's Wall", "Covenant", "Outer Being", "Realms", "Relationship", "The Ways of the Mountains", "Creature's Wall"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 29,
+    "tags": ["Relationship", "Creature's Wall", "Fruit", "Genealogy"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 30,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Fruit", "Genealogy"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 31,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Covenant", "Fruit", "Outer Being"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 32,
+    "tags": ["God's Wall", "Relationship", "Creature's Wall", "Outer Being", "The Ways of the Mountains", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 33,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 34,
+    "tags": ["Sin", "Creature's Wall", "Relationship", "People", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 35,
+    "tags": ["God's Wall", "Relationship", "Creature's Wall", "Fruit", "Genealogy", "Covenant", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 36,
+    "tags": ["Genealogy", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 37,
+    "tags": ["Relationship", "Creature's Wall", "Fruit", "Realms", "God's Wall"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 38,
+    "tags": ["Relationship", "Creature's Wall", "Sin", "Fruit", "Genealogy"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 39,
+    "tags": ["Creature's Wall", "God's Wall", "Fruit", "Relationship", "Sin"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 40,
+    "tags": ["Realms", "God's Wall", "Creature's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 41,
+    "tags": ["Realms", "God's Wall", "Calling", "Creature's Wall", "People", "Fruit", "Victory"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 42,
+    "tags": ["People", "Relationship", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 43,
+    "tags": ["Relationship", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 44,
+    "tags": ["Creature's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 45,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Fruit", "People"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 46,
+    "tags": ["God's Wall", "Covenant", "Relationship", "Genealogy", "People", "Realms"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 47,
+    "tags": ["People", "God's Wall", "Relationship", "Creature's Wall", "Fruit", "Covenant"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 48,
+    "tags": ["Relationship", "Covenant", "God's Wall", "Creature's Wall", "Genealogy", "People"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 49,
+    "tags": ["Genealogy", "Relationship", "Covenant", "God's Wall", "Creature's Wall", "People"]
+  },
+  {
+    "book": "Genesis",
+    "chapter": 50,
+    "tags": ["Relationship", "Fruit", "God's Wall", "Covenant", "People"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 1,
+    "tags": ["People", "Genealogy", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 2,
+    "tags": ["Relationship", "Creature's Wall", "Calling", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 3,
+    "tags": ["Calling", "God's Wall", "Outer Being", "The Ways of the Mountains", "Creature's Wall", "Covenant"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 4,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Covenant", "Relationship", "People"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 5,
+    "tags": ["People", "Creature's Wall", "Calling", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 6,
+    "tags": ["God's Wall", "Covenant", "Genealogy", "Calling", "People"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 7,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "People", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 8,
+    "tags": ["God's Wall", "Creature's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 9,
+    "tags": ["God's Wall", "Creature's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 10,
+    "tags": ["God's Wall", "Creature's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 11,
+    "tags": ["God's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 12,
+    "tags": ["Covenant", "God's Wall", "People", "Judgment", "Fruit", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 13,
+    "tags": ["God's Wall", "People", "Creature's Wall", "Covenant", "Relationship"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 14,
+    "tags": ["Battle", "Victory", "God's Wall", "People", "Creature's Wall", "Fruit", "Realms"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 15,
+    "tags": ["Victory", "People", "God's Wall", "Creature's Wall", "Realms", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 16,
+    "tags": ["God's Wall", "People", "Creature's Wall", "Fruit", "Covenant"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 17,
+    "tags": ["Battle", "Victory", "God's Wall", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 18,
+    "tags": ["Relationship", "People", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 19,
+    "tags": ["Covenant", "God's Wall", "People", "The Ways of the Mountains", "Creature's Wall"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 20,
+    "tags": ["Covenant", "God's Wall", "People", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 21,
+    "tags": ["Covenant", "God's Wall", "People", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 22,
+    "tags": ["Covenant", "God's Wall", "People", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 23,
+    "tags": ["Covenant", "God's Wall", "People", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 24,
+    "tags": ["Covenant", "God's Wall", "People", "The Ways of the Mountains", "Creature's Wall"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 25,
+    "tags": ["God's Wall", "Covenant", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 26,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 27,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 28,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains", "Relationship"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 29,
+    "tags": ["God's Wall", "Covenant", "Creature's Wall", "The Ways of the Mountains", "Relationship"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 30,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 31,
+    "tags": ["Calling", "God's Wall", "Covenant", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 32,
+    "tags": ["Sin", "Judgment", "Covenant", "God's Wall", "Creature's Wall", "People", "Fruit", "Relationship"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 33,
+    "tags": ["God's Wall", "Relationship", "Covenant", "People", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 34,
+    "tags": ["Covenant", "God's Wall", "People", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 35,
+    "tags": ["God's Wall", "Creature's Wall", "People", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 36,
+    "tags": ["God's Wall", "Creature's Wall", "People", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 37,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 38,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 39,
+    "tags": ["God's Wall", "Creature's Wall", "People", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Exodus",
+    "chapter": 40,
+    "tags": ["God's Wall", "Covenant", "People", "Realms", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 1,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 2,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 3,
+    "tags": ["God's Wall", "Creature's Wall", "Relationship", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 4,
+    "tags": ["God's Wall", "Sin", "Fruit", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 5,
+    "tags": ["God's Wall", "Sin", "Fruit", "Relationship", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 6,
+    "tags": ["God's Wall", "Creature's Wall", "Relationship", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 7,
+    "tags": ["God's Wall", "Covenant", "Relationship", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 8,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Relationship", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 9,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Fruit", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 10,
+    "tags": ["Creature's Wall", "God's Wall", "Judgment", "Fruit", "Relationship", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 11,
+    "tags": ["God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 12,
+    "tags": ["God's Wall", "Relationship", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 13,
+    "tags": ["God's Wall", "Creature's Wall", "People", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 14,
+    "tags": ["God's Wall", "Creature's Wall", "Relationship", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 15,
+    "tags": ["God's Wall", "Creature's Wall", "Relationship", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 16,
+    "tags": ["God's Wall", "People", "Sin", "Covenant", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 17,
+    "tags": ["God's Wall", "Creature's Wall", "Covenant", "People", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 18,
+    "tags": ["God's Wall", "Creature's Wall", "Sin", "Fruit", "People"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 19,
+    "tags": ["God's Wall", "Creature's Wall", "Relationship", "People", "Covenant"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 20,
+    "tags": ["God's Wall", "Judgment", "Sin", "Fruit", "People", "Relationship"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 21,
+    "tags": ["God's Wall", "Creature's Wall", "Relationship", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 22,
+    "tags": ["God's Wall", "Creature's Wall", "Covenant", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 23,
+    "tags": ["God's Wall", "People", "Covenant", "Relationship"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 24,
+    "tags": ["God's Wall", "Creature's Wall", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 25,
+    "tags": ["God's Wall", "Covenant", "People", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 26,
+    "tags": ["Covenant", "God's Wall", "People", "Fruit", "Judgment", "Blessing"]
+  },
+  {
+    "book": "Leviticus",
+    "chapter": 27,
+    "tags": ["Covenant", "God's Wall", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 1,
+    "tags": ["People", "Genealogy", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 2,
+    "tags": ["People", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 3,
+    "tags": ["Genealogy", "Calling", "God's Wall", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 4,
+    "tags": ["Calling", "God's Wall", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 5,
+    "tags": ["God's Wall", "Relationship", "Creature's Wall", "Sin", "Fruit", "People"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 6,
+    "tags": ["Calling", "God's Wall", "Blessing", "Relationship"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 7,
+    "tags": ["God's Wall", "People", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 8,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 9,
+    "tags": ["God's Wall", "People", "Covenant", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 10,
+    "tags": ["God's Wall", "People", "Creature's Wall", "Calling"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 11,
+    "tags": ["People", "Creature's Wall", "Sin", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 12,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "God's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 13,
+    "tags": ["Calling", "People", "Creature's Wall", "Battle", "God's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 14,
+    "tags": ["People", "Sin", "Judgment", "Fruit", "God's Wall", "Creature's Wall", "Covenant"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 15,
+    "tags": ["God's Wall", "Covenant", "People", "Sin", "Judgment"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 16,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "Fruit", "People", "God's Wall", "Calling"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 17,
+    "tags": ["God's Wall", "Calling", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 18,
+    "tags": ["Calling", "Covenant", "God's Wall", "People", "Relationship"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 19,
+    "tags": ["God's Wall", "Creature's Wall", "People", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 20,
+    "tags": ["God's Wall", "Creature's Wall", "Sin", "Judgment", "Fruit", "People", "Relationship"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 21,
+    "tags": ["Battle", "Victory", "God's Wall", "People", "Creature's Wall", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 22,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Outer Being", "Relationship", "People"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 23,
+    "tags": ["God's Wall", "Covenant", "People", "Creature's Wall", "Blessing"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 24,
+    "tags": ["God's Wall", "Covenant", "People", "Creature's Wall", "Blessing", "Calling"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 25,
+    "tags": ["People", "Sin", "Judgment", "Fruit", "Covenant", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 26,
+    "tags": ["Genealogy", "People", "Covenant", "God's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 27,
+    "tags": ["Genealogy", "Relationship", "Calling", "God's Wall", "People", "Covenant"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 28,
+    "tags": ["God's Wall", "People", "Covenant"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 29,
+    "tags": ["God's Wall", "People", "Covenant"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 30,
+    "tags": ["Covenant", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 31,
+    "tags": ["Battle", "Victory", "People", "God's Wall", "Creature's Wall", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 32,
+    "tags": ["People", "Covenant", "Relationship", "Creature's Wall", "Battle"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 33,
+    "tags": ["People", "Creature's Wall", "God's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 34,
+    "tags": ["Covenant", "People", "God's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 35,
+    "tags": ["People", "Covenant", "Relationship", "Judgment", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Numbers",
+    "chapter": 36,
+    "tags": ["Genealogy", "Relationship", "Covenant", "People", "God's Wall"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 1,
+    "tags": ["People", "God's Wall", "The Ways of the Mountains", "Creature's Wall", "Sin", "Battle", "Victory"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 2,
+    "tags": ["People", "God's Wall", "The Ways of the Mountains", "Battle", "Victory"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 3,
+    "tags": ["People", "Battle", "Victory", "God's Wall", "Calling"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 4,
+    "tags": ["Covenant", "People", "God's Wall", "Sin", "Judgment", "Light"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 5,
+    "tags": ["Covenant", "People", "God's Wall", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 6,
+    "tags": ["Covenant", "Relationship", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 7,
+    "tags": ["Covenant", "People", "Battle", "Victory", "God's Wall", "Sin"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 8,
+    "tags": ["People", "God's Wall", "Creature's Wall", "Sin", "Fruit", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 9,
+    "tags": ["People", "Sin", "God's Wall", "Judgment", "Relationship"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 10,
+    "tags": ["Covenant", "God's Wall", "Relationship", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 11,
+    "tags": ["Covenant", "People", "God's Wall", "Blessing", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 12,
+    "tags": ["Covenant", "God's Wall", "People", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 13,
+    "tags": ["Sin", "Judgment", "Covenant", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 14,
+    "tags": ["God's Wall", "People", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 15,
+    "tags": ["Covenant", "People", "Relationship", "God's Wall", "Blessing", "Fruit"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 16,
+    "tags": ["Covenant", "People", "God's Wall", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 17,
+    "tags": ["People", "God's Wall", "Covenant", "Creature's Wall", "Judgment"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 18,
+    "tags": ["God's Wall", "Calling", "Creature's Wall", "Sin", "Light"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 19,
+    "tags": ["People", "God's Wall", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 20,
+    "tags": ["Battle", "People", "God's Wall", "Victory"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 21,
+    "tags": ["People", "God's Wall", "Judgment", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 22,
+    "tags": ["Creature's Wall", "Relationship", "People", "God's Wall", "Sin"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 23,
+    "tags": ["People", "Covenant", "God's Wall", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 24,
+    "tags": ["People", "Relationship", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 25,
+    "tags": ["People", "God's Wall", "Judgment", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 26,
+    "tags": ["Covenant", "People", "God's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 27,
+    "tags": ["Covenant", "People", "God's Wall", "Judgment", "Sin"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 28,
+    "tags": ["Covenant", "People", "Blessing", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 29,
+    "tags": ["Covenant", "People", "God's Wall", "Sin", "Judgment", "Relationship"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 30,
+    "tags": ["Covenant", "People", "God's Wall", "Fruit", "Relationship", "Calling"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 31,
+    "tags": ["Calling", "People", "God's Wall", "Creature's Wall", "Covenant"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 32,
+    "tags": ["Light", "God's Wall", "People", "Covenant", "Sin", "Judgment", "Fruit", "Victory"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 33,
+    "tags": ["Blessing", "People", "Genealogy", "God's Wall", "Victory"]
+  },
+  {
+    "book": "Deuteronomy",
+    "chapter": 34,
+    "tags": ["Calling", "God's Wall", "People", "Fruit", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 1,
+    "tags": ["Calling", "People", "God's Wall", "Covenant", "Battle"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 2,
+    "tags": ["Creature's Wall", "Calling", "People", "God's Wall"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 3,
+    "tags": ["People", "God's Wall", "Realms", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 4,
+    "tags": ["People", "God's Wall", "Fruit", "Relationship"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 5,
+    "tags": ["Covenant", "God's Wall", "The Ways of the Mountains", "Battle"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 6,
+    "tags": ["Battle", "Victory", "God's Wall", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 7,
+    "tags": ["Sin", "Judgment", "People", "God's Wall", "Fruit", "Battle"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 8,
+    "tags": ["Battle", "Victory", "God's Wall", "People", "Covenant"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 9,
+    "tags": ["Covenant", "Creature's Wall", "People", "God's Wall"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 10,
+    "tags": ["Battle", "Victory", "God's Wall", "People", "Realms"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 11,
+    "tags": ["Battle", "Victory", "People", "God's Wall"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 12,
+    "tags": ["Battle", "Victory", "People"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 13,
+    "tags": ["People", "Calling", "Covenant", "Genealogy"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 14,
+    "tags": ["Calling", "Covenant", "People", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 15,
+    "tags": ["People", "Covenant"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 16,
+    "tags": ["People", "Covenant"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 17,
+    "tags": ["People", "Covenant", "Creature's Wall"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 18,
+    "tags": ["People", "Covenant", "Calling"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 19,
+    "tags": ["People", "Covenant", "Genealogy"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 20,
+    "tags": ["God's Wall", "People", "Judgment", "Relationship"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 21,
+    "tags": ["Covenant", "People", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 22,
+    "tags": ["People", "Relationship", "Covenant", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 23,
+    "tags": ["Covenant", "People", "God's Wall", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Joshua",
+    "chapter": 24,
+    "tags": ["Covenant", "People", "Relationship", "God's Wall", "Calling", "Creature's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 1,
+    "tags": ["People", "Battle", "Victory", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 2,
+    "tags": ["People", "Covenant", "Sin", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 3,
+    "tags": ["People", "Sin", "Judgment", "Calling", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 4,
+    "tags": ["Calling", "People", "Battle", "Victory", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 5,
+    "tags": ["Battle", "Victory", "People", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 6,
+    "tags": ["Calling", "People", "God's Wall", "Sin", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 7,
+    "tags": ["Battle", "Victory", "Calling", "God's Wall", "People"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 8,
+    "tags": ["Battle", "Victory", "People", "Creature's Wall", "Sin", "Fruit"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 9,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "People", "Battle", "Victory", "Fruit"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 10,
+    "tags": ["People", "Sin", "Judgment", "God's Wall", "Relationship"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 11,
+    "tags": ["Calling", "Covenant", "People", "Battle", "Victory", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 12,
+    "tags": ["People", "Battle", "Victory", "Creature's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 13,
+    "tags": ["Calling", "Outer Being", "God's Wall", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 14,
+    "tags": ["Calling", "Creature's Wall", "God's Wall", "Relationship", "Sin"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 15,
+    "tags": ["Battle", "Victory", "Calling", "Creature's Wall", "People"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 16,
+    "tags": ["Creature's Wall", "Relationship", "Sin", "Fruit", "Battle", "Victory", "Calling"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 17,
+    "tags": ["Sin", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 18,
+    "tags": ["People", "Sin", "Creature's Wall", "Battle", "Victory"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 19,
+    "tags": ["Sin", "Creature's Wall", "Relationship", "People", "Fruit"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 20,
+    "tags": ["People", "Sin", "Battle", "Victory", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Judges",
+    "chapter": 21,
+    "tags": ["People", "Sin", "Fruit", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 1,
+    "tags": ["Relationship", "People", "Fruit", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 2,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "People"]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 3,
+    "tags": ["Relationship", "Creature's Wall", "Covenant", "God's Wall"]
+  },
+  {
+    "book": "Ruth",
+    "chapter": 4,
+    "tags": ["Relationship", "Covenant", "People", "Genealogy", "Fruit", "Blessing"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 1,
+    "tags": ["Relationship", "Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 2,
+    "tags": ["God's Wall", "Creature's Wall", "Judgment", "Fruit", "Calling"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 3,
+    "tags": ["Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 4,
+    "tags": ["People", "Battle", "Victory", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 5,
+    "tags": ["God's Wall", "Judgment", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 6,
+    "tags": ["God's Wall", "Judgment", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 7,
+    "tags": ["People", "Sin", "Relationship", "God's Wall", "Battle", "Victory"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 8,
+    "tags": ["People", "Calling", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 9,
+    "tags": ["Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 10,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "People"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 11,
+    "tags": ["Battle", "Victory", "People", "Calling"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 12,
+    "tags": ["People", "Covenant", "God's Wall", "Sin", "Judgment", "Relationship"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 13,
+    "tags": ["Sin", "Judgment", "Calling", "Battle", "God's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 14,
+    "tags": ["Battle", "Victory", "Calling", "God's Wall", "Creature's Wall", "Judgment"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 15,
+    "tags": ["Calling", "Sin", "Judgment", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 16,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 17,
+    "tags": ["Battle", "Victory", "Calling", "God's Wall", "Creature's Wall", "People"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 18,
+    "tags": ["Relationship", "Creature's Wall", "Sin", "Fruit", "People"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 19,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Battle"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 20,
+    "tags": ["Relationship", "Covenant", "Creature's Wall", "Calling"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 21,
+    "tags": ["Creature's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 22,
+    "tags": ["People", "Sin", "Judgment", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 23,
+    "tags": ["Calling", "God's Wall", "Battle", "Victory", "People"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 24,
+    "tags": ["Creature's Wall", "Relationship", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 25,
+    "tags": ["Creature's Wall", "Relationship", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 26,
+    "tags": ["Creature's Wall", "Relationship", "God's Wall", "Calling"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 27,
+    "tags": ["Creature's Wall", "People", "Battle"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 28,
+    "tags": ["Outer Being", "Realms", "Sin", "Judgment", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 29,
+    "tags": ["People", "Battle", "Creature's Wall"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 30,
+    "tags": ["Battle", "Victory", "God's Wall", "People", "Fruit"]
+  },
+  {
+    "book": "1 Samuel",
+    "chapter": 31,
+    "tags": ["Battle", "Victory", "Fruit", "People"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 1,
+    "tags": ["Relationship", "Creature's Wall", "People", "Fruit"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 2,
+    "tags": ["People", "Calling", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 3,
+    "tags": ["People", "Creature's Wall", "Relationship", "Battle", "Victory", "Fruit"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 4,
+    "tags": ["Creature's Wall", "Judgment", "Victory", "Fruit"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 5,
+    "tags": ["Calling", "Covenant", "People", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 6,
+    "tags": ["God's Wall", "Creature's Wall", "People", "Judgment", "Relationship"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 7,
+    "tags": ["Covenant", "Calling", "God's Wall", "People", "Relationship"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 8,
+    "tags": ["Battle", "Victory", "People", "God's Wall"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 9,
+    "tags": ["Relationship", "Covenant", "Blessing", "People"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 10,
+    "tags": ["People", "Battle", "Victory", "Creature's Wall"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 11,
+    "tags": ["Sin", "Creature's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 12,
+    "tags": ["Sin", "Judgment", "God's Wall", "Fruit", "Relationship"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 13,
+    "tags": ["Sin", "Creature's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 14,
+    "tags": ["Relationship", "Creature's Wall", "People", "God's Wall"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 15,
+    "tags": ["Creature's Wall", "People", "Sin", "Battle", "Fruit"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 16,
+    "tags": ["Creature's Wall", "Relationship", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 17,
+    "tags": ["Creature's Wall", "Battle", "Victory", "God's Wall", "People"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 18,
+    "tags": ["Battle", "Victory", "Fruit", "Relationship", "People"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 19,
+    "tags": ["Relationship", "People", "Creature's Wall", "Victory"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 20,
+    "tags": ["People", "Battle", "Victory", "Creature's Wall", "Judgment"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 21,
+    "tags": ["People", "Covenant", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 22,
+    "tags": ["God's Wall", "Light", "Battle", "Victory", "Relationship"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 23,
+    "tags": ["Calling", "Covenant", "God's Wall", "Battle", "Victory", "People"]
+  },
+  {
+    "book": "2 Samuel",
+    "chapter": 24,
+    "tags": ["Sin", "Judgment", "God's Wall", "People", "Fruit", "Relationship"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 1,
+    "tags": ["People", "Creature's Wall", "Calling", "Victory"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 2,
+    "tags": ["Calling", "People", "Judgment", "Fruit", "Covenant"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 3,
+    "tags": ["God's Wall", "Light", "Calling", "Judgment", "Relationship"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 4,
+    "tags": ["People", "Victory", "God's Wall", "Blessing"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 5,
+    "tags": ["Covenant", "People", "Calling", "God's Wall"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 6,
+    "tags": ["God's Wall", "Calling", "Relationship"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 7,
+    "tags": ["God's Wall", "Creature's Wall", "Calling"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 8,
+    "tags": ["Covenant", "Relationship", "God's Wall", "People", "Calling", "Blessing"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 9,
+    "tags": ["Covenant", "God's Wall", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 10,
+    "tags": ["People", "Light", "Victory", "Blessing", "God's Wall"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 11,
+    "tags": ["Sin", "Judgment", "Fruit", "People", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 12,
+    "tags": ["People", "Creature's Wall", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 13,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Judgment", "Fruit"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 14,
+    "tags": ["Sin", "Judgment", "People", "God's Wall", "Fruit", "Calling"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 15,
+    "tags": ["People", "Sin", "Judgment", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 16,
+    "tags": ["People", "Sin", "Judgment", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 17,
+    "tags": ["Calling", "God's Wall", "Relationship", "Creature's Wall", "Fruit", "Outer Being"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 18,
+    "tags": ["Calling", "God's Wall", "People", "Battle", "Victory", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 19,
+    "tags": ["God's Wall", "Calling", "Relationship", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 20,
+    "tags": ["Battle", "Victory", "People", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 21,
+    "tags": ["Sin", "Judgment", "Creature's Wall", "People", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "1 Kings",
+    "chapter": 22,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Battle", "Victory", "Judgment", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 1,
+    "tags": ["Calling", "God's Wall", "Outer Being", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 2,
+    "tags": ["Calling", "God's Wall", "Outer Being", "Realms", "Creature's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 3,
+    "tags": ["People", "Battle", "Victory", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 4,
+    "tags": ["Calling", "God's Wall", "Relationship", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 5,
+    "tags": ["Calling", "God's Wall", "Relationship", "Creature's Wall", "Sin", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 6,
+    "tags": ["God's Wall", "Battle", "Victory", "Outer Being", "Realms", "Creature's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 7,
+    "tags": ["God's Wall", "Battle", "Victory", "People", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 8,
+    "tags": ["Calling", "God's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 9,
+    "tags": ["Calling", "Judgment", "Battle", "Victory", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 10,
+    "tags": ["Battle", "Victory", "Judgment", "Sin", "People", "God's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 11,
+    "tags": ["People", "Calling", "Covenant", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 12,
+    "tags": ["People", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 13,
+    "tags": ["Calling", "People", "God's Wall", "Battle", "Victory", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 14,
+    "tags": ["People", "Battle", "Victory", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 15,
+    "tags": ["People", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 16,
+    "tags": ["People", "Sin", "Judgment", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 17,
+    "tags": ["People", "Covenant", "Sin", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 18,
+    "tags": ["Calling", "People", "God's Wall", "Battle", "Creature's Wall", "Covenant"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 19,
+    "tags": ["People", "God's Wall", "Relationship", "Battle", "Victory", "Outer Being"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 20,
+    "tags": ["Relationship", "God's Wall", "Calling", "Judgment", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 21,
+    "tags": ["Sin", "Judgment", "People", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 22,
+    "tags": ["Calling", "God's Wall", "Covenant", "Sin", "Judgment"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 23,
+    "tags": ["Covenant", "People", "Sin", "Judgment", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 24,
+    "tags": ["People", "Judgment", "Battle", "Victory", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "2 Kings",
+    "chapter": 25,
+    "tags": ["People", "Judgment", "Battle", "Victory", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 1,
+    "tags": ["Genealogy", "Creation", "People"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 2,
+    "tags": ["Genealogy", "People"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 3,
+    "tags": ["Genealogy", "People"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 4,
+    "tags": ["Genealogy", "People", "Calling", "Blessing"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 5,
+    "tags": ["Genealogy", "People", "Battle", "Victory", "God's Wall", "Sin", "Judgment"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 6,
+    "tags": ["Genealogy", "People", "Calling", "Relationship"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 7,
+    "tags": ["Genealogy", "People", "Battle"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 8,
+    "tags": ["Genealogy", "People"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 9,
+    "tags": ["Genealogy", "People", "Calling", "Relationship"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 10,
+    "tags": ["Battle", "Victory", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 11,
+    "tags": ["Calling", "People", "Battle", "Victory", "Covenant"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 12,
+    "tags": ["People", "Calling", "Battle", "Victory"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 13,
+    "tags": ["People", "God's Wall", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 14,
+    "tags": ["People", "Calling", "God's Wall", "Battle", "Victory"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 15,
+    "tags": ["God's Wall", "Relationship", "People", "Creature's Wall"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 16,
+    "tags": ["God's Wall", "Covenant", "Relationship", "People", "Light"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 17,
+    "tags": ["Covenant", "Calling", "God's Wall", "People", "Relationship"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 18,
+    "tags": ["Battle", "Victory", "People", "God's Wall"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 19,
+    "tags": ["People", "Battle", "Victory", "Creature's Wall"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 20,
+    "tags": ["Battle", "Victory", "People"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 21,
+    "tags": ["Sin", "Judgment", "God's Wall", "People", "Fruit", "Relationship"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 22,
+    "tags": ["Calling", "God's Wall", "People", "Covenant"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 23,
+    "tags": ["People", "Calling", "Relationship", "Genealogy"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 24,
+    "tags": ["People", "Calling", "Genealogy", "Relationship"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 25,
+    "tags": ["Calling", "Creature's Wall", "Relationship", "People"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 26,
+    "tags": ["Calling", "People", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 27,
+    "tags": ["People", "Calling", "Genealogy"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 28,
+    "tags": ["Calling", "God's Wall", "Covenant", "People", "Relationship"]
+  },
+  {
+    "book": "1 Chronicles",
+    "chapter": 29,
+    "tags": ["People", "God's Wall", "Relationship", "Calling", "Fruit"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 1,
+    "tags": ["Calling", "God's Wall", "People", "Light", "Blessing"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 2,
+    "tags": ["Calling", "People", "Covenant", "God's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 3,
+    "tags": ["God's Wall", "Calling", "Relationship"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 4,
+    "tags": ["God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 5,
+    "tags": ["God's Wall", "Relationship", "People", "Creature's Wall", "Realms"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 6,
+    "tags": ["Covenant", "Relationship", "God's Wall", "People", "Calling"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 7,
+    "tags": ["Covenant", "God's Wall", "People", "Judgment", "Fruit", "Relationship"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 8,
+    "tags": ["People", "Calling", "God's Wall", "Victory"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 9,
+    "tags": ["People", "Light", "Victory", "Blessing", "God's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 10,
+    "tags": ["People", "Creature's Wall", "Judgment", "Fruit"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 11,
+    "tags": ["People", "Battle", "Victory", "God's Wall", "Calling"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 12,
+    "tags": ["Sin", "Judgment", "People", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 13,
+    "tags": ["People", "Covenant", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 14,
+    "tags": ["People", "God's Wall", "Battle", "Victory", "Calling"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 15,
+    "tags": ["Covenant", "People", "God's Wall", "Relationship", "Sin"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 16,
+    "tags": ["Covenant", "Sin", "Judgment", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 17,
+    "tags": ["People", "God's Wall", "Calling", "Victory", "Light"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 18,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Battle", "Judgment"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 19,
+    "tags": ["Calling", "People", "God's Wall", "Judgment", "Relationship"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 20,
+    "tags": ["People", "God's Wall", "Battle", "Victory", "Relationship"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 21,
+    "tags": ["Sin", "Judgment", "Fruit", "People", "Creature's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 22,
+    "tags": ["People", "Sin", "Judgment", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 23,
+    "tags": ["People", "Covenant", "Calling", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 24,
+    "tags": ["Calling", "People", "God's Wall", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 25,
+    "tags": ["People", "Calling", "Battle", "Victory", "Sin", "Judgment"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 26,
+    "tags": ["Calling", "God's Wall", "Sin", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 27,
+    "tags": ["People", "Calling", "God's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 28,
+    "tags": ["People", "Sin", "Judgment", "Battle", "Victory", "Fruit"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 29,
+    "tags": ["Calling", "God's Wall", "People", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 30,
+    "tags": ["People", "Covenant", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 31,
+    "tags": ["People", "God's Wall", "Relationship", "Blessing"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 32,
+    "tags": ["People", "Battle", "Victory", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 33,
+    "tags": ["Sin", "Judgment", "Relationship", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 34,
+    "tags": ["Calling", "Covenant", "God's Wall", "People", "Sin", "Judgment"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 35,
+    "tags": ["Covenant", "People", "Relationship", "Battle", "Fruit"]
+  },
+  {
+    "book": "2 Chronicles",
+    "chapter": 36,
+    "tags": ["People", "Sin", "Judgment", "Fruit", "God's Wall", "Calling"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 1,
+    "tags": ["Calling", "God's Wall", "People", "Fruit"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 2,
+    "tags": ["Genealogy", "People", "Calling"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 3,
+    "tags": ["People", "God's Wall", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 4,
+    "tags": ["People", "Creature's Wall", "Battle", "Judgment"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 5,
+    "tags": ["Calling", "God's Wall", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 6,
+    "tags": ["God's Wall", "Calling", "People", "Covenant", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 7,
+    "tags": ["Calling", "God's Wall", "Light", "People", "Covenant"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 8,
+    "tags": ["People", "Calling", "God's Wall", "Relationship"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 9,
+    "tags": ["Sin", "People", "God's Wall", "Covenant", "Judgment", "Relationship"]
+  },
+  {
+    "book": "Ezra",
+    "chapter": 10,
+    "tags": ["Sin", "People", "Covenant", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 1,
+    "tags": ["Relationship", "People", "God's Wall", "Calling", "Covenant"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 2,
+    "tags": ["Calling", "God's Wall", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 3,
+    "tags": ["People", "Calling", "Creature's Wall"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 4,
+    "tags": ["People", "Battle", "Victory", "Calling", "God's Wall"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 5,
+    "tags": ["People", "Sin", "Relationship", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 6,
+    "tags": ["Calling", "Creature's Wall", "God's Wall", "Victory", "People"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 7,
+    "tags": ["Genealogy", "People", "Calling"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 8,
+    "tags": ["Light", "God's Wall", "People", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 9,
+    "tags": ["People", "Covenant", "God's Wall", "Sin", "Judgment", "Relationship"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 10,
+    "tags": ["Covenant", "People", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 11,
+    "tags": ["People", "Calling", "Genealogy"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 12,
+    "tags": ["People", "Relationship", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Nehemiah",
+    "chapter": 13,
+    "tags": ["Covenant", "People", "Sin", "Judgment", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 1,
+    "tags": ["People", "Creature's Wall", "Judgment"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 2,
+    "tags": ["Calling", "People", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 3,
+    "tags": ["People", "Sin", "Creature's Wall", "Judgment"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 4,
+    "tags": ["Calling", "People", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 5,
+    "tags": ["Calling", "Creature's Wall", "People"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 6,
+    "tags": ["Victory", "Creature's Wall", "People"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 7,
+    "tags": ["Victory", "Judgment", "Creature's Wall", "People", "Fruit"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 8,
+    "tags": ["Victory", "People", "Calling", "Creature's Wall"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 9,
+    "tags": ["Victory", "People", "Battle", "Fruit", "Relationship"]
+  },
+  {
+    "book": "Esther",
+    "chapter": 10,
+    "tags": ["Victory", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 1,
+    "tags": ["Relationship", "Outer Being", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Job",
+    "chapter": 2,
+    "tags": ["Relationship", "Outer Being", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 3,
+    "tags": ["Creature's Wall", "Fruit", "Relationship"]
+  },
+  {
+    "book": "Job",
+    "chapter": 4,
+    "tags": ["Creature's Wall", "Light"]
+  },
+  {
+    "book": "Job",
+    "chapter": 5,
+    "tags": ["Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Job",
+    "chapter": 6,
+    "tags": ["Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Job",
+    "chapter": 7,
+    "tags": ["Creature's Wall", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 8,
+    "tags": ["Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Job",
+    "chapter": 9,
+    "tags": ["God's Wall", "Creature's Wall", "Realms"]
+  },
+  {
+    "book": "Job",
+    "chapter": 10,
+    "tags": ["Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 11,
+    "tags": ["Creature's Wall", "God's Wall", "Sin", "Judgment"]
+  },
+  {
+    "book": "Job",
+    "chapter": 12,
+    "tags": ["God's Wall", "Light", "Creature's Wall", "Realms"]
+  },
+  {
+    "book": "Job",
+    "chapter": 13,
+    "tags": ["Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 14,
+    "tags": ["Fruit", "Realms", "Relationship"]
+  },
+  {
+    "book": "Job",
+    "chapter": 15,
+    "tags": ["Creature's Wall", "Sin", "Judgment"]
+  },
+  {
+    "book": "Job",
+    "chapter": 16,
+    "tags": ["Creature's Wall", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 17,
+    "tags": ["Relationship", "Fruit"]
+  },
+  {
+    "book": "Job",
+    "chapter": 18,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Job",
+    "chapter": 19,
+    "tags": ["Relationship", "God's Wall", "Fruit", "Light"]
+  },
+  {
+    "book": "Job",
+    "chapter": 20,
+    "tags": ["Sin", "Judgment", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 21,
+    "tags": ["Creature's Wall", "God's Wall", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Job",
+    "chapter": 22,
+    "tags": ["Sin", "Judgment", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 23,
+    "tags": ["Relationship", "God's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Job",
+    "chapter": 24,
+    "tags": ["Sin", "Judgment", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 25,
+    "tags": ["God's Wall", "Creature's Wall", "Realms"]
+  },
+  {
+    "book": "Job",
+    "chapter": 26,
+    "tags": ["God's Wall", "Realms", "Light", "Outer Being"]
+  },
+  {
+    "book": "Job",
+    "chapter": 27,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Job",
+    "chapter": 28,
+    "tags": ["Light", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 29,
+    "tags": ["Relationship", "People", "Fruit"]
+  },
+  {
+    "book": "Job",
+    "chapter": 30,
+    "tags": ["Creature's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Job",
+    "chapter": 31,
+    "tags": ["Sin", "Creature's Wall", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 32,
+    "tags": ["Creature's Wall", "Light", "God's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 33,
+    "tags": ["God's Wall", "Light", "Relationship", "Outer Being"]
+  },
+  {
+    "book": "Job",
+    "chapter": 34,
+    "tags": ["God's Wall", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 35,
+    "tags": ["God's Wall", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Job",
+    "chapter": 36,
+    "tags": ["God's Wall", "Judgment", "Fruit", "Light"]
+  },
+  {
+    "book": "Job",
+    "chapter": 37,
+    "tags": ["God's Wall", "Realms", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 38,
+    "tags": ["Creation", "God's Wall", "Realms", "Creature's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 39,
+    "tags": ["Creation", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 40,
+    "tags": ["God's Wall", "Creature's Wall", "Creation"]
+  },
+  {
+    "book": "Job",
+    "chapter": 41,
+    "tags": ["Creation", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Job",
+    "chapter": 42,
+    "tags": ["Relationship", "God's Wall", "Fruit", "Blessing", "Creature's Wall"]
+  },
+  {"book":"Psalms","chapter":1,"tags":["Light","God's Wall","Fruit"]},
+  {"book":"Psalms","chapter":2,"tags":["People","God's Wall","Calling","Judgment"]},
+  {"book":"Psalms","chapter":3,"tags":["Relationship","God's Wall","Battle","Victory"]},
+  {"book":"Psalms","chapter":4,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":5,"tags":["Relationship","God's Wall","Sin","Judgment"]},
+  {"book":"Psalms","chapter":6,"tags":["Relationship","God's Wall","Judgment","Fruit"]},
+  {"book":"Psalms","chapter":7,"tags":["Relationship","God's Wall","Judgment","Creature's Wall"]},
+  {"book":"Psalms","chapter":8,"tags":["Creation","God's Wall","Creature's Wall","Realms"]},
+  {"book":"Psalms","chapter":9,"tags":["People","God's Wall","Judgment","Victory"]},
+  {"book":"Psalms","chapter":10,"tags":["Sin","Judgment","People","God's Wall"]},
+  {"book":"Psalms","chapter":11,"tags":["God's Wall","Judgment","Creature's Wall"]},
+  {"book":"Psalms","chapter":12,"tags":["Creature's Wall","Sin","Judgment","People"]},
+  {"book":"Psalms","chapter":13,"tags":["Relationship","God's Wall","Fruit"]},
+  {"book":"Psalms","chapter":14,"tags":["Sin","Judgment","People","God's Wall"]},
+  {"book":"Psalms","chapter":15,"tags":["Relationship","Creature's Wall","God's Wall"]},
+  {"book":"Psalms","chapter":16,"tags":["Relationship","God's Wall","Fruit","Light"]},
+  {"book":"Psalms","chapter":17,"tags":["Relationship","God's Wall","Judgment"]},
+  {"book":"Psalms","chapter":18,"tags":["Relationship","God's Wall","Battle","Victory","Realms"]},
+  {"book":"Psalms","chapter":19,"tags":["Creation","God's Wall","Light","Realms"]},
+  {"book":"Psalms","chapter":20,"tags":["People","Relationship","God's Wall","Battle","Victory"]},
+  {"book":"Psalms","chapter":21,"tags":["People","God's Wall","Victory","Blessing"]},
+  {"book":"Psalms","chapter":22,"tags":["Relationship","God's Wall","Creature's Wall","Fruit","Light"]},
+  {"book":"Psalms","chapter":23,"tags":["Relationship","God's Wall","The Ways of the Mountains"]},
+  {"book":"Psalms","chapter":24,"tags":["Creation","God's Wall","Realms","Creature's Wall"]},
+  {"book":"Psalms","chapter":25,"tags":["Relationship","God's Wall","Light","Sin"]},
+  {"book":"Psalms","chapter":26,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":27,"tags":["Relationship","God's Wall","Light","The Ways of the Mountains"]},
+  {"book":"Psalms","chapter":28,"tags":["Relationship","God's Wall","Judgment"]},
+  {"book":"Psalms","chapter":29,"tags":["God's Wall","Creation","Creature's Wall","Realms"]},
+  {"book":"Psalms","chapter":30,"tags":["Relationship","God's Wall","Fruit","Blessing"]},
+  {"book":"Psalms","chapter":31,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":32,"tags":["Sin","Relationship","God's Wall","Fruit","Light"]},
+  {"book":"Psalms","chapter":33,"tags":["Creation","God's Wall","People","Realms"]},
+  {"book":"Psalms","chapter":34,"tags":["Relationship","God's Wall","Light","Creature's Wall"]},
+  {"book":"Psalms","chapter":35,"tags":["Relationship","God's Wall","Battle","Judgment"]},
+  {"book":"Psalms","chapter":36,"tags":["Sin","God's Wall","Light","Fruit"]},
+  {"book":"Psalms","chapter":37,"tags":["Light","God's Wall","Judgment","Fruit"]},
+  {"book":"Psalms","chapter":38,"tags":["Sin","Relationship","God's Wall","Fruit"]},
+  {"book":"Psalms","chapter":39,"tags":["Creature's Wall","Relationship","Fruit"]},
+  {"book":"Psalms","chapter":40,"tags":["Relationship","God's Wall","Calling","Fruit"]},
+  {"book":"Psalms","chapter":41,"tags":["Relationship","God's Wall","Creature's Wall","Fruit"]},
+  {"book":"Psalms","chapter":42,"tags":["Relationship","God's Wall","The Ways of the Mountains"]},
+  {"book":"Psalms","chapter":43,"tags":["Relationship","God's Wall","Light"]},
+  {"book":"Psalms","chapter":44,"tags":["People","God's Wall","Battle","Victory","Relationship"]},
+  {"book":"Psalms","chapter":45,"tags":["Relationship","Calling","People","Victory"]},
+  {"book":"Psalms","chapter":46,"tags":["God's Wall","Realms","People","Battle","Victory"]},
+  {"book":"Psalms","chapter":47,"tags":["People","God's Wall","Victory","Creature's Wall"]},
+  {"book":"Psalms","chapter":48,"tags":["People","God's Wall","Victory","Realms"]},
+  {"book":"Psalms","chapter":49,"tags":["Light","Fruit","Judgment","Creature's Wall"]},
+  {"book":"Psalms","chapter":50,"tags":["Covenant","God's Wall","Judgment","Creature's Wall"]},
+  {"book":"Psalms","chapter":51,"tags":["Sin","Relationship","God's Wall","Fruit"]},
+  {"book":"Psalms","chapter":52,"tags":["Sin","Judgment","Creature's Wall","Fruit"]},
+  {"book":"Psalms","chapter":53,"tags":["Sin","Judgment","People","God's Wall"]},
+  {"book":"Psalms","chapter":54,"tags":["Relationship","God's Wall","Judgment"]},
+  {"book":"Psalms","chapter":55,"tags":["Relationship","Creature's Wall","God's Wall","Fruit"]},
+  {"book":"Psalms","chapter":56,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":57,"tags":["Relationship","God's Wall","Victory"]},
+  {"book":"Psalms","chapter":58,"tags":["Sin","Judgment","People","God's Wall"]},
+  {"book":"Psalms","chapter":59,"tags":["Relationship","God's Wall","Battle","Judgment"]},
+  {"book":"Psalms","chapter":60,"tags":["People","Battle","Victory","God's Wall"]},
+  {"book":"Psalms","chapter":61,"tags":["Relationship","God's Wall","The Ways of the Mountains"]},
+  {"book":"Psalms","chapter":62,"tags":["Relationship","God's Wall","Light"]},
+  {"book":"Psalms","chapter":63,"tags":["Relationship","God's Wall","The Ways of the Mountains"]},
+  {"book":"Psalms","chapter":64,"tags":["Creature's Wall","Sin","Judgment","God's Wall"]},
+  {"book":"Psalms","chapter":65,"tags":["Creation","God's Wall","Blessing","Realms"]},
+  {"book":"Psalms","chapter":66,"tags":["People","God's Wall","Battle","Victory","Fruit"]},
+  {"book":"Psalms","chapter":67,"tags":["People","God's Wall","Blessing"]},
+  {"book":"Psalms","chapter":68,"tags":["People","God's Wall","Battle","Victory","Realms"]},
+  {"book":"Psalms","chapter":69,"tags":["Relationship","God's Wall","Creature's Wall","Fruit"]},
+  {"book":"Psalms","chapter":70,"tags":["Relationship","God's Wall","Judgment"]},
+  {"book":"Psalms","chapter":71,"tags":["Relationship","God's Wall","Calling","Fruit"]},
+  {"book":"Psalms","chapter":72,"tags":["Calling","People","God's Wall","Judgment","Blessing"]},
+  {"book":"Psalms","chapter":73,"tags":["Light","God's Wall","Judgment","Fruit","Relationship"]},
+  {"book":"Psalms","chapter":74,"tags":["People","God's Wall","Creation","Judgment","Realms"]},
+  {"book":"Psalms","chapter":75,"tags":["God's Wall","Judgment","Victory","People"]},
+  {"book":"Psalms","chapter":76,"tags":["God's Wall","Judgment","Battle","Victory","Realms"]},
+  {"book":"Psalms","chapter":77,"tags":["Relationship","God's Wall","Realms","Fruit"]},
+  {"book":"Psalms","chapter":78,"tags":["People","Covenant","God's Wall","Sin","Judgment","Fruit"]},
+  {"book":"Psalms","chapter":79,"tags":["People","God's Wall","Judgment","Fruit"]},
+  {"book":"Psalms","chapter":80,"tags":["People","Relationship","God's Wall","Fruit"]},
+  {"book":"Psalms","chapter":81,"tags":["Covenant","People","God's Wall","Sin","Judgment"]},
+  {"book":"Psalms","chapter":82,"tags":["God's Wall","Judgment","People"]},
+  {"book":"Psalms","chapter":83,"tags":["People","Battle","Victory","God's Wall"]},
+  {"book":"Psalms","chapter":84,"tags":["Relationship","God's Wall","The Ways of the Mountains"]},
+  {"book":"Psalms","chapter":85,"tags":["Relationship","God's Wall","Fruit","Blessing"]},
+  {"book":"Psalms","chapter":86,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":87,"tags":["People","God's Wall","Realms"]},
+  {"book":"Psalms","chapter":88,"tags":["Relationship","Fruit","God's Wall"]},
+  {"book":"Psalms","chapter":89,"tags":["Covenant","God's Wall","People","Judgment","Fruit"]},
+  {"book":"Psalms","chapter":90,"tags":["Creation","God's Wall","Fruit","Realms"]},
+  {"book":"Psalms","chapter":91,"tags":["Relationship","God's Wall","Outer Being","Creature's Wall"]},
+  {"book":"Psalms","chapter":92,"tags":["God's Wall","Fruit","Creation","Light"]},
+  {"book":"Psalms","chapter":93,"tags":["God's Wall","Realms","Creation"]},
+  {"book":"Psalms","chapter":94,"tags":["Judgment","God's Wall","People","Creature's Wall"]},
+  {"book":"Psalms","chapter":95,"tags":["God's Wall","Creation","Relationship","Creature's Wall"]},
+  {"book":"Psalms","chapter":96,"tags":["God's Wall","People","Creation","Realms"]},
+  {"book":"Psalms","chapter":97,"tags":["God's Wall","Judgment","Realms","Creature's Wall"]},
+  {"book":"Psalms","chapter":98,"tags":["God's Wall","People","Victory","Creation"]},
+  {"book":"Psalms","chapter":99,"tags":["God's Wall","People","Judgment"]},
+  {"book":"Psalms","chapter":100,"tags":["Relationship","God's Wall","People","Creation"]},
+  {"book":"Psalms","chapter":101,"tags":["Calling","Creature's Wall","God's Wall","People"]},
+  {"book":"Psalms","chapter":102,"tags":["Relationship","God's Wall","Creation","Realms"]},
+  {"book":"Psalms","chapter":103,"tags":["God's Wall","Relationship","Fruit","Blessing"]},
+  {"book":"Psalms","chapter":104,"tags":["Creation","God's Wall","Realms","Creature's Wall"]},
+  {"book":"Psalms","chapter":105,"tags":["People","Covenant","God's Wall","Calling","Victory"]},
+  {"book":"Psalms","chapter":106,"tags":["People","Sin","Judgment","God's Wall","Fruit"]},
+  {"book":"Psalms","chapter":107,"tags":["People","God's Wall","Fruit","Relationship"]},
+  {"book":"Psalms","chapter":108,"tags":["Relationship","God's Wall","Battle","Victory"]},
+  {"book":"Psalms","chapter":109,"tags":["Creature's Wall","Judgment","Relationship","God's Wall"]},
+  {"book":"Psalms","chapter":110,"tags":["Calling","God's Wall","Victory","Judgment","Light"]},
+  {"book":"Psalms","chapter":111,"tags":["God's Wall","Creation","Light","Covenant"]},
+  {"book":"Psalms","chapter":112,"tags":["Light","Fruit","Blessing","Creature's Wall"]},
+  {"book":"Psalms","chapter":113,"tags":["God's Wall","People","Blessing"]},
+  {"book":"Psalms","chapter":114,"tags":["People","God's Wall","Realms","Creation"]},
+  {"book":"Psalms","chapter":115,"tags":["God's Wall","Creature's Wall","People"]},
+  {"book":"Psalms","chapter":116,"tags":["Relationship","God's Wall","Fruit"]},
+  {"book":"Psalms","chapter":117,"tags":["People","God's Wall","Relationship"]},
+  {"book":"Psalms","chapter":118,"tags":["Relationship","God's Wall","Battle","Victory","Fruit"]},
+  {"book":"Psalms","chapter":119,"tags":["Light","God's Wall","Relationship","Creature's Wall"]},
+  {"book":"Psalms","chapter":120,"tags":["Creature's Wall","Relationship","People"]},
+  {"book":"Psalms","chapter":121,"tags":["Relationship","God's Wall","The Ways of the Mountains"]},
+  {"book":"Psalms","chapter":122,"tags":["People","Relationship","God's Wall"]},
+  {"book":"Psalms","chapter":123,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":124,"tags":["People","God's Wall","Battle","Victory"]},
+  {"book":"Psalms","chapter":125,"tags":["Relationship","God's Wall","The Ways of the Mountains"]},
+  {"book":"Psalms","chapter":126,"tags":["People","God's Wall","Fruit","Victory"]},
+  {"book":"Psalms","chapter":127,"tags":["Relationship","God's Wall","Calling","Fruit"]},
+  {"book":"Psalms","chapter":128,"tags":["Relationship","God's Wall","Blessing","Fruit"]},
+  {"book":"Psalms","chapter":129,"tags":["People","Battle","God's Wall","Judgment"]},
+  {"book":"Psalms","chapter":130,"tags":["Relationship","God's Wall","Sin","Judgment"]},
+  {"book":"Psalms","chapter":131,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":132,"tags":["Covenant","God's Wall","People","Calling"]},
+  {"book":"Psalms","chapter":133,"tags":["Relationship","People","Blessing"]},
+  {"book":"Psalms","chapter":134,"tags":["Relationship","God's Wall","People"]},
+  {"book":"Psalms","chapter":135,"tags":["God's Wall","Creation","People","Judgment"]},
+  {"book":"Psalms","chapter":136,"tags":["God's Wall","Creation","People","Covenant","Victory"]},
+  {"book":"Psalms","chapter":137,"tags":["People","Relationship","Fruit","Creature's Wall"]},
+  {"book":"Psalms","chapter":138,"tags":["Relationship","God's Wall","Calling","Fruit"]},
+  {"book":"Psalms","chapter":139,"tags":["God's Wall","Relationship","Creation","Realms"]},
+  {"book":"Psalms","chapter":140,"tags":["Creature's Wall","Sin","Judgment","Relationship"]},
+  {"book":"Psalms","chapter":141,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":142,"tags":["Relationship","God's Wall","Creature's Wall"]},
+  {"book":"Psalms","chapter":143,"tags":["Relationship","God's Wall","Calling","Sin"]},
+  {"book":"Psalms","chapter":144,"tags":["People","Battle","Victory","God's Wall","Blessing"]},
+  {"book":"Psalms","chapter":145,"tags":["God's Wall","Creation","People","Blessing"]},
+  {"book":"Psalms","chapter":146,"tags":["God's Wall","People","Judgment","Blessing"]},
+  {"book":"Psalms","chapter":147,"tags":["Creation","God's Wall","People","Light"]},
+  {"book":"Psalms","chapter":148,"tags":["Creation","God's Wall","Realms","Creature's Wall"]},
+  {"book":"Psalms","chapter":149,"tags":["People","God's Wall","Victory","Judgment"]},
+  {"book":"Psalms","chapter":150,"tags":["Relationship","God's Wall","Creature's Wall"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 1,
+    "tags": ["Light", "Creature's Wall", "Relationship", "Sin", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 2,
+    "tags": ["Light", "Creature's Wall", "Sin", "Fruit"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 3,
+    "tags": ["Light", "Relationship", "Creature's Wall", "Fruit", "Blessing", "God's Wall"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 4,
+    "tags": ["Light", "Relationship", "Creature's Wall", "Sin"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 5,
+    "tags": ["Relationship", "Sin", "Creature's Wall", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 6,
+    "tags": ["Creature's Wall", "Relationship", "Sin", "Fruit", "Judgment", "Covenant"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 7,
+    "tags": ["Relationship", "Sin", "Creature's Wall", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 8,
+    "tags": ["Light", "Creation", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 9,
+    "tags": ["Light", "Creature's Wall", "Sin", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 10,
+    "tags": ["Light", "Creature's Wall", "Sin", "Fruit", "Blessing", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 11,
+    "tags": ["Light", "Creature's Wall", "Fruit", "Judgment", "People"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 12,
+    "tags": ["Light", "Creature's Wall", "Fruit", "Relationship"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 13,
+    "tags": ["Light", "Creature's Wall", "Fruit", "Relationship", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 14,
+    "tags": ["Light", "Creature's Wall", "Fruit", "Judgment", "People"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 15,
+    "tags": ["Light", "Creature's Wall", "Relationship", "Fruit", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 16,
+    "tags": ["Light", "Creature's Wall", "God's Wall", "Fruit", "Judgment", "People"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 17,
+    "tags": ["Light", "Creature's Wall", "Relationship", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 18,
+    "tags": ["Light", "Creature's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 19,
+    "tags": ["Light", "Creature's Wall", "Relationship", "Fruit", "Judgment", "Blessing"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 20,
+    "tags": ["Light", "Creature's Wall", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 21,
+    "tags": ["Light", "Creature's Wall", "God's Wall", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 22,
+    "tags": ["Light", "Creature's Wall", "Relationship", "Fruit", "People"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 23,
+    "tags": ["Creature's Wall", "Relationship", "Sin", "Fruit", "Light"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 24,
+    "tags": ["Light", "Creature's Wall", "Battle", "Victory", "Fruit", "Judgment", "People"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 25,
+    "tags": ["Light", "Creature's Wall", "Relationship", "People", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 26,
+    "tags": ["Light", "Creature's Wall", "Sin", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 27,
+    "tags": ["Light", "Creature's Wall", "Relationship", "Fruit"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 28,
+    "tags": ["Light", "Creature's Wall", "Sin", "Judgment", "Fruit", "People", "Blessing"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 29,
+    "tags": ["Light", "Creature's Wall", "People", "Judgment", "Fruit", "Relationship"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 30,
+    "tags": ["Light", "Creature's Wall", "Creation", "God's Wall"]
+  },
+  {
+    "book": "Proverbs",
+    "chapter": 31,
+    "tags": ["Light", "Creature's Wall", "Relationship", "Blessing", "People"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 1,
+    "tags": ["Light", "Creation", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 2,
+    "tags": ["Light", "Fruit", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 3,
+    "tags": ["Light", "Creation", "Fruit", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 4,
+    "tags": ["Creature's Wall", "Relationship", "People", "Fruit"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 5,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 6,
+    "tags": ["Fruit", "Creature's Wall", "God's Wall", "Light"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 7,
+    "tags": ["Light", "Creature's Wall", "Sin", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 8,
+    "tags": ["Light", "Creature's Wall", "God's Wall", "Judgment", "People"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 9,
+    "tags": ["Fruit", "Creature's Wall", "Light", "God's Wall"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 10,
+    "tags": ["Light", "Creature's Wall", "Fruit", "People"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 11,
+    "tags": ["Creature's Wall", "Fruit", "Light", "Blessing", "Creation"]
+  },
+  {
+    "book": "Ecclesiastes",
+    "chapter": 12,
+    "tags": ["Creation", "Fruit", "Judgment", "God's Wall", "Light"]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 1,
+    "tags": ["Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 2,
+    "tags": ["Relationship", "Creature's Wall", "Creation"]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 3,
+    "tags": ["Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 4,
+    "tags": ["Relationship", "Creature's Wall", "Creation"]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 5,
+    "tags": ["Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 6,
+    "tags": ["Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 7,
+    "tags": ["Relationship", "Creature's Wall", "Creation"]
+  },
+  {
+    "book": "Song of Solomon",
+    "chapter": 8,
+    "tags": ["Relationship", "Creature's Wall", "Covenant"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 1,
+    "tags": ["Sin", "Judgment", "People", "Covenant", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 2,
+    "tags": ["God's Wall", "Judgment", "People", "The Ways of the Mountains", "Light"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 3,
+    "tags": ["Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 4,
+    "tags": ["Judgment", "People", "God's Wall", "Blessing"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 5,
+    "tags": ["People", "Sin", "Judgment", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 6,
+    "tags": ["Calling", "God's Wall", "Outer Being", "Sin", "Judgment"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 7,
+    "tags": ["People", "Covenant", "God's Wall", "Calling", "Light"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 8,
+    "tags": ["People", "Judgment", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 9,
+    "tags": ["People", "Judgment", "God's Wall", "Light", "Victory"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 10,
+    "tags": ["People", "Judgment", "Sin", "Victory", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 11,
+    "tags": ["God's Wall", "Light", "People", "Creation", "Victory"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 12,
+    "tags": ["Blessing", "Victory", "God's Wall", "People"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 13,
+    "tags": ["Judgment", "People", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 14,
+    "tags": ["Judgment", "Victory", "People", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 15,
+    "tags": ["Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 16,
+    "tags": ["People", "Judgment", "Covenant", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 17,
+    "tags": ["Judgment", "People", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 18,
+    "tags": ["People", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 19,
+    "tags": ["Judgment", "People", "God's Wall", "Victory"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 20,
+    "tags": ["Calling", "People", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 21,
+    "tags": ["Judgment", "People", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 22,
+    "tags": ["People", "Judgment", "Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 23,
+    "tags": ["Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 24,
+    "tags": ["Judgment", "People", "Creation", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 25,
+    "tags": ["Victory", "Blessing", "God's Wall", "People", "Creation"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 26,
+    "tags": ["Light", "God's Wall", "Victory", "Judgment", "People"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 27,
+    "tags": ["Judgment", "Victory", "People", "Creation", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 28,
+    "tags": ["Judgment", "People", "Sin", "God's Wall", "Light"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 29,
+    "tags": ["Judgment", "People", "God's Wall", "Light", "Creature's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 30,
+    "tags": ["People", "Covenant", "Sin", "Judgment", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 31,
+    "tags": ["People", "Battle", "Victory", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 32,
+    "tags": ["God's Wall", "Light", "People", "Blessing", "Judgment"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 33,
+    "tags": ["Battle", "Victory", "Judgment", "God's Wall", "People"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 34,
+    "tags": ["Judgment", "People", "Creation", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 35,
+    "tags": ["Creation", "Blessing", "Victory", "God's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 36,
+    "tags": ["People", "Battle", "Creature's Wall", "Covenant"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 37,
+    "tags": ["People", "Battle", "Victory", "God's Wall", "Relationship"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 38,
+    "tags": ["Relationship", "God's Wall", "Fruit", "Blessing"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 39,
+    "tags": ["Creature's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 40,
+    "tags": ["God's Wall", "Creation", "Light", "Blessing", "People"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 41,
+    "tags": ["God's Wall", "People", "Battle", "Victory", "Creation"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 42,
+    "tags": ["Calling", "God's Wall", "Light", "People", "Judgment"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 43,
+    "tags": ["People", "Covenant", "God's Wall", "Victory", "Creation"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 44,
+    "tags": ["Creation", "God's Wall", "Sin", "Judgment", "People"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 45,
+    "tags": ["Calling", "God's Wall", "People", "Creation", "Victory"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 46,
+    "tags": ["God's Wall", "Creature's Wall", "Judgment", "Victory"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 47,
+    "tags": ["Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 48,
+    "tags": ["People", "Covenant", "Sin", "Judgment", "God's Wall", "Light"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 49,
+    "tags": ["Calling", "God's Wall", "People", "Victory", "Blessing", "Light"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 50,
+    "tags": ["Calling", "Creature's Wall", "God's Wall", "Relationship", "Judgment"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 51,
+    "tags": ["Covenant", "People", "God's Wall", "Creation", "Victory"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 52,
+    "tags": ["People", "Victory", "God's Wall", "Light"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 53,
+    "tags": ["Calling", "Sin", "Fruit", "Victory", "God's Wall", "Relationship"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 54,
+    "tags": ["Covenant", "Blessing", "People", "God's Wall", "Victory"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 55,
+    "tags": ["Covenant", "Blessing", "God's Wall", "Light", "Calling"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 56,
+    "tags": ["Covenant", "People", "Blessing", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 57,
+    "tags": ["Sin", "Judgment", "Relationship", "God's Wall", "Blessing"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 58,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "Blessing", "Relationship"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 59,
+    "tags": ["Sin", "Judgment", "God's Wall", "Fruit", "People"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 60,
+    "tags": ["Light", "People", "Victory", "Blessing", "God's Wall"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 61,
+    "tags": ["Calling", "Blessing", "Victory", "God's Wall", "People", "Light"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 62,
+    "tags": ["Relationship", "Covenant", "Blessing", "God's Wall", "People"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 63,
+    "tags": ["Battle", "Victory", "Judgment", "People", "God's Wall", "Relationship"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 64,
+    "tags": ["Relationship", "God's Wall", "Sin", "Judgment", "Creation"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 65,
+    "tags": ["Judgment", "People", "Creation", "Victory", "Blessing", "Fruit"]
+  },
+  {
+    "book": "Isaiah",
+    "chapter": 66,
+    "tags": ["Judgment", "People", "Creation", "God's Wall", "Victory", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 1,
+    "tags": ["Calling", "God's Wall", "People", "Judgment"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 2,
+    "tags": ["Relationship", "Covenant", "Sin", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 3,
+    "tags": ["Relationship", "Covenant", "Sin", "Judgment", "People", "Blessing"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 4,
+    "tags": ["Judgment", "Battle", "People", "Creation", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 5,
+    "tags": ["Sin", "Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 6,
+    "tags": ["Judgment", "Battle", "People", "Sin", "Creature's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 7,
+    "tags": ["Relationship", "Covenant", "Sin", "Judgment", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 8,
+    "tags": ["Sin", "Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 9,
+    "tags": ["Sin", "Judgment", "People", "Relationship", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 10,
+    "tags": ["Creation", "God's Wall", "Creature's Wall", "Sin", "Judgment"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 11,
+    "tags": ["Covenant", "Sin", "Judgment", "People", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 12,
+    "tags": ["Relationship", "Judgment", "People", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 13,
+    "tags": ["Creature's Wall", "Judgment", "People", "Sin", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 14,
+    "tags": ["Judgment", "People", "Relationship", "Sin", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 15,
+    "tags": ["Calling", "Judgment", "Relationship", "God's Wall", "People"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 16,
+    "tags": ["Judgment", "People", "Relationship", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 17,
+    "tags": ["Light", "Creature's Wall", "Sin", "Fruit", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 18,
+    "tags": ["Creation", "God's Wall", "People", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 19,
+    "tags": ["Judgment", "Creature's Wall", "People", "Sin", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 20,
+    "tags": ["Calling", "Creature's Wall", "Relationship", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 21,
+    "tags": ["Judgment", "People", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 22,
+    "tags": ["People", "Judgment", "Creature's Wall", "Fruit", "Covenant"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 23,
+    "tags": ["God's Wall", "Calling", "Judgment", "People", "Light", "Creature's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 24,
+    "tags": ["Realms", "Judgment", "People", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 25,
+    "tags": ["Judgment", "People", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 26,
+    "tags": ["Calling", "People", "Creature's Wall", "Judgment", "Relationship"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 27,
+    "tags": ["Covenant", "People", "Calling", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 28,
+    "tags": ["Calling", "Creature's Wall", "Judgment", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 29,
+    "tags": ["People", "Calling", "God's Wall", "Blessing", "Judgment"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 30,
+    "tags": ["People", "Judgment", "Victory", "Blessing", "Covenant", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 31,
+    "tags": ["Covenant", "People", "Relationship", "Blessing", "God's Wall", "Creation"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 32,
+    "tags": ["Covenant", "People", "Calling", "God's Wall", "Blessing", "Judgment"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 33,
+    "tags": ["Covenant", "People", "God's Wall", "Blessing", "Calling"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 34,
+    "tags": ["Covenant", "People", "Sin", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 35,
+    "tags": ["Relationship", "Creature's Wall", "Covenant", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 36,
+    "tags": ["Calling", "Creature's Wall", "God's Wall", "Judgment", "People"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 37,
+    "tags": ["People", "Battle", "Calling", "Creature's Wall", "Judgment"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 38,
+    "tags": ["People", "Creature's Wall", "Calling", "Judgment", "Relationship"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 39,
+    "tags": ["Battle", "Victory", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 40,
+    "tags": ["People", "Victory", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 41,
+    "tags": ["People", "Battle", "Creature's Wall", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 42,
+    "tags": ["Relationship", "Calling", "God's Wall", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 43,
+    "tags": ["People", "Creature's Wall", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 44,
+    "tags": ["Sin", "Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 45,
+    "tags": ["Calling", "Relationship", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 46,
+    "tags": ["Battle", "Victory", "Judgment", "People", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 47,
+    "tags": ["Battle", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 48,
+    "tags": ["Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 49,
+    "tags": ["Judgment", "People", "Battle", "Victory", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 50,
+    "tags": ["Battle", "Victory", "Judgment", "People", "God's Wall", "Blessing"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 51,
+    "tags": ["Battle", "Victory", "Judgment", "People", "Creation", "God's Wall"]
+  },
+  {
+    "book": "Jeremiah",
+    "chapter": 52,
+    "tags": ["Battle", "Victory", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 1,
+    "tags": ["Judgment", "People", "Fruit", "Relationship", "Creature's Wall"]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 2,
+    "tags": ["Judgment", "People", "God's Wall", "Fruit", "Battle"]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 3,
+    "tags": ["Relationship", "God's Wall", "Judgment", "Fruit", "Blessing", "Light"]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 4,
+    "tags": ["Judgment", "People", "Fruit", "Battle"]
+  },
+  {
+    "book": "Lamentations",
+    "chapter": 5,
+    "tags": ["People", "Judgment", "Relationship", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 1,
+    "tags": ["Outer Being", "Realms", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 2,
+    "tags": ["Calling", "Outer Being", "God's Wall", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 3,
+    "tags": ["Calling", "God's Wall", "People", "Judgment", "Light"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 4,
+    "tags": ["Calling", "Creature's Wall", "Judgment", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 5,
+    "tags": ["Judgment", "People", "Sin", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 6,
+    "tags": ["Judgment", "People", "Sin", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 7,
+    "tags": ["Judgment", "People", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 8,
+    "tags": ["Outer Being", "Realms", "Sin", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 9,
+    "tags": ["Outer Being", "Judgment", "People", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 10,
+    "tags": ["Outer Being", "Realms", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 11,
+    "tags": ["Outer Being", "Judgment", "People", "God's Wall", "Blessing"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 12,
+    "tags": ["Calling", "Creature's Wall", "Judgment", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 13,
+    "tags": ["Sin", "Judgment", "Creature's Wall", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 14,
+    "tags": ["Sin", "Judgment", "Relationship", "People", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 15,
+    "tags": ["Creation", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 16,
+    "tags": ["Relationship", "Covenant", "Sin", "Judgment", "Fruit", "People", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 17,
+    "tags": ["Creature's Wall", "Covenant", "Judgment", "People", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 18,
+    "tags": ["Sin", "Fruit", "Judgment", "Creature's Wall", "Relationship"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 19,
+    "tags": ["People", "Judgment", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 20,
+    "tags": ["People", "Covenant", "Sin", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 21,
+    "tags": ["Judgment", "Battle", "Victory", "People", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 22,
+    "tags": ["Sin", "Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 23,
+    "tags": ["Relationship", "Sin", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 24,
+    "tags": ["Calling", "Creature's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 25,
+    "tags": ["Judgment", "People", "Victory", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 26,
+    "tags": ["Judgment", "Battle", "Victory", "People", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 27,
+    "tags": ["People", "Creature's Wall", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 28,
+    "tags": ["Judgment", "Creature's Wall", "Outer Being", "People", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 29,
+    "tags": ["Judgment", "People", "Battle", "Victory", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 30,
+    "tags": ["Judgment", "Battle", "Victory", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 31,
+    "tags": ["Creation", "Creature's Wall", "Judgment", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 32,
+    "tags": ["Judgment", "People", "Fruit", "Realms"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 33,
+    "tags": ["Calling", "People", "Judgment", "Sin", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 34,
+    "tags": ["People", "Creature's Wall", "God's Wall", "Judgment", "Blessing", "Relationship"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 35,
+    "tags": ["Judgment", "People", "Battle", "Victory"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 36,
+    "tags": ["Creation", "People", "Covenant", "Blessing", "God's Wall", "Sin"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 37,
+    "tags": ["Creation", "Realms", "God's Wall", "People", "Victory", "Covenant"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 38,
+    "tags": ["People", "Battle", "Judgment", "Victory", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 39,
+    "tags": ["People", "Battle", "Victory", "Judgment", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 40,
+    "tags": ["Realms", "God's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 41,
+    "tags": ["Realms", "God's Wall"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 42,
+    "tags": ["Realms", "God's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 43,
+    "tags": ["Outer Being", "Realms", "God's Wall", "Blessing"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 44,
+    "tags": ["God's Wall", "Relationship", "Judgment", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 45,
+    "tags": ["Covenant", "People", "God's Wall", "Blessing"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 46,
+    "tags": ["God's Wall", "Relationship", "Covenant", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 47,
+    "tags": ["Creation", "Realms", "God's Wall", "Blessing", "People"]
+  },
+  {
+    "book": "Ezekiel",
+    "chapter": 48,
+    "tags": ["People", "Covenant", "Blessing", "God's Wall", "Realms"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 1,
+    "tags": ["Calling", "Relationship", "Creature's Wall", "Blessing", "God's Wall"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 2,
+    "tags": ["Realms", "Outer Being", "Light", "God's Wall", "People", "Victory"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 3,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Victory", "People"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 4,
+    "tags": ["God's Wall", "Judgment", "Creature's Wall", "Fruit", "People"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 5,
+    "tags": ["Judgment", "God's Wall", "Creature's Wall", "Fruit", "People"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 6,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Victory", "Judgment"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 7,
+    "tags": ["Realms", "Outer Being", "God's Wall", "People", "Judgment", "Victory"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 8,
+    "tags": ["Realms", "Outer Being", "God's Wall", "People", "Battle", "Victory"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 9,
+    "tags": ["Relationship", "Covenant", "Sin", "Judgment", "God's Wall", "Outer Being", "People"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 10,
+    "tags": ["Outer Being", "Realms", "Relationship", "God's Wall", "Battle", "People"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 11,
+    "tags": ["People", "Battle", "Victory", "Judgment", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Daniel",
+    "chapter": 12,
+    "tags": ["Realms", "Outer Being", "Judgment", "Victory", "God's Wall", "Light"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 1,
+    "tags": ["Calling", "Relationship", "Creature's Wall", "Judgment", "People"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 2,
+    "tags": ["Relationship", "Covenant", "Sin", "Judgment", "Blessing", "People", "God's Wall"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 3,
+    "tags": ["Relationship", "Covenant", "People", "God's Wall"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 4,
+    "tags": ["Sin", "Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 5,
+    "tags": ["Judgment", "Sin", "People", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 6,
+    "tags": ["Relationship", "Sin", "God's Wall", "Blessing", "People"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 7,
+    "tags": ["Sin", "Creature's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 8,
+    "tags": ["Covenant", "Sin", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 9,
+    "tags": ["Judgment", "People", "Fruit", "Relationship"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 10,
+    "tags": ["Sin", "Judgment", "People", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 11,
+    "tags": ["Relationship", "God's Wall", "People", "Judgment", "Blessing"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 12,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "People", "Sin"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 13,
+    "tags": ["Sin", "Judgment", "People", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Hosea",
+    "chapter": 14,
+    "tags": ["Relationship", "Sin", "Blessing", "God's Wall", "Fruit", "People"]
+  },
+  {
+    "book": "Joel",
+    "chapter": 1,
+    "tags": ["Judgment", "Creation", "People", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "Joel",
+    "chapter": 2,
+    "tags": ["Battle", "Judgment", "People", "God's Wall", "Blessing", "Creation", "Outer Being"]
+  },
+  {
+    "book": "Joel",
+    "chapter": 3,
+    "tags": ["Judgment", "People", "Battle", "Victory", "God's Wall", "Blessing", "Realms"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 1,
+    "tags": ["Judgment", "People", "Battle", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 2,
+    "tags": ["Judgment", "People", "Sin", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 3,
+    "tags": ["Covenant", "People", "Judgment", "Calling", "God's Wall"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 4,
+    "tags": ["Judgment", "People", "Creature's Wall", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 5,
+    "tags": ["Sin", "Judgment", "People", "Light", "God's Wall"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 6,
+    "tags": ["Sin", "Judgment", "People", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 7,
+    "tags": ["Calling", "God's Wall", "Judgment", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 8,
+    "tags": ["Judgment", "People", "Fruit", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Amos",
+    "chapter": 9,
+    "tags": ["Judgment", "People", "Victory", "Blessing", "Creation", "God's Wall"]
+  },
+  {
+    "book": "Obadiah",
+    "chapter": 1,
+    "tags": ["Judgment", "People", "Battle", "Victory", "Fruit", "Sin", "God's Wall"]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 1,
+    "tags": ["Calling", "Creature's Wall", "God's Wall", "Judgment", "People", "Realms"]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 2,
+    "tags": ["Relationship", "Realms", "God's Wall", "Creature's Wall", "Blessing"]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 3,
+    "tags": ["Calling", "People", "Judgment", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Jonah",
+    "chapter": 4,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "People", "Creation"]
+  },
+  {
+    "book": "Micah",
+    "chapter": 1,
+    "tags": ["Judgment", "People", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Micah",
+    "chapter": 2,
+    "tags": ["Sin", "Judgment", "People", "Fruit", "Blessing"]
+  },
+  {
+    "book": "Micah",
+    "chapter": 3,
+    "tags": ["Sin", "Judgment", "People", "Creature's Wall", "Calling"]
+  },
+  {
+    "book": "Micah",
+    "chapter": 4,
+    "tags": ["God's Wall", "The Ways of the Mountains", "People", "Victory", "Blessing", "Light"]
+  },
+  {
+    "book": "Micah",
+    "chapter": 5,
+    "tags": ["Calling", "Victory", "People", "Battle", "God's Wall", "Light"]
+  },
+  {
+    "book": "Micah",
+    "chapter": 6,
+    "tags": ["Covenant", "People", "Sin", "Judgment", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Micah",
+    "chapter": 7,
+    "tags": ["Sin", "Judgment", "Relationship", "God's Wall", "Blessing", "Victory", "Fruit"]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 1,
+    "tags": ["Judgment", "Battle", "Victory", "God's Wall", "People"]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 2,
+    "tags": ["Battle", "Victory", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Nahum",
+    "chapter": 3,
+    "tags": ["Judgment", "People", "Battle", "Victory", "Sin", "Fruit"]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 1,
+    "tags": ["Relationship", "God's Wall", "Judgment", "People", "Battle"]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 2,
+    "tags": ["God's Wall", "Light", "Judgment", "Sin", "Fruit", "People"]
+  },
+  {
+    "book": "Habakkuk",
+    "chapter": 3,
+    "tags": ["Relationship", "God's Wall", "Battle", "Victory", "Creation", "Blessing"]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 1,
+    "tags": ["Judgment", "People", "Creation", "Sin", "Fruit"]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 2,
+    "tags": ["Judgment", "People", "Battle", "Victory", "Blessing"]
+  },
+  {
+    "book": "Zephaniah",
+    "chapter": 3,
+    "tags": ["Judgment", "People", "Sin", "Blessing", "Victory", "God's Wall"]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 1,
+    "tags": ["Calling", "People", "God's Wall", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Haggai",
+    "chapter": 2,
+    "tags": ["People", "Covenant", "God's Wall", "Blessing", "Victory", "Creation"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 1,
+    "tags": ["Calling", "God's Wall", "Outer Being", "People", "Judgment", "Blessing"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 2,
+    "tags": ["Realms", "Outer Being", "God's Wall", "People", "Blessing"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 3,
+    "tags": ["Outer Being", "God's Wall", "Judgment", "Blessing", "Relationship"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 4,
+    "tags": ["Outer Being", "Realms", "God's Wall", "Calling", "Light"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 5,
+    "tags": ["Realms", "Outer Being", "Judgment", "Sin", "God's Wall"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 6,
+    "tags": ["Outer Being", "Realms", "Calling", "God's Wall", "Victory"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 7,
+    "tags": ["People", "Creature's Wall", "Sin", "Judgment", "Relationship"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 8,
+    "tags": ["People", "Covenant", "Blessing", "God's Wall", "Victory"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 9,
+    "tags": ["Judgment", "Battle", "Victory", "People", "God's Wall", "Calling"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 10,
+    "tags": ["People", "God's Wall", "Blessing", "Victory", "Creature's Wall"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 11,
+    "tags": ["Calling", "Creature's Wall", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 12,
+    "tags": ["People", "Battle", "Victory", "God's Wall", "Blessing"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 13,
+    "tags": ["People", "Sin", "Judgment", "Blessing", "God's Wall"]
+  },
+  {
+    "book": "Zechariah",
+    "chapter": 14,
+    "tags": ["People", "Battle", "Victory", "Judgment", "Creation", "God's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 1,
+    "tags": ["Relationship", "Covenant", "Sin", "Judgment", "Creature's Wall", "People"]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 2,
+    "tags": ["Covenant", "Relationship", "Sin", "Judgment", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 3,
+    "tags": ["Calling", "Covenant", "Judgment", "Blessing", "God's Wall", "People", "Fruit"]
+  },
+  {
+    "book": "Malachi",
+    "chapter": 4,
+    "tags": ["Judgment", "Victory", "Blessing", "God's Wall", "People", "Fruit"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 1,
+    "tags": ["Genealogy", "Creation", "Calling", "God's Wall", "Light"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 2,
+    "tags": ["Outer Being", "Calling", "God's Wall", "People", "Light"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 3,
+    "tags": ["Calling", "God's Wall", "Relationship", "People", "Light"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 4,
+    "tags": ["Calling", "Battle", "Creature's Wall", "God's Wall", "Light"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 5,
+    "tags": ["Light", "God's Wall", "Creature's Wall", "Relationship", "Judgment"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 6,
+    "tags": ["Relationship", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 7,
+    "tags": ["Light", "Judgment", "Creature's Wall", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 8,
+    "tags": ["God's Wall", "Outer Being", "Creature's Wall", "People", "Victory"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 9,
+    "tags": ["Calling", "God's Wall", "Relationship", "People", "Victory"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 10,
+    "tags": ["Calling", "People", "Battle", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 11,
+    "tags": ["Calling", "God's Wall", "Judgment", "Light", "People"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 12,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "God's Wall", "Light", "Victory"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 13,
+    "tags": ["Light", "God's Wall", "Judgment", "People", "Fruit", "Realms"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 14,
+    "tags": ["God's Wall", "Outer Being", "People", "Creature's Wall", "Victory"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 15,
+    "tags": ["Creature's Wall", "Sin", "Relationship", "God's Wall", "People"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 16,
+    "tags": ["Light", "God's Wall", "Calling", "People", "Judgment"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 17,
+    "tags": ["Outer Being", "Realms", "God's Wall", "Calling", "Light"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 18,
+    "tags": ["Relationship", "Creature's Wall", "Judgment", "Fruit", "People"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 19,
+    "tags": ["Relationship", "Covenant", "Creature's Wall", "Light", "God's Wall"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 20,
+    "tags": ["God's Wall", "Calling", "Relationship", "People", "Creature's Wall"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 21,
+    "tags": ["Calling", "Victory", "People", "Judgment", "God's Wall", "Light"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 22,
+    "tags": ["Covenant", "Light", "Judgment", "Relationship", "People", "God's Wall"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 23,
+    "tags": ["Creature's Wall", "Sin", "Judgment", "People", "God's Wall"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 24,
+    "tags": ["Judgment", "People", "Realms", "God's Wall", "Light"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 25,
+    "tags": ["Judgment", "Fruit", "Creature's Wall", "God's Wall", "People"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 26,
+    "tags": ["Covenant", "Relationship", "Sin", "Creature's Wall", "God's Wall", "Battle"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 27,
+    "tags": ["Judgment", "Battle", "Victory", "Fruit", "God's Wall", "People"]
+  },
+  {
+    "book": "Matthew",
+    "chapter": 28,
+    "tags": ["Victory", "Calling", "God's Wall", "Outer Being", "People", "Light"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 1,
+    "tags": ["Calling", "Light", "God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 2,
+    "tags": ["Relationship", "Sin", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 3,
+    "tags": ["Calling", "People", "Sin", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 4,
+    "tags": ["Light", "God's Wall", "Creature's Wall", "Realms"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 5,
+    "tags": ["Outer Being", "God's Wall", "Creature's Wall", "Victory", "Relationship"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 6,
+    "tags": ["Calling", "People", "Battle", "Victory", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 7,
+    "tags": ["Sin", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 8,
+    "tags": ["Calling", "Light", "God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 9,
+    "tags": ["Outer Being", "Light", "God's Wall", "Creature's Wall", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 10,
+    "tags": ["Relationship", "Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 11,
+    "tags": ["Calling", "People", "Sin", "Judgment", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 12,
+    "tags": ["Covenant", "Relationship", "Sin", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 13,
+    "tags": ["Judgment", "People", "Realms", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 14,
+    "tags": ["Covenant", "Sin", "Battle", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 15,
+    "tags": ["Battle", "Victory", "Judgment", "God's Wall", "Creature's Wall", "Fruit", "Light"]
+  },
+  {
+    "book": "Mark",
+    "chapter": 16,
+    "tags": ["Victory", "Calling", "Light", "God's Wall", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 1,
+    "tags": ["Calling", "Covenant", "Relationship", "God's Wall", "Creature's Wall", "Outer Being", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 2,
+    "tags": ["Calling", "People", "God's Wall", "Creature's Wall", "Outer Being", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 3,
+    "tags": ["Calling", "Genealogy", "People", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 4,
+    "tags": ["Battle", "Calling", "God's Wall", "Creature's Wall", "Outer Being", "Light", "Victory"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 5,
+    "tags": ["Calling", "Sin", "Relationship", "God's Wall", "Creature's Wall", "Victory"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 6,
+    "tags": ["God's Wall", "Creature's Wall", "Relationship", "Sin", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 7,
+    "tags": ["Relationship", "God's Wall", "Creature's Wall", "Victory", "Fruit", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 8,
+    "tags": ["Light", "God's Wall", "Creature's Wall", "Outer Being", "Victory", "Fruit"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 9,
+    "tags": ["Calling", "People", "Battle", "Victory", "God's Wall", "Creature's Wall", "Outer Being", "Light", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 10,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Victory", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 11,
+    "tags": ["God's Wall", "Creature's Wall", "Sin", "Judgment", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 12,
+    "tags": ["God's Wall", "Creature's Wall", "Judgment", "People", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 13,
+    "tags": ["Judgment", "Sin", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 14,
+    "tags": ["Relationship", "God's Wall", "Creature's Wall", "Calling", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 15,
+    "tags": ["Relationship", "Sin", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 16,
+    "tags": ["Judgment", "Fruit", "Relationship", "God's Wall", "Creature's Wall", "Realms"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 17,
+    "tags": ["People", "Judgment", "God's Wall", "Creature's Wall", "Victory"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 18,
+    "tags": ["Relationship", "God's Wall", "Creature's Wall", "Sin", "Victory"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 19,
+    "tags": ["Calling", "People", "Victory", "Judgment", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 20,
+    "tags": ["Sin", "Judgment", "Covenant", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 21,
+    "tags": ["Judgment", "People", "Realms", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 22,
+    "tags": ["Covenant", "Battle", "Sin", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 23,
+    "tags": ["Battle", "Victory", "Judgment", "Fruit", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Luke",
+    "chapter": 24,
+    "tags": ["Victory", "Calling", "Light", "God's Wall", "Creature's Wall", "Outer Being", "Realms"]
+  },
+  {
+    "book": "John",
+    "chapter": 1,
+    "tags": ["Creation", "Light", "Calling", "God's Wall", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "John",
+    "chapter": 2,
+    "tags": ["God's Wall", "Creature's Wall", "Calling", "Relationship"]
+  },
+  {
+    "book": "John",
+    "chapter": 3,
+    "tags": ["Light", "Relationship", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "John",
+    "chapter": 4,
+    "tags": ["Calling", "Relationship", "God's Wall", "Creature's Wall", "People", "Light"]
+  },
+  {
+    "book": "John",
+    "chapter": 5,
+    "tags": ["Judgment", "Victory", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "John",
+    "chapter": 6,
+    "tags": ["People", "God's Wall", "Creature's Wall", "Light", "Calling"]
+  },
+  {
+    "book": "John",
+    "chapter": 7,
+    "tags": ["People", "Sin", "Judgment", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "John",
+    "chapter": 8,
+    "tags": ["Light", "Sin", "Judgment", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "John",
+    "chapter": 9,
+    "tags": ["Victory", "God's Wall", "Creature's Wall", "Light", "Sin"]
+  },
+  {
+    "book": "John",
+    "chapter": 10,
+    "tags": ["Relationship", "Calling", "People", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "John",
+    "chapter": 11,
+    "tags": ["Victory", "Relationship", "God's Wall", "Creature's Wall", "Light", "Fruit"]
+  },
+  {
+    "book": "John",
+    "chapter": 12,
+    "tags": ["Calling", "Victory", "Judgment", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "John",
+    "chapter": 13,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Calling"]
+  },
+  {
+    "book": "John",
+    "chapter": 14,
+    "tags": ["Light", "Relationship", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "John",
+    "chapter": 15,
+    "tags": ["Relationship", "Fruit", "Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "John",
+    "chapter": 16,
+    "tags": ["Calling", "Judgment", "Victory", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "John",
+    "chapter": 17,
+    "tags": ["Relationship", "People", "Calling", "God's Wall", "Light"]
+  },
+  {
+    "book": "John",
+    "chapter": 18,
+    "tags": ["Battle", "Sin", "Judgment", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "John",
+    "chapter": 19,
+    "tags": ["Battle", "Victory", "Judgment", "Fruit", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "John",
+    "chapter": 20,
+    "tags": ["Victory", "Calling", "Light", "God's Wall", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "John",
+    "chapter": 21,
+    "tags": ["Calling", "Relationship", "Victory", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 1,
+    "tags": ["Calling", "People", "God's Wall", "Outer Being", "Realms"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 2,
+    "tags": ["Calling", "People", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 3,
+    "tags": ["Victory", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 4,
+    "tags": ["People", "Battle", "Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 5,
+    "tags": ["Sin", "Judgment", "People", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 6,
+    "tags": ["People", "Calling", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 7,
+    "tags": ["People", "Battle", "Judgment", "God's Wall", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 8,
+    "tags": ["Calling", "People", "God's Wall", "Creature's Wall", "Victory"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 9,
+    "tags": ["Calling", "God's Wall", "Outer Being", "Creature's Wall", "Victory"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 10,
+    "tags": ["Calling", "People", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 11,
+    "tags": ["People", "Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 12,
+    "tags": ["Battle", "Victory", "Judgment", "God's Wall", "Outer Being", "Fruit"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 13,
+    "tags": ["Calling", "People", "Battle", "God's Wall", "Creature's Wall", "Victory"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 14,
+    "tags": ["Calling", "People", "Battle", "Victory", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 15,
+    "tags": ["Covenant", "People", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 16,
+    "tags": ["Calling", "God's Wall", "Creature's Wall", "Victory", "Outer Being"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 17,
+    "tags": ["Calling", "People", "Light", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 18,
+    "tags": ["Calling", "People", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 19,
+    "tags": ["Calling", "People", "Battle", "Victory", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 20,
+    "tags": ["Calling", "Relationship", "God's Wall", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 21,
+    "tags": ["Calling", "People", "Battle", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 22,
+    "tags": ["Calling", "People", "Battle", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 23,
+    "tags": ["Battle", "People", "God's Wall", "Creature's Wall", "Victory"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 24,
+    "tags": ["Battle", "Judgment", "People", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 25,
+    "tags": ["Battle", "Judgment", "People", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 26,
+    "tags": ["Calling", "God's Wall", "Light", "Creature's Wall", "People"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 27,
+    "tags": ["Battle", "God's Wall", "Creature's Wall", "Victory", "Fruit"]
+  },
+  {
+    "book": "Acts",
+    "chapter": 28,
+    "tags": ["Calling", "Victory", "God's Wall", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 1,
+    "tags": ["Calling", "Sin", "Judgment", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 2,
+    "tags": ["Judgment", "Sin", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 3,
+    "tags": ["Sin", "Judgment", "Covenant", "God's Wall", "Light"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 4,
+    "tags": ["Covenant", "Relationship", "God's Wall", "Light"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 5,
+    "tags": ["Relationship", "Fruit", "Sin", "God's Wall", "Light"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 6,
+    "tags": ["Sin", "Fruit", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 7,
+    "tags": ["Sin", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 8,
+    "tags": ["Relationship", "God's Wall", "Calling", "Fruit", "Light", "Victory"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 9,
+    "tags": ["People", "Calling", "God's Wall", "Covenant"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 10,
+    "tags": ["Calling", "People", "Light", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 11,
+    "tags": ["People", "Covenant", "God's Wall", "Victory"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 12,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Calling"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 13,
+    "tags": ["People", "Relationship", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 14,
+    "tags": ["Relationship", "People", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 15,
+    "tags": ["Calling", "People", "Relationship", "God's Wall", "Light"]
+  },
+  {
+    "book": "Romans",
+    "chapter": 16,
+    "tags": ["Relationship", "Calling", "People", "Creature's Wall"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 1,
+    "tags": ["Calling", "People", "God's Wall", "Light"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 2,
+    "tags": ["Light", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 3,
+    "tags": ["People", "Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 4,
+    "tags": ["Calling", "Creature's Wall", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 5,
+    "tags": ["Sin", "Judgment", "People", "Fruit"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "tags": ["Relationship", "Sin", "Judgment", "Creature's Wall"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 7,
+    "tags": ["Relationship", "Calling", "God's Wall"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 8,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 9,
+    "tags": ["Calling", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 10,
+    "tags": ["People", "Sin", "Judgment", "Fruit", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 11,
+    "tags": ["Relationship", "People", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 12,
+    "tags": ["People", "Calling", "God's Wall", "Relationship"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 13,
+    "tags": ["Relationship", "God's Wall", "Light"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 14,
+    "tags": ["People", "Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 15,
+    "tags": ["Victory", "Light", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Corinthians",
+    "chapter": 16,
+    "tags": ["People", "Calling", "Relationship"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 1,
+    "tags": ["Relationship", "Calling", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 2,
+    "tags": ["Relationship", "Sin", "Victory", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 3,
+    "tags": ["Covenant", "Light", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 4,
+    "tags": ["Light", "God's Wall", "Creature's Wall", "Fruit", "Victory"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 5,
+    "tags": ["Relationship", "Calling", "Judgment", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 6,
+    "tags": ["Relationship", "Calling", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 7,
+    "tags": ["Relationship", "Sin", "Fruit", "Creature's Wall"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 8,
+    "tags": ["Relationship", "People", "Creature's Wall"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 9,
+    "tags": ["Blessing", "Fruit", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 10,
+    "tags": ["Battle", "Calling", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 11,
+    "tags": ["Battle", "Calling", "Sin", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "tags": ["Calling", "God's Wall", "Outer Being", "Fruit"]
+  },
+  {
+    "book": "2 Corinthians",
+    "chapter": 13,
+    "tags": ["Relationship", "Judgment", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 1,
+    "tags": ["Calling", "Light", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 2,
+    "tags": ["Covenant", "Relationship", "Sin", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 3,
+    "tags": ["Covenant", "Calling", "Light", "God's Wall"]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 4,
+    "tags": ["Relationship", "Covenant", "Calling", "God's Wall", "Realms"]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 5,
+    "tags": ["Creature's Wall", "Fruit", "Sin", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "Galatians",
+    "chapter": 6,
+    "tags": ["Fruit", "Relationship", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 1,
+    "tags": ["Calling", "Covenant", "Relationship", "God's Wall", "Outer Being", "Light"]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 2,
+    "tags": ["Fruit", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 3,
+    "tags": ["Calling", "Outer Being", "God's Wall", "Light"]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 4,
+    "tags": ["Relationship", "Calling", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 5,
+    "tags": ["Relationship", "Creature's Wall", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Ephesians",
+    "chapter": 6,
+    "tags": ["Relationship", "Battle", "Calling", "Creature's Wall", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 1,
+    "tags": ["Calling", "People", "Relationship", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 2,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Victory", "Light"]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 3,
+    "tags": ["Calling", "Victory", "Creature's Wall", "God's Wall", "Light"]
+  },
+  {
+    "book": "Philippians",
+    "chapter": 4,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Fruit", "Blessing"]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 1,
+    "tags": ["Calling", "Creation", "Light", "God's Wall", "Outer Being", "Victory"]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 2,
+    "tags": ["Sin", "Light", "God's Wall", "Outer Being", "Creature's Wall"]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 3,
+    "tags": ["Relationship", "Creature's Wall", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Colossians",
+    "chapter": 4,
+    "tags": ["Relationship", "Calling", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 1,
+    "tags": ["Calling", "People", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 2,
+    "tags": ["Calling", "Relationship", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 3,
+    "tags": ["Relationship", "Calling", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 4,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "1 Thessalonians",
+    "chapter": 5,
+    "tags": ["Judgment", "Calling", "People", "God's Wall", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 1,
+    "tags": ["People", "Judgment", "Victory", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 2,
+    "tags": ["Judgment", "Outer Being", "Creature's Wall", "God's Wall", "Light"]
+  },
+  {
+    "book": "2 Thessalonians",
+    "chapter": 3,
+    "tags": ["Calling", "Relationship", "Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 1,
+    "tags": ["Calling", "Sin", "God's Wall", "Creature's Wall", "Light"]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 2,
+    "tags": ["Relationship", "People", "Calling", "God's Wall"]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 3,
+    "tags": ["Calling", "Creature's Wall", "Relationship", "God's Wall"]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 4,
+    "tags": ["Calling", "Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 5,
+    "tags": ["Relationship", "People", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "1 Timothy",
+    "chapter": 6,
+    "tags": ["Sin", "Creature's Wall", "Fruit", "Calling", "God's Wall"]
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 1,
+    "tags": ["Calling", "Relationship", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 2,
+    "tags": ["Calling", "Battle", "Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 3,
+    "tags": ["Sin", "Creature's Wall", "Light", "God's Wall", "Judgment"]
+  },
+  {
+    "book": "2 Timothy",
+    "chapter": 4,
+    "tags": ["Calling", "Battle", "Victory", "Creature's Wall", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "Titus",
+    "chapter": 1,
+    "tags": ["Calling", "Creature's Wall", "Sin", "God's Wall"]
+  },
+  {
+    "book": "Titus",
+    "chapter": 2,
+    "tags": ["Relationship", "Creature's Wall", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "Titus",
+    "chapter": 3,
+    "tags": ["Relationship", "Fruit", "God's Wall", "Calling", "Creature's Wall"]
+  },
+  {
+    "book": "Philemon",
+    "chapter": 1,
+    "tags": ["Relationship", "Creature's Wall", "Calling", "Fruit"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 1,
+    "tags": ["Light", "God's Wall", "Outer Being", "Creation"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 2,
+    "tags": ["Relationship", "Calling", "Victory", "Outer Being", "God's Wall"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 3,
+    "tags": ["Relationship", "Covenant", "People", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 4,
+    "tags": ["The Ways of the Mountains", "God's Wall", "Light", "Judgment"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 5,
+    "tags": ["Calling", "God's Wall", "Light"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 6,
+    "tags": ["Covenant", "Fruit", "Calling", "God's Wall"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 7,
+    "tags": ["Covenant", "Calling", "God's Wall"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 8,
+    "tags": ["Covenant", "God's Wall", "Relationship"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 9,
+    "tags": ["Covenant", "God's Wall", "Fruit", "Judgment"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 10,
+    "tags": ["Covenant", "Relationship", "Fruit", "Judgment", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 11,
+    "tags": ["Light", "Calling", "Covenant", "Victory", "The Ways of the Mountains"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 12,
+    "tags": ["The Ways of the Mountains", "Relationship", "Judgment", "God's Wall", "Creature's Wall"]
+  },
+  {
+    "book": "Hebrews",
+    "chapter": 13,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Calling"]
+  },
+  {
+    "book": "James",
+    "chapter": 1,
+    "tags": ["Creature's Wall", "Fruit", "Sin", "God's Wall", "Light"]
+  },
+  {
+    "book": "James",
+    "chapter": 2,
+    "tags": ["Relationship", "Creature's Wall", "Fruit", "Sin"]
+  },
+  {
+    "book": "James",
+    "chapter": 3,
+    "tags": ["Creature's Wall", "Sin", "God's Wall", "Light"]
+  },
+  {
+    "book": "James",
+    "chapter": 4,
+    "tags": ["Sin", "Relationship", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "James",
+    "chapter": 5,
+    "tags": ["Judgment", "People", "Relationship", "Calling", "God's Wall", "Fruit"]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 1,
+    "tags": ["Calling", "Covenant", "Relationship", "God's Wall", "Light", "Outer Being"]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 2,
+    "tags": ["People", "Relationship", "Creature's Wall", "God's Wall", "Calling"]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 3,
+    "tags": ["Relationship", "Creature's Wall", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 4,
+    "tags": ["Sin", "Relationship", "Creature's Wall", "Judgment", "God's Wall"]
+  },
+  {
+    "book": "1 Peter",
+    "chapter": 5,
+    "tags": ["Calling", "Relationship", "Creature's Wall", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 1,
+    "tags": ["Calling", "Light", "God's Wall", "Fruit", "Outer Being"]
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 2,
+    "tags": ["Sin", "Judgment", "Outer Being", "Creature's Wall", "Fruit"]
+  },
+  {
+    "book": "2 Peter",
+    "chapter": 3,
+    "tags": ["Creation", "Judgment", "Realms", "God's Wall", "Light"]
+  },
+  {
+    "book": "1 John",
+    "chapter": 1,
+    "tags": ["Relationship", "Light", "Sin", "God's Wall"]
+  },
+  {
+    "book": "1 John",
+    "chapter": 2,
+    "tags": ["Relationship", "Light", "Sin", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "1 John",
+    "chapter": 3,
+    "tags": ["Relationship", "Creature's Wall", "Fruit", "God's Wall"]
+  },
+  {
+    "book": "1 John",
+    "chapter": 4,
+    "tags": ["Relationship", "Outer Being", "God's Wall", "Light"]
+  },
+  {
+    "book": "1 John",
+    "chapter": 5,
+    "tags": ["Relationship", "Victory", "Light", "God's Wall"]
+  },
+  {
+    "book": "2 John",
+    "chapter": 1,
+    "tags": ["Relationship", "Light", "Creature's Wall", "Calling", "God's Wall"]
+  },
+  {
+    "book": "3 John",
+    "chapter": 1,
+    "tags": ["Relationship", "Creature's Wall", "Calling", "People", "God's Wall"]
+  },
+  {
+    "book": "Jude",
+    "chapter": 1,
+    "tags": ["Calling", "Sin", "Judgment", "Outer Being", "Creature's Wall", "God's Wall", "Victory"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 1,
+    "tags": ["Outer Being", "Light", "God's Wall", "Calling"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 2,
+    "tags": ["People", "Calling", "Sin", "Judgment", "Fruit", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 3,
+    "tags": ["People", "Calling", "Sin", "Judgment", "Victory", "God's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 4,
+    "tags": ["Realms", "Outer Being", "God's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 5,
+    "tags": ["Outer Being", "Victory", "God's Wall", "Light"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 6,
+    "tags": ["Judgment", "Battle", "People", "Realms", "God's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 7,
+    "tags": ["People", "Covenant", "Victory", "Outer Being", "God's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 8,
+    "tags": ["Judgment", "Realms", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 9,
+    "tags": ["Judgment", "Outer Being", "Battle", "Creature's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 10,
+    "tags": ["Outer Being", "Calling", "God's Wall", "Realms"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 11,
+    "tags": ["Calling", "Battle", "Victory", "Judgment", "People", "God's Wall", "Outer Being"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 12,
+    "tags": ["Battle", "Outer Being", "Victory", "Creature's Wall", "God's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 13,
+    "tags": ["Outer Being", "People", "Creature's Wall", "Battle", "Judgment"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 14,
+    "tags": ["Judgment", "Victory", "People", "Outer Being", "God's Wall", "Light"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 15,
+    "tags": ["Victory", "Judgment", "Outer Being", "God's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 16,
+    "tags": ["Judgment", "Battle", "Realms", "God's Wall"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 17,
+    "tags": ["Judgment", "People", "Creature's Wall", "Outer Being"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 18,
+    "tags": ["Judgment", "Victory", "People", "Fruit"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 19,
+    "tags": ["Victory", "Battle", "Judgment", "Outer Being", "God's Wall", "Light"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 20,
+    "tags": ["Battle", "Judgment", "Victory", "Outer Being", "Realms"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 21,
+    "tags": ["Creation", "Victory", "Realms", "God's Wall", "Light", "Relationship"]
+  },
+  {
+    "book": "Revelation",
+    "chapter": 22,
+    "tags": ["Creation", "Light", "God's Wall", "Relationship", "Victory", "Outer Being"]
+  }
+]

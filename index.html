@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Tag Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Bible Tag Explorer</h1>
+    <p>Explore Scripture through your own tags.</p>
+  </header>
+
+  <main>
+    <section class="sidebar">
+      <h2>Tags</h2>
+      <input id="tagSearch" type="search" placeholder="Search tags...">
+      <div id="tagList"></div>
+    </section>
+
+    <section class="content">
+      <div class="toolbar">
+        <h2 id="resultTitle">All Chapters</h2>
+        <input id="chapterSearch" type="search"
+          placeholder="Search books or chapters...">
+      </div>
+
+      <p id="resultCount"></p>
+      <div id="chapterList"></div>
+    </section>
+  </main>
+
+  <script>
+    // The main script is loaded from script.js.
+  </script>
+</body>
+</html>
