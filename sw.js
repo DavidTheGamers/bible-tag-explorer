@@ -9,7 +9,7 @@ const APP_FILES = [
   "./bible.json",
   "./manifest.json",
   "./icons/resized-image.png",
-  "./icons/icon-512.png"
+  "./icons/resized-image (1).png"
 ];
 
 self.addEventListener("install", (event) => {
