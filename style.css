@@ -1107,3 +1107,44 @@ input[type="text"]:focus {
     padding-left: 11px;
   }
 }
+
+
+/* Tag bubbles displayed under each chapter */
+.chapter-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.chapter-tag {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 5px 9px;
+
+  color: #d4d4dc;
+  background: #202027;
+  border: 1px solid #383840;
+  border-radius: 999px;
+
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.chapter-card {
+  align-items: stretch;
+  text-align: left;
+}
+
+.chapter-card h3 {
+  margin: 0;
+}
+
+.chapter-card-tags:empty {
+  display: none;
+}
