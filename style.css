@@ -1,132 +1,25 @@
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  background: #101014;
-  color: #eeeeF2;
-  font-family: Arial, sans-serif;
-}
-
-button,
-input {
-  font: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-#chapterList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 14px;
-  padding: 16px;
-}
-
-.chapter-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  min-width: 0;
-  padding: 16px;
-  color: #eeeeF2;
-  background: #19191f;
-  border: 1px solid #303039;
-  border-radius: 12px;
-  text-align: left;
-}
-
-.chapter-card h3 {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-/* Space between the chapter title and its tags */
-.chapter-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
-  margin-top: 2px;
-}
-
-/* Individual tag bubbles */
-.chapter-tag {
-  display: inline-block;
-  width: fit-content;
-  max-width: 100%;
-  margin: 0;
-  padding: 6px 11px;
-  color: #e2e2eb;
-  background: #292932;
-  border: 1px solid #454551;
-  border-radius: 999px;
-  font-size: 11px;
-  line-height: 1.4;
-  white-space: normal;
-  overflow-wrap: anywhere;
-}
-
-.chapter-card-tags:empty {
-  display: none;
-}
-
-@media (max-width: 500px) {
-  #chapterList {
-    grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 12px;
-  }
-
-  .chapter-card {
-    padding: 14px;
-  }
-}
-
-
-/* FIX: Tag bubbles under each chapter in Your Library */
-#chapterList .chapter-card {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: stretch !important;
-  gap: 12px !important;
-}
-
-#chapterList .chapter-card-heading {
-  display: block !important;
-  width: 100% !important;
+  background: #101014 !important;
+  color: white !important;
 }
 
 #chapterList .chapter-card-tags {
   display: flex !important;
-  flex-direction: row !important;
   flex-wrap: wrap !important;
-  align-items: center !important;
-  gap: 8px !important;
-  width: 100% !important;
-  margin: 0 !important;
+  gap: 12px !important;
+  margin-top: 15px !important;
+  padding: 10px !important;
+  background: #402020 !important;
 }
 
-#chapterList .chapter-card-tags .chapter-tag {
-  display: inline-flex !important;
-  flex: 0 0 auto !important;
-  align-items: center !important;
-  width: fit-content !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 6px 12px !important;
-  border: 1px solid #454551 !important;
+#chapterList .chapter-tag {
+  display: inline-block !important;
+  width: auto !important;
+  padding: 8px 14px !important;
+  margin: 3px !important;
+  color: white !important;
+  background: #174d38 !important;
+  border: 2px solid #65e6a1 !important;
   border-radius: 999px !important;
-  background: #25252e !important;
-  color: #eeeeF2 !important;
-  font-size: 11px !important;
-  line-height: 1.5 !important;
-  white-space: normal !important;
-  overflow-wrap: anywhere !important;
 }
