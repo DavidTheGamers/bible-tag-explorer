@@ -8,7 +8,7 @@ const APP_FILES = [
   "./script.js",
   "./bible.json",
   "./manifest.json",
-  "./icons/icon-192.png",
+  "./icons/resized-image.png",
   "./icons/icon-512.png"
 ];
 
