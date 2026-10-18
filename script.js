@@ -2,6 +2,8 @@
 const API_BASE = "https://api.midvash.com/v1";
 const BIBLE_VERSION = "kjv";
 
+const STORAGE_KEY = "bibleTagExplorer.userData.v1";
+
 const tagList = document.getElementById("tagList");
 const chapterList = document.getElementById("chapterList");
 const tagSearch = document.getElementById("tagSearch");
@@ -25,51 +27,146 @@ const selectedVerseText = document.getElementById("selectedVerseText");
 const closeVerseButton = document.getElementById("closeVerseButton");
 const copyrightNotice = document.getElementById("copyrightNotice");
 
+const chapterTagEditor = document.getElementById("chapterTagEditor");
+const newTagForm = document.getElementById("newTagForm");
+const newTagInput = document.getElementById("newTagInput");
+const exportButton = document.getElementById("exportTagsButton");
+
 let chapters = [];
+let customTags = [];
 let selectedTag = null;
 let currentChapter = null;
 let selectedVerseButton = null;
 
-// Load your existing tag index.
-async function loadBible() {
+// Load locally saved edits, if available.
+function getSavedData() {
   try {
-    statusMessage.textContent = "Loading chapter index...";
+    const saved = localStorage.getItem(STORAGE_KEY);
 
+    if (!saved) return null;
+
+    const data = JSON.parse(saved);
+
+    if (!Array.isArray(data.chapters)) return null;
+
+    return {
+      chapters: data.chapters,
+      customTags: Array.isArray(data.customTags)
+        ? data.customTags.filter(
+            (tag) => typeof tag === "string" && tag.trim()
+          )
+        : []
+    };
+  } catch (error) {
+    console.error("Could not read saved Bible data:", error);
+    return null;
+  }
+}
+
+// Save all chapter assignments and custom tag names on this device.
+function saveLocalData() {
+  try {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        chapters,
+        customTags
+      })
+    );
+
+    statusMessage.textContent = "Changes saved on this device.";
+    return true;
+  } catch (error) {
+    console.error("Could not save Bible data:", error);
+
+    statusMessage.textContent =
+      "Local saving failed. Export your JSON to preserve your changes.";
+
+    return false;
+  }
+}
+
+// Normalize chapter records without changing their existing structure.
+function normalizeChapters(data) {
+  return data.map((chapter) => ({
+    ...chapter,
+    tags: Array.isArray(chapter.tags)
+      ? [...new Set(
+          chapter.tags.filter(
+            (tag) => typeof tag === "string" && tag.trim()
+          )
+        )]
+      : []
+  }));
+}
+
+// Load the original JSON, then prefer this device's saved edits.
+async function loadBible() {
+  statusMessage.textContent = "Loading chapter index...";
+
+  const saved = getSavedData();
+
+  try {
     const response = await fetch("./bible.json");
 
     if (!response.ok) {
       throw new Error("Could not load bible.json.");
     }
 
-    chapters = await response.json();
+    const data = await response.json();
 
-    if (!Array.isArray(chapters)) {
+    if (!Array.isArray(data)) {
       throw new Error("bible.json must contain an array of chapters.");
     }
 
-    renderTags();
-    renderChapters();
+    chapters = normalizeChapters(saved ? saved.chapters : data);
 
-    statusMessage.textContent = "";
+    if (saved) {
+      customTags = saved.customTags;
+      statusMessage.textContent =
+        "Loaded your saved tags from this device.";
+    } else {
+      customTags = [];
+      statusMessage.textContent = "";
+    }
   } catch (error) {
-    statusMessage.textContent =
-      `${error.message} Check that bible.json exists and the app is served through a local web server.`;
+    if (saved) {
+      chapters = normalizeChapters(saved.chapters);
+      customTags = saved.customTags;
 
-    resultCount.textContent = "Unable to load chapters.";
+      statusMessage.textContent =
+        "Using your saved chapters. The online JSON could not be loaded.";
+    } else {
+      statusMessage.textContent =
+        `${error.message} Check that bible.json exists and the app is served through a web server.`;
+
+      resultCount.textContent = "Unable to load chapters.";
+      return;
+    }
   }
+
+  renderTags();
+  renderChapters();
 }
 
-// Get every unique tag from the chapter index.
+// Get every unique tag, including newly created tags.
 function getAllTags() {
-  const tags = new Set();
+  const tags = new Set(customTags);
 
   chapters.forEach((chapter) => {
-    if (Array.isArray(chapter.tags)) {
-      chapter.tags.forEach((tag) => tags.add(tag));
-    }
+    chapter.tags.forEach((tag) => tags.add(tag));
   });
 
   return [...tags].sort((a, b) => a.localeCompare(b));
+}
+
+// Find an existing tag without regard to capitalization.
+function findExistingTag(name) {
+  const normalized = name.trim().toLocaleLowerCase();
+
+  return getAllTags().find(
+    (tag) => tag.toLocaleLowerCase() === normalized
+  );
 }
 
 // Display tag filter buttons.
@@ -119,25 +216,22 @@ function renderChapters() {
 
   const filtered = chapters.filter((chapter) => {
     const matchesTag =
-      selectedTag === null ||
-      (Array.isArray(chapter.tags) &&
-        chapter.tags.includes(selectedTag));
+      selectedTag === null || chapter.tags.includes(selectedTag);
 
-    const reference = `${chapter.book} ${chapter.chapter}`.toLowerCase();
-    const matchesSearch = reference.includes(search);
+    const reference =
+      `${chapter.book} ${chapter.chapter}`.toLowerCase();
 
-    return matchesTag && matchesSearch;
+    return matchesTag && reference.includes(search);
   });
 
   resultTitle.textContent = selectedTag || "All Chapters";
-  resultCount.textContent = `${filtered.length} chapter${filtered.length === 1 ? "" : "s"}`;
+  resultCount.textContent =
+    `${filtered.length} chapter${filtered.length === 1 ? "" : "s"}`;
 
   if (filtered.length === 0) {
     statusMessage.textContent = "No matching chapters found.";
     return;
   }
-
-  statusMessage.textContent = "";
 
   filtered.forEach((chapter) => {
     const card = document.createElement("button");
@@ -151,7 +245,7 @@ function renderChapters() {
     const chips = document.createElement("div");
     chips.className = "tag-chips";
 
-    (Array.isArray(chapter.tags) ? chapter.tags : []).forEach((tag) => {
+    chapter.tags.forEach((tag) => {
       const chip = document.createElement("span");
       chip.className = "tag-chip";
       chip.textContent = tag;
@@ -160,12 +254,102 @@ function renderChapters() {
 
     card.append(heading, chips);
 
-    card.addEventListener("click", () => {
-      openChapter(chapter);
-    });
+    card.addEventListener("click", () => openChapter(chapter));
 
     chapterList.appendChild(card);
   });
+}
+
+// Display tag controls for the currently open chapter.
+function renderChapterTagEditor() {
+  if (!currentChapter || !chapterTagEditor) return;
+
+  chapterTagEditor.replaceChildren();
+
+  const allTags = getAllTags();
+
+  if (allTags.length === 0) {
+    const emptyMessage = document.createElement("p");
+    emptyMessage.textContent =
+      "No tags exist yet. Create one below.";
+    chapterTagEditor.appendChild(emptyMessage);
+    return;
+  }
+
+  allTags.forEach((tag) => {
+    const label = document.createElement("label");
+    label.className = "tag-edit-option";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.checked = currentChapter.tags.includes(tag);
+    checkbox.setAttribute("aria-label", `Assign ${tag}`);
+
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        if (!currentChapter.tags.includes(tag)) {
+          currentChapter.tags.push(tag);
+        }
+      } else {
+        currentChapter.tags = currentChapter.tags.filter(
+          (existing) => existing !== tag
+        );
+      }
+
+      saveLocalData();
+      renderChapterTagEditor();
+      renderTags();
+      renderChapters();
+    });
+
+    const text = document.createElement("span");
+    text.textContent = tag;
+
+    label.append(checkbox, text);
+    chapterTagEditor.appendChild(label);
+  });
+}
+
+// Create a new tag and assign it to the current chapter.
+function createTag(event) {
+  event.preventDefault();
+
+  if (!currentChapter) return;
+
+  const name = newTagInput.value.trim();
+
+  if (!name) {
+    statusMessage.textContent = "Enter a tag name first.";
+    return;
+  }
+
+  if (name.length > 60) {
+    statusMessage.textContent =
+      "Tag names must be 60 characters or fewer.";
+    return;
+  }
+
+  const existing = findExistingTag(name);
+  const tag = existing || name;
+
+  if (!existing) {
+    customTags.push(tag);
+  }
+
+  if (!currentChapter.tags.includes(tag)) {
+    currentChapter.tags.push(tag);
+  }
+
+  newTagInput.value = "";
+
+  saveLocalData();
+  renderChapterTagEditor();
+  renderTags();
+  renderChapters();
+
+  statusMessage.textContent = existing
+    ? `Assigned existing tag "${tag}".`
+    : `Created and assigned "${tag}".`;
 }
 
 // Convert a book name into an API-friendly slug.
@@ -193,11 +377,13 @@ async function openChapter(chapter) {
   verseDetail.hidden = true;
   copyrightNotice.textContent = "";
   statusMessage.textContent = "";
+
+  renderChapterTagEditor();
+
   resultCount.textContent = "Loading verses...";
 
   const bookSlug = getBookSlug(chapter.book);
   const chapterNumber = encodeURIComponent(chapter.chapter);
-
   const url =
     `${API_BASE}/${BIBLE_VERSION}/${bookSlug}/${chapterNumber}`;
 
@@ -215,20 +401,17 @@ async function openChapter(chapter) {
 
     const data = payload.data ?? payload;
 
-
     const verses = Array.isArray(data.verses)
       ? data.verses.map((text, index) => ({
           number: index + 1,
-          text: text
+          text
         }))
       : null;
-
 
     if (!verses) {
       throw new Error("The API returned an unexpected chapter format.");
     }
 
-    // Ignore a response if the user has already opened another chapter.
     if (currentChapter !== chapter) return;
 
     renderVerses(verses);
@@ -236,14 +419,11 @@ async function openChapter(chapter) {
     resultCount.textContent =
       `${verses.length} verses · ${chapter.book} ${chapter.chapter}`;
 
-    
     const copyright = payload.meta?.copyright ?? "";
-
 
     copyrightNotice.textContent = copyright
       ? `Text attribution: ${copyright}`
       : "King James Version (KJV).";
-
   } catch (error) {
     if (currentChapter !== chapter) return;
 
@@ -298,6 +478,28 @@ function renderVerses(verses) {
   });
 }
 
+// Export the complete chapter index as a JSON file.
+function exportBibleJson() {
+  const json = JSON.stringify(chapters, null, 2);
+  const blob = new Blob([json], {
+    type: "application/json;charset=utf-8"
+  });
+
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+
+  link.href = url;
+  link.download = "bible.json";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+
+  URL.revokeObjectURL(url);
+
+  statusMessage.textContent =
+    "Exported bible.json. Upload it to GitHub to publish your changes.";
+}
+
 // Return to the chapter list.
 function closeReader() {
   currentChapter = null;
@@ -316,6 +518,14 @@ tagSearch.addEventListener("input", renderTags);
 chapterSearch.addEventListener("input", renderChapters);
 backButton.addEventListener("click", closeReader);
 
+if (newTagForm) {
+  newTagForm.addEventListener("submit", createTag);
+}
+
+if (exportButton) {
+  exportButton.addEventListener("click", exportBibleJson);
+}
+
 closeVerseButton.addEventListener("click", () => {
   verseDetail.hidden = true;
 
@@ -329,9 +539,8 @@ loadBible();
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js")
-      .catch((error) => {
-        console.error("Service worker registration failed:", error);
-      });
+    navigator.serviceWorker.register("./sw.js").catch((error) => {
+      console.error("Service worker registration failed:", error);
+    });
   });
 }
