@@ -1,15 +1,12 @@
 
-const CACHE_NAME = "bible-explorer-v3";
+const CACHE_NAME = "bible-tag-explorer-v4";
 
 const APP_FILES = [
   "./",
   "./index.html",
   "./style.css",
   "./script.js",
-  "./bible.json",
-  "./manifest.json",
-  "./icons/resized-image.png",
-  "./icons/resized-image (1).png"
+  "./manifest.json"
 ];
 
 self.addEventListener("install", (event) => {
@@ -22,60 +19,49 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(
-        keys
-          .filter((key) => key !== CACHE_NAME)
-          .map((key) => caches.delete(key))
+    caches.keys()
+      .then((keys) =>
+        Promise.all(
+          keys
+            .filter((key) => key !== CACHE_NAME)
+            .map((key) => caches.delete(key))
+        )
       )
-    ).then(() => self.clients.claim())
+      .then(() => self.clients.claim())
   );
 });
 
 self.addEventListener("fetch", (event) => {
   const request = event.request;
-  const url = new URL(request.url);
 
-  // Let external requests, including the Bible API, use the network.
-  if (url.origin !== self.location.origin) return;
   if (request.method !== "GET") return;
 
-  // Use the cached app when offline; update from the network when online.
-  if (request.mode === "navigate") {
+  const url = new URL(request.url);
+
+  // Let external requests, including the Scripture API, work normally.
+  if (url.origin !== self.location.origin) return;
+
+  // Always try the network first for the app and its changing files.
+  const isAppFile =
+    url.pathname.endsWith("/") ||
+    /\.(html|css|js|json)$/i.test(url.pathname);
+
+  if (isAppFile) {
     event.respondWith(
       fetch(request)
         .then((response) => {
           if (response.ok) {
             const copy = response.clone();
-            caches.open(CACHE_NAME).then((cache) =>
-              cache.put("./index.html", copy)
-            );
+            caches.open(CACHE_NAME)
+              .then((cache) => cache.put(request, copy));
           }
+
           return response;
         })
         .catch(async () => {
-          return (
-            await caches.match("./index.html")
-          ) || Response.error();
+          const cached = await caches.match(request);
+          return cached || Response.error();
         })
     );
-    return;
   }
-
-  event.respondWith(
-    caches.match(request).then((cached) => {
-      if (cached) return cached;
-
-      return fetch(request).then((response) => {
-        if (response.ok && response.type === "basic") {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) =>
-            cache.put(request, copy)
-          );
-        }
-
-        return response;
-      });
-    })
-  );
 });
