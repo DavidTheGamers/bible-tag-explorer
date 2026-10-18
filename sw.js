@@ -1,5 +1,5 @@
 
-const CACHE_NAME = "bible-explorer-v1";
+const CACHE_NAME = "bible-explorer-v2";
 
 const APP_FILES = [
   "./",
