@@ -88,3 +88,45 @@ button {
     padding: 14px;
   }
 }
+
+
+/* FIX: Tag bubbles under each chapter in Your Library */
+#chapterList .chapter-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 12px !important;
+}
+
+#chapterList .chapter-card-heading {
+  display: block !important;
+  width: 100% !important;
+}
+
+#chapterList .chapter-card-tags {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+#chapterList .chapter-card-tags .chapter-tag {
+  display: inline-flex !important;
+  flex: 0 0 auto !important;
+  align-items: center !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 6px 12px !important;
+  border: 1px solid #454551 !important;
+  border-radius: 999px !important;
+  background: #25252e !important;
+  color: #eeeeF2 !important;
+  font-size: 11px !important;
+  line-height: 1.5 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+}
