@@ -5,82 +5,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#09090b">
+  <meta name="description" content="Explore Bible chapters through searchable tags and KJV Scripture.">
   <title>Bible Tag Explorer</title>
-  <link rel="manifest" href="./manifest.json">
+
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <header class="topbar">
-    <div>
-      <h1>Bible Tag Explorer</h1>
-      <p>Explore Scripture through your own tag system.</p>
-    </div>
-    <div class="header-actions">
-  <button id="exportTagsButton" class="action-button" type="button">
-    Export JSON
-  </button>
-  <span class="version-badge">KJV</span>
-</div>
-  </header>
+  <div class="app-shell">
 
-  <main class="workspace">
-    <aside class="sidebar">
-      <h2>Tags</h2>
-      <input
-        id="tagSearch"
-        type="search"
-        placeholder="Search tags..."
-        aria-label="Search tags"
-      >
-      <div id="tagList" class="tag-list"></div>
-    </aside>
-
-    <section class="content">
-      <div class="toolbar">
-        <div>
-          <h2 id="resultTitle">All Chapters</h2>
-          <p id="resultCount">Loading chapters...</p>
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">B</div>
+        <div class="brand-text">
+          <h1>Bible Tag Explorer</h1>
+          <p>Scripture research workspace</p>
         </div>
-        <input
-          id="chapterSearch"
-          type="search"
-          placeholder="Search books or chapters..."
-          aria-label="Search books or chapters"
-        >
       </div>
 
-      <div id="statusMessage" class="status" role="status">
-        Loading your Bible index...
-      </div>
-
-      <section id="chapterView">
-        <div id="chapterList" class="chapter-list"></div>
-      </section>
-
-      <section id="readerView" hidden>
-        <button id="backButton" class="back-button" type="button">
-          ← Back to chapters
+      <div class="header-actions">
+        <button id="exportTagsButton" class="action-button" type="button">
+          Export JSON
         </button>
+        <span class="version-badge">KJV</span>
+      </div>
+    </header>
 
-        <div class="reader-heading">
-          <h2 id="readerTitle">Bible Passage</h2>
-          <p id="readerSubtitle">King James Version</p>
+    <main class="workspace">
+
+      <aside class="sidebar">
+        <div class="sidebar-heading">
+          <h2>Explore</h2>
+          <p>Find chapters by theme or passage.</p>
         </div>
 
-        <div id="verseList" class="verse-list"></div>
+        <div class="search-section">
+          <label for="tagSearch">Search tags</label>
+          <input
+            id="tagSearch"
+            type="search"
+            placeholder="Find a tag..."
+            autocomplete="off"
+          >
+        </div>
 
-        <section id="verseDetail" class="verse-detail" hidden>
-          <p id="selectedVerseReference" class="verse-reference"></p>
-          <p id="selectedVerseText" class="verse-text"></p>
-          <button id="closeVerseButton" class="back-button" type="button">
-            Close verse
-          </button>
+        <div class="tag-list-heading">
+          <h3>Tags</h3>
+          <span id="tagCount" class="count-badge">0</span>
+        </div>
+
+        <div id="tagList" class="tag-list">
+          <p class="muted-message">Loading tags...</p>
+        </div>
+
+        <div class="sidebar-divider"></div>
+
+        <div class="search-section">
+          <label for="chapterSearch">Search chapters</label>
+          <input
+            id="chapterSearch"
+            type="search"
+            placeholder="Book or chapter..."
+            autocomplete="off"
+          >
+        </div>
+
+        <button id="clearFiltersButton" class="clear-button" type="button">
+          Clear filters
+        </button>
+      </aside>
+
+      <section class="main-content">
+
+        <section class="results-panel">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">YOUR LIBRARY</p>
+              <h2>Chapters</h2>
+            </div>
+            <span id="chapterCount" class="count-badge">0</span>
+          </div>
+
+          <div id="activeFilters" class="active-filters"></div>
+
+          <div id="chapterList" class="chapter-list">
+            <p class="muted-message">Loading chapters...</p>
+          </div>
         </section>
 
-        <p id="copyrightNotice" class="copyright"></p>
+        <section id="readerView" class="reader-view" hidden>
+
+          <div class="reader-heading">
+            <div>
+              <p class="eyebrow">SCRIPTURE READER</p>
+              <h2 id="readerTitle">Select a chapter</h2>
+            </div>
+
+            <button id="closeReaderButton" class="icon-button" type="button"
+              aria-label="Close chapter reader">
+              &times;
+            </button>
+          </div>
+
+          <section class="tag-editor">
+            <div class="editor-heading">
+              <div>
+                <h3>Chapter tags</h3>
+                <p class="editor-description">
+                  Select or deselect tags for this chapter. Changes save
+                  automatically on this device.
+                </p>
+              </div>
+            </div>
+
+            <div id="chapterTagEditor" class="chapter-tag-editor">
+              <p class="muted-message">Loading tags...</p>
+            </div>
+
+            <form id="newTagForm" class="new-tag-form">
+              <input
+                id="newTagInput"
+                type="text"
+                maxlength="60"
+                placeholder="Create a new tag..."
+                aria-label="New tag name"
+                required
+              >
+              <button class="action-button" type="submit">Create tag</button>
+            </form>
+
+            <p id="statusMessage" class="status-message" role="status"
+              aria-live="polite"></p>
+          </section>
+
+          <section class="scripture-section">
+            <div class="scripture-heading">
+              <h3>King James Version</h3>
+              <p>Tap a verse to select it.</p>
+            </div>
+
+            <div id="verseContainer" class="verse-container">
+              <p class="muted-message">Select a chapter to read.</p>
+            </div>
+          </section>
+
+        </section>
+
+        <footer class="app-footer">
+          <p>Bible Tag Explorer</p>
+          <p>Your local tag edits are saved in this browser.</p>
+        </footer>
+
       </section>
-    </section>
-  </main>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
