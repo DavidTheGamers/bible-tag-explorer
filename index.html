@@ -20,8 +20,11 @@
           <p>Scripture research workspace</p>
         </div>
       </div>
+
       <div class="header-actions">
-        <button id="settingsButton" class="action-button" type="button" aria-haspopup="dialog">⚙ Settings</button>
+        <button id="settingsButton" class="action-button" type="button" aria-haspopup="dialog">
+          ⚙ Settings
+        </button>
         <span class="version-badge">KJV</span>
       </div>
     </header>
@@ -41,6 +44,7 @@
         <div class="tag-list-heading">
           <h3>Tags</h3>
         </div>
+
         <div id="tagList">
           <p class="muted-message">Loading tags...</p>
         </div>
@@ -49,11 +53,17 @@
 
         <div class="search-section">
           <label for="chapterSearch">Search chapters</label>
-          <input id="chapterSearch" type="search" placeholder="Genesis, light, covenant...">
+          <input
+            id="chapterSearch"
+            type="search"
+            placeholder="Genesis, light, covenant..."
+          >
           <p class="input-hint">Separate multiple search terms with commas.</p>
         </div>
 
-        <button id="clearFiltersButton" class="clear-button" type="button">Clear filters</button>
+        <button id="clearFiltersButton" class="clear-button" type="button">
+          Clear filters
+        </button>
       </aside>
 
       <section class="main-content">
@@ -65,6 +75,7 @@
             </div>
             <span id="resultCount" class="count-badge">Loading...</span>
           </div>
+
           <div id="chapterList" class="chapter-list">
             <p class="muted-message">Loading chapters...</p>
           </div>
@@ -75,37 +86,84 @@
             <div>
               <p class="eyebrow">SCRIPTURE READER</p>
               <h2 id="readerTitle">Chapter</h2>
-              <p id="readerSubtitle" class="reader-subtitle">King James Version</p>
+              <p id="readerSubtitle" class="reader-subtitle">
+                King James Version
+              </p>
             </div>
-            <button id="backButton" class="action-button" type="button">Back to chapters</button>
+
+            <button id="backButton" class="action-button" type="button">
+              Back to chapters
+            </button>
           </div>
 
-          <section class="tag-editor">
-            <h3>Chapter tags</h3>
-            <p class="editor-description">Select the tags that apply to this chapter. Changes save automatically on this device.</p>
-            <div id="chapterTagEditor" class="chapter-tag-editor"></div>
-            <form id="newTagForm" class="new-tag-form">
-              <input id="newTagInput" type="text" maxlength="60" placeholder="Create a new tag..." required>
-              <button class="action-button" type="submit">Create tag</button>
-            </form>
-            <p id="statusMessage" class="status-message" role="status" aria-live="polite"></p>
-          </section>
+          <!-- Collapsible chapter tag editor -->
+          <details id="tagEditorDetails" class="tag-editor" open>
+            <summary class="tag-editor-summary">
+              <span>
+                <strong>Chapter tags</strong>
+                <span class="tag-editor-summary-hint">
+                  Add or remove tags
+                </span>
+              </span>
+              <span class="tag-editor-chevron" aria-hidden="true">▾</span>
+            </summary>
 
+            <div class="tag-editor-content">
+              <p class="editor-description">
+                Select the tags that apply to this chapter. Changes save
+                automatically on this device.
+              </p>
+
+              <div id="chapterTagEditor" class="chapter-tag-editor"></div>
+
+              <form id="newTagForm" class="new-tag-form">
+                <input
+                  id="newTagInput"
+                  type="text"
+                  maxlength="60"
+                  placeholder="Create a new tag..."
+                  required
+                >
+                <button class="action-button" type="submit">
+                  Create tag
+                </button>
+              </form>
+
+              <p
+                id="statusMessage"
+                class="status-message"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </div>
+          </details>
+
+          <!-- Scripture verses remain outside the collapsible tag editor -->
           <section class="scripture-section">
             <div class="scripture-heading">
               <h3>King James Version</h3>
               <p>Tap a verse to view it separately.</p>
             </div>
+
             <div id="verseList" class="verse-list">
               <p class="muted-message">Select a chapter to read.</p>
             </div>
+
             <section id="verseDetail" class="verse-detail" hidden>
               <div class="verse-detail-heading">
                 <h3 id="selectedVerseReference">Verse</h3>
-                <button id="closeVerseButton" class="icon-button" type="button" aria-label="Close verse details">&times;</button>
+                <button
+                  id="closeVerseButton"
+                  class="icon-button"
+                  type="button"
+                  aria-label="Close verse details"
+                >
+                  &times;
+                </button>
               </div>
               <p id="selectedVerseText"></p>
             </section>
+
             <p id="copyrightNotice" class="copyright-notice"></p>
           </section>
         </section>
@@ -118,23 +176,41 @@
     </main>
   </div>
 
+  <!-- Settings dialog -->
   <div id="settingsDialog" class="modal-backdrop" hidden>
-    <section class="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <section
+      class="settings-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="settingsTitle"
+    >
       <div class="modal-heading">
         <div>
-          <p class="eyebrow">PREFERENCES & DATA</p>
+          <p class="eyebrow">PREFERENCES &amp; DATA</p>
           <h2 id="settingsTitle">Settings</h2>
         </div>
-        <button id="closeSettingsButton" class="icon-button" type="button" aria-label="Close settings">&times;</button>
+
+        <button
+          id="closeSettingsButton"
+          class="icon-button"
+          type="button"
+          aria-label="Close settings"
+        >
+          &times;
+        </button>
       </div>
 
       <section class="settings-section">
         <h3>Appearance</h3>
+
         <div class="setting-row">
           <div>
             <strong>Theme</strong>
-            <p class="settings-help">Your choice is remembered on this device.</p>
+            <p class="settings-help">
+              Your choice is remembered on this device.
+            </p>
           </div>
+
           <select id="themeSelect" aria-label="Color theme">
             <option value="dark">Dark mode</option>
             <option value="light">Light mode</option>
@@ -144,27 +220,74 @@
 
       <section class="settings-section">
         <h3>Export data</h3>
-        <p class="settings-help">Download a backup of your chapter tags or a separate descriptions file.</p>
+        <p class="settings-help">
+          Download a backup of your chapter tags or a separate descriptions file.
+        </p>
+
         <div class="settings-actions">
-          <button id="exportTagsButton" class="action-button" type="button">Export chapter & tag JSON</button>
-          <button id="exportDescriptionsButton" class="action-button" type="button">Export descriptions JSON</button>
+          <button id="exportTagsButton" class="action-button" type="button">
+            Export chapter &amp; tag JSON
+          </button>
+
+          <button
+            id="exportDescriptionsButton"
+            class="action-button"
+            type="button"
+          >
+            Export descriptions JSON
+          </button>
         </div>
       </section>
 
       <section class="settings-section">
         <h3>Import data</h3>
-        <p class="settings-help">Import a chapter/tag backup or a descriptions-only file. Importing chapter data replaces the current chapter/tag dataset; descriptions import updates descriptions without changing tags.</p>
+        <p class="settings-help">
+          Import a chapter/tag backup or a descriptions-only file. Importing
+          chapter data replaces the current chapter/tag dataset. Importing
+          descriptions updates descriptions without changing tags.
+        </p>
+
         <div class="settings-actions">
-          <label class="file-button action-button" for="importTagsInput">Import chapter & tag JSON</label>
-          <input id="importTagsInput" class="visually-hidden" type="file" accept=".json,application/json">
-          <label class="file-button action-button" for="importDescriptionsInput">Import descriptions JSON</label>
-          <input id="importDescriptionsInput" class="visually-hidden" type="file" accept=".json,application/json">
+          <label class="file-button action-button" for="importTagsInput">
+            Import chapter &amp; tag JSON
+          </label>
+          <input
+            id="importTagsInput"
+            class="visually-hidden"
+            type="file"
+            accept=".json,application/json"
+          >
+
+          <label
+            class="file-button action-button"
+            for="importDescriptionsInput"
+          >
+            Import descriptions JSON
+          </label>
+          <input
+            id="importDescriptionsInput"
+            class="visually-hidden"
+            type="file"
+            accept=".json,application/json"
+          >
         </div>
       </section>
 
-      <p id="settingsStatus" class="status-message" role="status" aria-live="polite"></p>
+      <p
+        id="settingsStatus"
+        class="status-message"
+        role="status"
+        aria-live="polite"
+      ></p>
+
       <div class="modal-footer">
-        <button id="closeSettingsFooterButton" class="action-button" type="button">Done</button>
+        <button
+          id="closeSettingsFooterButton"
+          class="action-button"
+          type="button"
+        >
+          Done
+        </button>
       </div>
     </section>
   </div>
