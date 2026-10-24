@@ -12,24 +12,30 @@ const tagList = $("tagList");
 const chapterList = $("chapterList");
 const tagSearch = $("tagSearch");
 const chapterSearch = $("chapterSearch");
+
 const resultTitle = $("resultTitle");
 const resultCount = $("resultCount");
 const statusMessage = $("statusMessage");
+
 const chapterView = $("chapterView");
 const readerView = $("readerView");
 const readerTitle = $("readerTitle");
 const readerSubtitle = $("readerSubtitle");
+
 const verseList = $("verseList");
 const backButton = $("backButton");
 const verseDetail = $("verseDetail");
+
 const selectedVerseReference = $("selectedVerseReference");
 const selectedVerseText = $("selectedVerseText");
 const closeVerseButton = $("closeVerseButton");
 const copyrightNotice = $("copyrightNotice");
+
 const chapterTagEditor = $("chapterTagEditor");
 const newTagForm = $("newTagForm");
 const newTagInput = $("newTagInput");
 const clearFiltersButton = $("clearFiltersButton");
+
 const settingsDialog = $("settingsDialog");
 const settingsStatus = $("settingsStatus");
 const themeSelect = $("themeSelect");
@@ -65,15 +71,19 @@ function showChapterMessage(message) {
 function getSavedData() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
+
     if (!raw) return null;
 
     const data = JSON.parse(raw);
+
     if (!data || !Array.isArray(data.chapters)) return null;
 
     return {
       chapters: data.chapters,
       customTags: Array.isArray(data.customTags)
-        ? data.customTags.filter((tag) => typeof tag === "string" && tag.trim())
+        ? data.customTags.filter(
+            (tag) => typeof tag === "string" && tag.trim()
+          )
         : []
     };
   } catch (error) {
@@ -88,25 +98,29 @@ function normalizeChapters(data) {
   }
 
   return data
-    .filter((chapter) =>
-      chapter &&
-      typeof chapter.book === "string" &&
-      chapter.book.trim() &&
-      chapter.chapter !== undefined &&
-      chapter.chapter !== null
+    .filter(
+      (chapter) =>
+        chapter &&
+        typeof chapter.book === "string" &&
+        chapter.book.trim() &&
+        chapter.chapter !== undefined &&
+        chapter.chapter !== null
     )
     .map((chapter) => ({
       ...chapter,
       tags: Array.isArray(chapter.tags)
-        ? [...new Set(
-            chapter.tags
-              .filter((tag) => typeof tag === "string" && tag.trim())
-              .map((tag) => tag.trim())
-          )]
+        ? [
+            ...new Set(
+              chapter.tags
+                .filter((tag) => typeof tag === "string" && tag.trim())
+                .map((tag) => tag.trim())
+            )
+          ]
         : [],
-      description: typeof chapter.description === "string"
-        ? chapter.description
-        : ""
+      description:
+        typeof chapter.description === "string"
+          ? chapter.description
+          : ""
     }));
 }
 
@@ -118,35 +132,163 @@ function saveLocalData(announce = true) {
     );
 
     if (announce) setStatus("Changes saved on this device.");
+
     return true;
   } catch (error) {
     console.error("Could not save Bible data:", error);
-    setStatus("Could not save locally. Export JSON to preserve your changes.");
-    setSettingsStatus("Could not save locally. Your browser storage may be full or disabled.");
+
+    setStatus(
+      "Could not save locally. Export JSON to preserve your changes."
+    );
+
+    setSettingsStatus(
+      "Could not save locally. Your browser storage may be full or disabled."
+    );
+
     return false;
   }
 }
 
+/* -------------------------------------------------------
+   READER LAYOUT
+   Places the chapter description in the reader and makes
+   the tag editor collapsible without hiding the verses.
+------------------------------------------------------- */
+
+function ensureReaderDescription() {
+  let description = $("readerDescription");
+
+  if (description) return description;
+
+  description = document.createElement("section");
+  description.id = "readerDescription";
+  description.className = "reader-chapter-description";
+  description.setAttribute("aria-label", "Chapter description");
+  description.hidden = true;
+
+  const readerHeading = readerTitle?.closest(".reader-heading");
+
+  if (readerHeading) {
+    readerHeading.insertAdjacentElement("afterend", description);
+  } else if (readerTitle?.parentElement) {
+    readerTitle.parentElement.insertAdjacentElement(
+      "afterend",
+      description
+    );
+  } else if (readerView) {
+    readerView.prepend(description);
+  }
+
+  return description;
+}
+
+function renderReaderDescription(chapter) {
+  const description = ensureReaderDescription();
+
+  if (!description) return;
+
+  description.replaceChildren();
+
+  const text = (chapter.description || "").trim();
+
+  if (!text) {
+    description.hidden = true;
+    return;
+  }
+
+  const heading = document.createElement("h3");
+  heading.textContent = "Chapter description";
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent = text;
+
+  description.append(heading, paragraph);
+  description.hidden = false;
+}
+
+function ensureTagEditorCollapsible() {
+  if (!readerView || !chapterTagEditor) return;
+
+  let details = $("tagEditorDetails");
+
+  if (details) {
+    details.open = true;
+    return;
+  }
+
+  details = document.createElement("details");
+  details.id = "tagEditorDetails";
+  details.className = "tag-editor";
+  details.open = true;
+
+  const summary = document.createElement("summary");
+  summary.className = "tag-editor-summary";
+  summary.textContent = "Chapter tags";
+
+  const content = document.createElement("div");
+  content.className = "tag-editor-content";
+
+  const editorParent = chapterTagEditor.parentElement;
+
+  if (!editorParent) return;
+
+  editorParent.insertBefore(details, chapterTagEditor);
+
+  details.append(summary, content);
+  content.appendChild(chapterTagEditor);
+
+  if (newTagForm && newTagForm !== chapterTagEditor) {
+    content.appendChild(newTagForm);
+  }
+
+  const hint = document.createElement("p");
+  hint.className = "tag-editor-hint";
+  hint.textContent = "Add or remove tags for this chapter.";
+
+  content.insertBefore(hint, content.firstChild);
+
+  summary.setAttribute("aria-label", "Expand or collapse chapter tags");
+}
+
+function prepareReaderLayout() {
+  ensureReaderDescription();
+  ensureTagEditorCollapsible();
+}
+
+/* -------------------------------------------------------
+   LOAD BIBLE DATA
+------------------------------------------------------- */
+
 async function loadBible() {
   if (resultCount) resultCount.textContent = "Loading...";
+
   showChapterMessage("Loading your Bible chapter index...");
 
   const saved = getSavedData();
 
   try {
-    const response = await fetch("./bible.json", { cache: "no-store" });
+    const response = await fetch("./bible.json", {
+      cache: "no-store"
+    });
 
     if (!response.ok) {
-      throw new Error(`Could not load bible.json (HTTP ${response.status}).`);
+      throw new Error(
+        `Could not load bible.json (HTTP ${response.status}).`
+      );
     }
 
     const originalData = await response.json();
 
     if (!Array.isArray(originalData)) {
-      throw new Error("bible.json must contain an array of chapter records.");
+      throw new Error(
+        "bible.json must contain an array of chapter records."
+      );
     }
 
-    chapters = normalizeChapters(saved ? saved.chapters : originalData);
+    chapters = normalizeChapters(
+      saved ? saved.chapters : originalData
+    );
+
     customTags = saved ? saved.customTags : [];
 
     if (!chapters.length) {
@@ -155,7 +297,12 @@ async function loadBible() {
 
     renderTags();
     renderChapters();
-    setStatus(saved ? "Loaded your saved chapter edits from this device." : "");
+
+    setStatus(
+      saved
+        ? "Loaded your saved chapter edits from this device."
+        : ""
+    );
   } catch (error) {
     console.error("Bible index loading error:", error);
 
@@ -170,7 +317,11 @@ async function loadBible() {
 
         renderTags();
         renderChapters();
-        setStatus("Using saved local data because bible.json could not load.");
+
+        setStatus(
+          "Using saved local data because bible.json could not load."
+        );
+
         return;
       } catch (savedError) {
         console.error("Saved Bible data is invalid:", savedError);
@@ -179,6 +330,7 @@ async function loadBible() {
 
     chapters = [];
     customTags = [];
+
     renderTags();
 
     if (resultTitle) resultTitle.textContent = "Unable to load Bible";
@@ -189,6 +341,10 @@ async function loadBible() {
     );
   }
 }
+
+/* -------------------------------------------------------
+   TAGS
+------------------------------------------------------- */
 
 function getAllTags() {
   const tags = new Set(customTags);
@@ -217,18 +373,19 @@ function renderTags() {
 
   tagList.replaceChildren();
 
-  const all = document.createElement("button");
-  all.type = "button";
-  all.className = "tag-button" + (selectedTag === null ? " active" : "");
-  all.textContent = "All Chapters";
+  const allButton = document.createElement("button");
+  allButton.type = "button";
+  allButton.className =
+    "tag-button" + (selectedTag === null ? " active" : "");
+  allButton.textContent = "All Chapters";
 
-  all.addEventListener("click", () => {
+  allButton.addEventListener("click", () => {
     selectedTag = null;
     renderTags();
     renderChapters();
   });
 
-  tagList.appendChild(all);
+  tagList.appendChild(allButton);
 
   const matching = getAllTags().filter((tag) =>
     tag.toLocaleLowerCase().includes(search)
@@ -236,8 +393,11 @@ function renderTags() {
 
   matching.forEach((tag) => {
     const button = document.createElement("button");
+
     button.type = "button";
-    button.className = "tag-button" + (selectedTag === tag ? " active" : "");
+    button.className =
+      "tag-button" + (selectedTag === tag ? " active" : "");
+
     button.append(document.createTextNode(tag));
 
     const count = document.createElement("span");
@@ -261,9 +421,14 @@ function renderTags() {
     const p = document.createElement("p");
     p.className = "muted-message";
     p.textContent = "No tags match your search.";
+
     tagList.appendChild(p);
   }
 }
+
+/* -------------------------------------------------------
+   CHAPTER SEARCH AND PREVIEW CARDS
+------------------------------------------------------- */
 
 function getSearchTerms() {
   return chapterSearch
@@ -282,7 +447,6 @@ function chapterMatchesSearch(chapter, terms) {
     `${(chapter.tags || []).join(" ")} ${chapter.description || ""}`
   ).toLocaleLowerCase();
 
-  // A chapter matches if it contains ANY of the comma-separated terms.
   return terms.some((term) => searchable.includes(term));
 }
 
@@ -293,12 +457,15 @@ function renderChapters() {
 
   const terms = getSearchTerms();
 
-  const filtered = chapters.filter((chapter) =>
-    (selectedTag === null || chapter.tags.includes(selectedTag)) &&
-    chapterMatchesSearch(chapter, terms)
+  const filtered = chapters.filter(
+    (chapter) =>
+      (selectedTag === null || chapter.tags.includes(selectedTag)) &&
+      chapterMatchesSearch(chapter, terms)
   );
 
-  if (resultTitle) resultTitle.textContent = selectedTag || "All Chapters";
+  if (resultTitle) {
+    resultTitle.textContent = selectedTag || "All Chapters";
+  }
 
   if (resultCount) {
     resultCount.textContent =
@@ -311,6 +478,7 @@ function renderChapters() {
         ? "No matching chapters found. Try clearing your filters."
         : "No chapter data is available."
     );
+
     return;
   }
 
@@ -325,7 +493,9 @@ function renderChapters() {
     openButton.type = "button";
     openButton.className = "chapter-open-button";
     openButton.textContent = `${chapter.book} ${chapter.chapter}`;
+
     openButton.addEventListener("click", () => openChapter(chapter));
+
     heading.appendChild(openButton);
 
     const tagContainer = document.createElement("div");
@@ -345,6 +515,7 @@ function renderChapters() {
       });
     }
 
+    /* Expandable description and edit button stay together. */
     const descriptionArea = document.createElement("section");
     descriptionArea.className = "chapter-description-area";
 
@@ -378,7 +549,8 @@ function renderChapters() {
 
     const descriptionText = document.createElement("p");
     descriptionText.className = "chapter-description-text";
-    descriptionText.textContent = chapter.description || "No description yet.";
+    descriptionText.textContent =
+      chapter.description || "No description yet.";
 
     const editArea = document.createElement("div");
     editArea.className = "description-edit-area";
@@ -411,30 +583,46 @@ function renderChapters() {
     editActions.append(saveDescription, cancelDescription);
     editArea.append(textarea, editActions);
     descriptionContent.append(descriptionText, editArea);
+
     descriptionToggle.append(arrow, toggleText);
-    descriptionArea.append(descriptionToggle, editButton, descriptionContent);
+    descriptionArea.append(
+      descriptionToggle,
+      editButton,
+      descriptionContent
+    );
 
     descriptionToggle.addEventListener("click", () => {
       const opening = descriptionContent.hidden;
+
       descriptionContent.hidden = !opening;
-      descriptionToggle.setAttribute("aria-expanded", String(opening));
+
+      descriptionToggle.setAttribute(
+        "aria-expanded",
+        String(opening)
+      );
+
       arrow.textContent = opening ? "▾" : "▸";
     });
 
     editButton.addEventListener("click", () => {
       descriptionContent.hidden = false;
+
       descriptionToggle.setAttribute("aria-expanded", "true");
       arrow.textContent = "▾";
+
       editArea.hidden = false;
       descriptionText.hidden = true;
       editButton.hidden = true;
+
       toggleText.textContent = "Editing description";
+
       textarea.value = chapter.description || "";
       textarea.focus();
     });
 
     saveDescription.addEventListener("click", () => {
       chapter.description = textarea.value.trim();
+
       saveLocalData();
 
       descriptionText.textContent =
@@ -464,7 +652,12 @@ function renderChapters() {
     });
 
     card.addEventListener("click", (event) => {
-      if (event.target.closest("button, textarea, input, label")) return;
+      if (
+        event.target.closest("button, textarea, input, label")
+      ) {
+        return;
+      }
+
       openChapter(chapter);
     });
 
@@ -472,6 +665,10 @@ function renderChapters() {
     chapterList.appendChild(card);
   });
 }
+
+/* -------------------------------------------------------
+   CHAPTER TAG EDITOR
+------------------------------------------------------- */
 
 function renderChapterTagEditor() {
   if (!chapterTagEditor || !currentChapter) return;
@@ -484,6 +681,7 @@ function renderChapterTagEditor() {
     const p = document.createElement("p");
     p.className = "muted-message";
     p.textContent = "No tags exist yet. Create one below.";
+
     chapterTagEditor.appendChild(p);
     return;
   }
@@ -548,7 +746,10 @@ function createTag(event) {
   const tag = existing || name;
 
   if (!existing) customTags.push(tag);
-  if (!currentChapter.tags.includes(tag)) currentChapter.tags.push(tag);
+
+  if (!currentChapter.tags.includes(tag)) {
+    currentChapter.tags.push(tag);
+  }
 
   newTagInput.value = "";
 
@@ -563,6 +764,10 @@ function createTag(event) {
       : `Created and assigned "${tag}".`
   );
 }
+
+/* -------------------------------------------------------
+   OPEN CHAPTER AND LOAD VERSES
+------------------------------------------------------- */
 
 function getBookSlug(bookName) {
   return String(bookName)
@@ -582,14 +787,27 @@ async function openChapter(chapter) {
 
   chapterView.hidden = true;
   readerView.hidden = false;
+
   readerTitle.textContent = `${chapter.book} ${chapter.chapter}`;
   readerSubtitle.textContent = "King James Version";
+
+  prepareReaderLayout();
+  renderReaderDescription(chapter);
+
+  /*
+   * Reset the tag editor to expanded whenever a chapter opens.
+   * The user can then collapse it to focus on Scripture.
+   */
+  const tagDetails = $("tagEditorDetails");
+
+  if (tagDetails) tagDetails.open = true;
 
   verseList.replaceChildren();
 
   const loading = document.createElement("p");
   loading.className = "muted-message";
   loading.textContent = "Loading verses...";
+
   verseList.appendChild(loading);
 
   if (verseDetail) verseDetail.hidden = true;
@@ -599,7 +817,9 @@ async function openChapter(chapter) {
   renderChapterTagEditor();
 
   const url =
-    `${API_BASE}/${BIBLE_VERSION}/${getBookSlug(chapter.book)}/${encodeURIComponent(chapter.chapter)}`;
+    `${API_BASE}/${BIBLE_VERSION}/` +
+    `${getBookSlug(chapter.book)}/` +
+    `${encodeURIComponent(chapter.chapter)}`;
 
   try {
     const response = await fetch(url);
@@ -616,7 +836,9 @@ async function openChapter(chapter) {
     const data = payload.data ?? payload;
 
     if (!Array.isArray(data.verses)) {
-      throw new Error("The API response did not contain a verses array.");
+      throw new Error(
+        "The API response did not contain a verses array."
+      );
     }
 
     const verses = data.verses.map((verse, index) =>
@@ -632,18 +854,24 @@ async function openChapter(chapter) {
 
     renderVerses(verses);
 
-    resultCount.textContent =
-      `${verses.length} verses · ${chapter.book} ${chapter.chapter}`;
+    if (resultCount) {
+      resultCount.textContent =
+        `${verses.length} verses · ${chapter.book} ${chapter.chapter}`;
+    }
 
-    const copyright = payload.meta?.copyright ?? data.copyright ?? "";
+    const copyright =
+      payload.meta?.copyright ?? data.copyright ?? "";
 
-    copyrightNotice.textContent = copyright
-      ? `Text attribution: ${copyright}`
-      : "King James Version (KJV).";
+    if (copyrightNotice) {
+      copyrightNotice.textContent = copyright
+        ? `Text attribution: ${copyright}`
+        : "King James Version (KJV).";
+    }
   } catch (error) {
     if (requestNumber !== chapterRequestNumber) return;
 
     console.error("Verse loading error:", error);
+
     verseList.replaceChildren();
 
     const p = document.createElement("p");
@@ -652,7 +880,10 @@ async function openChapter(chapter) {
       `Could not load ${chapter.book} ${chapter.chapter}. ${error.message}`;
 
     verseList.appendChild(p);
-    resultCount.textContent = "Verse loading failed.";
+
+    if (resultCount) {
+      resultCount.textContent = "Verse loading failed.";
+    }
   }
 }
 
@@ -663,12 +894,14 @@ function renderVerses(verses) {
     const p = document.createElement("p");
     p.className = "muted-message";
     p.textContent = "No verses were returned for this chapter.";
+
     verseList.appendChild(p);
     return;
   }
 
   verses.forEach((verse) => {
     const button = document.createElement("button");
+
     button.type = "button";
     button.className = "verse";
 
@@ -690,6 +923,7 @@ function renderVerses(verses) {
         `${currentChapter.book} ${currentChapter.chapter}:${verse.number}`;
 
       selectedVerseText.textContent = verse.text;
+
       verseDetail.hidden = false;
 
       verseDetail.scrollIntoView({
@@ -706,9 +940,12 @@ function closeReader() {
   chapterRequestNumber++;
   currentChapter = null;
   selectedVerseButton = null;
+
   readerView.hidden = true;
   chapterView.hidden = false;
-  verseDetail.hidden = true;
+
+  if (verseDetail) verseDetail.hidden = true;
+
   setStatus("");
   renderChapters();
 }
@@ -724,12 +961,17 @@ function closeVerseDetail() {
 
 function clearFilters() {
   selectedTag = null;
-  tagSearch.value = "";
-  chapterSearch.value = "";
+
+  if (tagSearch) tagSearch.value = "";
+  if (chapterSearch) chapterSearch.value = "";
 
   renderTags();
   renderChapters();
 }
+
+/* -------------------------------------------------------
+   JSON EXPORT AND IMPORT
+------------------------------------------------------- */
 
 function downloadJson(filename, data) {
   const blob = new Blob(
@@ -761,18 +1003,25 @@ function exportChapterTags() {
     setSettingsStatus("Chapter and tag JSON export started.");
   } catch (error) {
     console.error(error);
-    setSettingsStatus("Export failed. Check the browser console for details.");
+    setSettingsStatus(
+      "Export failed. Check the browser console for details."
+    );
   }
 }
 
 function chapterKey(chapter) {
-  return `${String(chapter.book).trim()} ${String(chapter.chapter).trim()}`
-    .toLocaleLowerCase();
+  return (
+    `${String(chapter.book).trim()} ` +
+    `${String(chapter.chapter).trim()}`
+  ).toLocaleLowerCase();
 }
 
 function exportDescriptions() {
   const descriptions = chapters
-    .filter((chapter) => chapter.description && chapter.description.trim())
+    .filter(
+      (chapter) =>
+        chapter.description && chapter.description.trim()
+    )
     .map((chapter) => ({
       book: chapter.book,
       chapter: chapter.chapter,
@@ -796,6 +1045,7 @@ function exportDescriptions() {
 
 async function readJsonFile(input) {
   const file = input.files && input.files[0];
+
   if (!file) return null;
 
   try {
@@ -810,6 +1060,7 @@ async function readJsonFile(input) {
 async function importChapterTags(event) {
   try {
     const data = await readJsonFile(event.target);
+
     if (!data) return;
 
     let importedChapters;
@@ -840,13 +1091,15 @@ async function importChapterTags(event) {
         .map((tag) => tag.trim())
     );
 
-    normalized.forEach((chapter) => {
-      chapter.tags.forEach((tag) => tagSet.add(tag));
-    });
+    normalized.forEach((chapter) =>
+      chapter.tags.forEach((tag) => tagSet.add(tag))
+    );
 
-    if (!window.confirm(
-      `Import ${normalized.length} chapter records? This replaces the current chapter/tag dataset on this device.`
-    )) {
+    if (
+      !window.confirm(
+        `Import ${normalized.length} chapter records? This replaces the current chapter/tag dataset on this device.`
+      )
+    ) {
       return;
     }
 
@@ -860,11 +1113,14 @@ async function importChapterTags(event) {
 
     if (currentChapter) {
       currentChapter =
-        chapters.find((chapter) =>
-          chapterKey(chapter) === chapterKey(currentChapter)
+        chapters.find(
+          (chapter) => chapterKey(chapter) === chapterKey(currentChapter)
         ) || null;
 
-      if (currentChapter) renderChapterTagEditor();
+      if (currentChapter) {
+        renderChapterTagEditor();
+        renderReaderDescription(currentChapter);
+      }
     }
 
     setSettingsStatus(
@@ -881,6 +1137,7 @@ async function importChapterTags(event) {
 async function importDescriptions(event) {
   try {
     const data = await readJsonFile(event.target);
+
     if (!data) return;
 
     let records;
@@ -895,7 +1152,11 @@ async function importDescriptions(event) {
           const match = key.match(/^(.*)\s+(\d+)$/);
 
           return match
-            ? { book: match[1], chapter: match[2], description }
+            ? {
+                book: match[1],
+                chapter: match[2],
+                description
+              }
             : null;
         })
         .filter(Boolean);
@@ -937,22 +1198,30 @@ async function importDescriptions(event) {
 
     if (currentChapter) {
       currentChapter =
-        chapters.find((chapter) =>
-          chapterKey(chapter) === chapterKey(currentChapter)
+        chapters.find(
+          (chapter) => chapterKey(chapter) === chapterKey(currentChapter)
         ) || currentChapter;
+
+      renderReaderDescription(currentChapter);
     }
 
     setSettingsStatus(
       `Imported ${updated} description${updated === 1 ? "" : "s"}.` +
-      (unmatched
-        ? ` ${unmatched} record(s) were skipped because they were invalid or did not match a chapter.`
-        : "")
+      (
+        unmatched
+          ? ` ${unmatched} record(s) were skipped because they were invalid or did not match a chapter.`
+          : ""
+      )
     );
   } catch (error) {
     console.error("Description import failed:", error);
     setSettingsStatus(`Import failed: ${error.message}`);
   }
 }
+
+/* -------------------------------------------------------
+   THEME AND SETTINGS
+------------------------------------------------------- */
 
 function applyTheme(theme) {
   const normalized = theme === "light" ? "light" : "dark";
@@ -993,48 +1262,112 @@ function loadTheme() {
 
 function openSettings() {
   lastSettingsFocus = document.activeElement;
+
   settingsDialog.hidden = false;
   setSettingsStatus("");
-  themeSelect.focus();
+
+  if (themeSelect) themeSelect.focus();
 }
 
 function closeSettings() {
   settingsDialog.hidden = true;
 
-  if (lastSettingsFocus && typeof lastSettingsFocus.focus === "function") {
+  if (
+    lastSettingsFocus &&
+    typeof lastSettingsFocus.focus === "function"
+  ) {
     lastSettingsFocus.focus();
   }
 }
 
-if (tagSearch) tagSearch.addEventListener("input", renderTags);
-if (chapterSearch) chapterSearch.addEventListener("input", renderChapters);
-if (backButton) backButton.addEventListener("click", closeReader);
-if (newTagForm) newTagForm.addEventListener("submit", createTag);
-if (clearFiltersButton) clearFiltersButton.addEventListener("click", clearFilters);
-if (closeVerseButton) closeVerseButton.addEventListener("click", closeVerseDetail);
+/* -------------------------------------------------------
+   EVENT LISTENERS
+------------------------------------------------------- */
 
-$("settingsButton").addEventListener("click", openSettings);
-$("closeSettingsButton").addEventListener("click", closeSettings);
-$("closeSettingsFooterButton").addEventListener("click", closeSettings);
+if (tagSearch) {
+  tagSearch.addEventListener("input", renderTags);
+}
 
-settingsDialog.addEventListener("click", (event) => {
-  if (event.target === settingsDialog) closeSettings();
-});
+if (chapterSearch) {
+  chapterSearch.addEventListener("input", renderChapters);
+}
+
+if (backButton) {
+  backButton.addEventListener("click", closeReader);
+}
+
+if (newTagForm) {
+  newTagForm.addEventListener("submit", createTag);
+}
+
+if (clearFiltersButton) {
+  clearFiltersButton.addEventListener("click", clearFilters);
+}
+
+if (closeVerseButton) {
+  closeVerseButton.addEventListener("click", closeVerseDetail);
+}
+
+const settingsButton = $("settingsButton");
+const closeSettingsButton = $("closeSettingsButton");
+const closeSettingsFooterButton = $("closeSettingsFooterButton");
+const exportTagsButton = $("exportTagsButton");
+const exportDescriptionsButton = $("exportDescriptionsButton");
+const importTagsInput = $("importTagsInput");
+const importDescriptionsInput = $("importDescriptionsInput");
+
+if (settingsButton) {
+  settingsButton.addEventListener("click", openSettings);
+}
+
+if (closeSettingsButton) {
+  closeSettingsButton.addEventListener("click", closeSettings);
+}
+
+if (closeSettingsFooterButton) {
+  closeSettingsFooterButton.addEventListener("click", closeSettings);
+}
+
+if (settingsDialog) {
+  settingsDialog.addEventListener("click", (event) => {
+    if (event.target === settingsDialog) closeSettings();
+  });
+}
 
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && !settingsDialog.hidden) closeSettings();
+  if (event.key === "Escape" && settingsDialog && !settingsDialog.hidden) {
+    closeSettings();
+  }
 });
 
-$("exportTagsButton").addEventListener("click", exportChapterTags);
-$("exportDescriptionsButton").addEventListener("click", exportDescriptions);
-$("importTagsInput").addEventListener("change", importChapterTags);
-$("importDescriptionsInput").addEventListener("change", importDescriptions);
+if (exportTagsButton) {
+  exportTagsButton.addEventListener("click", exportChapterTags);
+}
 
-themeSelect.addEventListener("change", () => {
-  applyTheme(themeSelect.value);
-  setSettingsStatus(`Theme set to ${themeSelect.value} mode.`);
-});
+if (exportDescriptionsButton) {
+  exportDescriptionsButton.addEventListener("click", exportDescriptions);
+}
 
+if (importTagsInput) {
+  importTagsInput.addEventListener("change", importChapterTags);
+}
+
+if (importDescriptionsInput) {
+  importDescriptionsInput.addEventListener("change", importDescriptions);
+}
+
+if (themeSelect) {
+  themeSelect.addEventListener("change", () => {
+    applyTheme(themeSelect.value);
+    setSettingsStatus(`Theme set to ${themeSelect.value} mode.`);
+  });
+}
+
+/* -------------------------------------------------------
+   INITIALIZATION
+------------------------------------------------------- */
+
+prepareReaderLayout();
 loadTheme();
 loadBible();
 
@@ -1042,6 +1375,8 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
       .register("./sw.js")
-      .catch((error) => console.error("Service worker registration failed:", error));
+      .catch((error) =>
+        console.error("Service worker registration failed:", error)
+      );
   });
 }
