@@ -1059,3 +1059,87 @@ p {
     padding: 0 14px 14px;
   }
 }
+
+/* Chapter description inside the verse reader */
+.reader-chapter-description {
+  margin: 0 0 22px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--panel);
+}
+
+.reader-chapter-description[hidden] {
+  display: none !important;
+}
+
+.reader-chapter-description h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.reader-chapter-description p {
+  margin: 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Make the Chapter tags section visibly interactive */
+#tagEditorDetails {
+  margin-bottom: 22px;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--panel);
+  overflow: hidden;
+}
+
+#tagEditorDetails > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 17px 20px;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+#tagEditorDetails > summary::-webkit-details-marker {
+  display: none;
+}
+
+#tagEditorDetails > summary::after {
+  content: "＋";
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+#tagEditorDetails[open] > summary::after {
+  content: "−";
+}
+
+#tagEditorDetails > summary:hover {
+  background: var(--card-hover);
+}
+
+#tagEditorDetails > .tag-editor-content {
+  padding: 0 20px 20px;
+}
+
+#tagEditorDetails .chapter-tag-editor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#tagEditorDetails .new-tag-form {
+  margin-top: 16px;
+}
