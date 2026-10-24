@@ -991,3 +991,71 @@ p {
     transition-duration: .01ms !important;
   }
 }
+
+
+
+/* Collapsible chapter tag editor */
+.tag-editor {
+  padding: 0;
+  overflow: hidden;
+}
+
+.tag-editor-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 17px 20px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.tag-editor-summary::-webkit-details-marker {
+  display: none;
+}
+
+.tag-editor-summary::marker {
+  content: "";
+}
+
+.tag-editor-summary strong {
+  display: block;
+  font-size: 15px;
+}
+
+.tag-editor-summary-hint {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.tag-editor-chevron {
+  flex: 0 0 auto;
+  color: var(--muted);
+  transition: transform 150ms ease;
+}
+
+.tag-editor[open] .tag-editor-chevron {
+  transform: rotate(180deg);
+}
+
+.tag-editor-content {
+  padding: 0 20px 20px;
+  border-top: 1px solid var(--border);
+}
+
+.tag-editor-content .editor-description {
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .tag-editor-summary {
+    padding: 15px;
+  }
+
+  .tag-editor-content {
+    padding: 0 14px 14px;
+  }
+}
