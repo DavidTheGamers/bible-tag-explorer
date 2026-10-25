@@ -1168,3 +1168,465 @@ p {
   line-height: 1.6;
   white-space: pre-wrap;
 }
+
+
+/* ======================================================
+   CHAPTER DESCRIPTIONS — LIBRARY + SCRIPTURE READER
+====================================================== */
+
+.chapter-description-area {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 38px;
+  align-items: start;
+  gap: 7px;
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.description-toggle {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  min-height: 38px;
+  padding: 8px 10px;
+  color: var(--text);
+  text-align: left;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition:
+    background var(--transition),
+    border-color var(--transition);
+}
+
+.description-toggle:hover,
+.description-edit-button:hover {
+  background: var(--panel-hover);
+  border-color: var(--border-strong);
+}
+
+.description-arrow {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.description-toggle span:last-child {
+  overflow-wrap: anywhere;
+}
+
+.description-edit-button {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  min-height: 38px;
+  padding: 0;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition:
+    background var(--transition),
+    border-color var(--transition);
+}
+
+.chapter-description-content {
+  grid-column: 1 / -1;
+  min-width: 0;
+  padding: 13px;
+  background: #101014;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow-wrap: anywhere;
+}
+
+.chapter-description-text {
+  margin: 0;
+  color: #d4d4dc;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+.description-edit-area {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.description-input,
+.reader-description-input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  color: var(--text);
+  font: inherit;
+  line-height: 1.65;
+  background: #0c0c10;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  resize: vertical;
+}
+
+.description-edit-actions,
+.reader-description-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.small-button {
+  min-height: 36px;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+/* ======================================================
+   SCRIPTURE READER — COMBINED DESCRIPTION + TAGS
+====================================================== */
+
+.reader-study-details {
+  margin: 0 0 24px;
+  color: var(--text);
+  background:
+    linear-gradient(145deg, #17171d, #111115);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-panel);
+  overflow: clip;
+}
+
+/* Clickable expand/collapse heading */
+
+.reader-study-summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  padding: 17px 20px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  transition: background var(--transition);
+}
+
+.reader-study-summary::-webkit-details-marker {
+  display: none;
+}
+
+.reader-study-summary::before {
+  display: grid;
+  flex: 0 0 25px;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  color: var(--text);
+  font-size: 13px;
+  background: #292932;
+  border: 1px solid #41414b;
+  border-radius: 7px;
+  content: "+";
+  transition:
+    transform var(--transition),
+    background var(--transition);
+}
+
+.reader-study-details[open] > .reader-study-summary::before {
+  content: "−";
+  background: #353540;
+}
+
+.reader-study-summary::after {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+  content: "EXPAND";
+}
+
+.reader-study-details[open] > .reader-study-summary::after {
+  content: "COLLAPSE";
+}
+
+.reader-study-summary:hover {
+  background: rgb(255 255 255 / 3%);
+}
+
+.reader-study-summary:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -3px;
+}
+
+/* Contents inside the expanded container */
+
+.reader-study-content {
+  display: grid;
+  gap: 18px;
+  padding: 0 20px 22px;
+  border-top: 1px solid var(--border);
+}
+
+.reader-study-hint {
+  margin: 15px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Description panel */
+
+.reader-chapter-description {
+  min-width: 0;
+  padding: 18px;
+  background: #0d0d11;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow-wrap: anywhere;
+}
+
+.reader-chapter-description h3 {
+  margin: 0 0 12px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.reader-description-text {
+  margin: 0 0 15px;
+  color: #d4d4dc;
+  font-size: 14px;
+  line-height: 1.85;
+  white-space: pre-wrap;
+}
+
+.reader-description-edit {
+  min-height: 36px;
+  padding: 8px 12px;
+  color: var(--text);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  background: #202027;
+  border: 1px solid #3c3c46;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.reader-description-edit:hover {
+  background: #2a2a33;
+}
+
+.reader-description-edit-area {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Tag editor inside the shared expandable container */
+
+#chapterTagEditor {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.tag-edit-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 43px;
+  padding: 10px 12px;
+  color: #d4d4dc;
+  background: #141419;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  transition:
+    background var(--transition),
+    border-color var(--transition);
+}
+
+.tag-edit-option:hover {
+  background: #1c1c23;
+  border-color: var(--border-strong);
+}
+
+.tag-edit-option:has(input:checked) {
+  color: var(--text);
+  background: #23232c;
+  border-color: #51515f;
+}
+
+.tag-edit-option input {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #d4d4dc;
+  cursor: pointer;
+}
+
+.tag-edit-option span {
+  min-width: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+/* Create-tag form */
+
+#newTagForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding-top: 17px;
+  border-top: 1px solid var(--border);
+}
+
+#newTagForm input {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+#newTagForm button {
+  flex: 0 0 auto;
+  min-height: 42px;
+  padding: 9px 14px;
+  color: var(--text);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  background: #292932;
+  border: 1px solid #454550;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+#newTagForm button:hover {
+  background: #353540;
+}
+
+/* Ensure verses remain independent of the collapsible section */
+
+#verseList {
+  min-width: 0;
+}
+
+.verse {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: start;
+  gap: 13px;
+  width: 100%;
+  padding: 17px 18px;
+  color: #e4e4e7;
+  text-align: left;
+  font: inherit;
+  line-height: 1.9;
+  background: rgb(19 19 22 / 85%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  transition:
+    background var(--transition),
+    border-color var(--transition);
+}
+
+.verse:hover {
+  background: #19191f;
+  border-color: #44444e;
+}
+
+.verse.selected {
+  background: #202027;
+  border-color: #686873;
+  box-shadow: inset 3px 0 #d4d4d8;
+}
+
+/* ======================================================
+   RESPONSIVE LAYOUT
+====================================================== */
+
+@media (min-width: 1100px) {
+  .reader-study-content {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  #chapterTagEditor {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .reader-study-details {
+    margin-bottom: 18px;
+    border-radius: var(--radius-md);
+  }
+
+  .reader-study-summary {
+    min-height: 54px;
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .reader-study-summary::after {
+    font-size: 9px;
+  }
+
+  .reader-study-content {
+    gap: 14px;
+    padding: 0 12px 15px;
+  }
+
+  .reader-chapter-description {
+    padding: 14px;
+  }
+
+  #chapterTagEditor {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #newTagForm {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  #newTagForm button {
+    width: 100%;
+  }
+
+  .verse {
+    grid-template-columns: 25px minmax(0, 1fr);
+    gap: 10px;
+    padding: 14px 12px;
+    line-height: 1.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reader-study-summary::before,
+  .reader-study-summary,
+  .description-toggle,
+  .description-edit-button {
+    transition: none;
+  }
+}
