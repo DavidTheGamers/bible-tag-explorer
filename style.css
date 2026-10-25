@@ -1143,3 +1143,28 @@ p {
 #tagEditorDetails .new-tag-form {
   margin-top: 16px;
 }
+
+
+.reader-chapter-description {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--border-color, #444);
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.reader-chapter-description[hidden] {
+  display: none !important;
+}
+
+.reader-chapter-description h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.reader-chapter-description p {
+  margin: 0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
