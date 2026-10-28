@@ -1029,6 +1029,7 @@ async function openChapter(chapter) {
 
   setStatus("");
   renderChapterTagEditor();
+  window.dispatchEvent(new CustomEvent("bte:chapter-opened"));
 
   window.dispatchEvent(
     new CustomEvent("bte:chapter-opened", {
@@ -1627,4 +1628,19 @@ function saveChapterDescription(chapter, description) {
 window.BibleTagExplorerCore = {
   getCurrentChapter: () => currentChapter,
   saveChapterDescription
+};
+
+window.BibleTagExplorerCore = {
+  getCurrentChapter() {
+    return currentChapter;
+  },
+
+  saveChapterDescription(description) {
+    if (!currentChapter) return false;
+
+    currentChapter.description = description;
+    const saved = saveLocalData(false);
+    renderChapters();
+    return saved;
+  }
 };
