@@ -510,10 +510,15 @@
       return;
     }
 
-    const saved = core.saveChapterDescription(
-      chapter,
-      description
-    );
+    console.log("Reader description debug:", {
+  chapter,
+  description,
+  currentChapter: core.getCurrentChapter()
+});
+
+    const saved = core.saveChapterDescription(chapter, description);
+
+    console.log("Save result:", saved);
 
     if (!saved) {
       elements.status.textContent =
