@@ -1453,6 +1453,119 @@ async function importDescriptions(event) {
 }
 
 /* =======================================================
+   SIMPLE CROSS-DEVICE TRANSFER (NO FILES)
+======================================================= */
+
+async function compressTransferData(data) {
+  const stream = new Blob([JSON.stringify(data)]).stream()
+    .pipeThrough(new CompressionStream("gzip"));
+  const bytes = new Uint8Array(await new Response(stream).arrayBuffer());
+  let binary = "";
+  for (let i = 0; i < bytes.length; i += 0x8000) {
+    binary += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+  }
+  return "BTE1:" + btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+}
+
+async function decompressTransferCode(code) {
+  const clean = code.trim();
+  if (!clean.startsWith("BTE1:")) {
+    throw new Error("That doesn't look like a Bible Tag Explorer transfer code.");
+  }
+  const encoded = clean.slice(5).replace(/-/g, "+").replace(/_/g, "/");
+  const binary = atob(encoded + "=".repeat((4 - encoded.length % 4) % 4));
+  const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
+  const stream = new Blob([bytes]).stream()
+    .pipeThrough(new DecompressionStream("gzip"));
+  return JSON.parse(await new Response(stream).text());
+}
+
+async function copyTransferCode() {
+  const button = $("copyTransferCodeButton");
+  button.disabled = true;
+  setSettingsStatus("Preparing your transfer code...");
+  try {
+    const code = await compressTransferData({
+      format: "bible-tag-explorer-transfer-v1",
+      chapters,
+      customTags
+    });
+    await navigator.clipboard.writeText(code);
+    setSettingsStatus("Transfer code copied! Send it to yourself, then paste it on your other device.");
+  } catch (error) {
+    console.error("Could not create transfer code:", error);
+    setSettingsStatus("Couldn't copy automatically. Try opening the app in a modern browser and allow clipboard access.");
+  } finally {
+    button.disabled = false;
+  }
+}
+
+async function restoreTransferCode() {
+  const input = $("transferCodeInput");
+  const code = input.value.trim();
+  if (!code) {
+    setSettingsStatus("Paste your transfer code into the box first.");
+    input.focus();
+    return;
+  }
+
+  const button = $("restoreTransferCodeButton");
+  button.disabled = true;
+  setSettingsStatus("Restoring and merging your study...");
+  try {
+    const data = await decompressTransferCode(code);
+    if (data.format !== "bible-tag-explorer-transfer-v1" ||
+        !Array.isArray(data.chapters)) {
+      throw new Error("The transfer code doesn't contain a valid study backup.");
+    }
+
+    const incoming = normalizeChapters(data.chapters);
+    const merged = new Map(chapters.map((chapter) => [chapterKey(chapter), chapter]));
+    let added = 0;
+
+    for (const incomingChapter of incoming) {
+      const key = chapterKey(incomingChapter);
+      const existing = merged.get(key);
+      if (!existing) {
+        merged.set(key, incomingChapter);
+        added++;
+        continue;
+      }
+      existing.tags = [...new Set([...(existing.tags || []), ...(incomingChapter.tags || [])])];
+      if (incomingChapter.description.trim()) {
+        existing.description = incomingChapter.description;
+      }
+    }
+
+    chapters = [...merged.values()];
+    customTags = [...new Set([
+      ...customTags,
+      ...(Array.isArray(data.customTags) ? data.customTags.filter((tag) => typeof tag === "string" && tag.trim()).map((tag) => tag.trim()) : []),
+      ...chapters.flatMap((chapter) => chapter.tags || [])
+    ])];
+
+    if (!saveLocalData(false)) {
+      throw new Error("The browser couldn't save the restored data. Your current data was not intentionally cleared.");
+    }
+
+    renderTags();
+    renderChapters();
+    if (currentChapter) {
+      currentChapter = chapters.find((chapter) => chapterKey(chapter) === chapterKey(currentChapter)) || null;
+      if (currentChapter) renderChapterTagEditor();
+    }
+    input.value = "";
+    setSettingsStatus(`Study restored and merged successfully. Added ${added} chapter records; existing tags and descriptions were preserved.`);
+    setStatus("Study restored on this device.");
+  } catch (error) {
+    console.error("Transfer restore failed:", error);
+    setSettingsStatus(`Could not restore: ${error.message}`);
+  } finally {
+    button.disabled = false;
+  }
+}
+
+/* =======================================================
    THEME AND SETTINGS
 ======================================================= */
 
@@ -1563,21 +1676,8 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-$("exportTagsButton").addEventListener("click", exportChapterTags);
-$("exportDescriptionsButton").addEventListener(
-  "click",
-  exportDescriptions
-);
-
-$("importTagsInput").addEventListener(
-  "change",
-  importChapterTags
-);
-
-$("importDescriptionsInput").addEventListener(
-  "change",
-  importDescriptions
-);
+$("copyTransferCodeButton").addEventListener("click", copyTransferCode);
+$("restoreTransferCodeButton").addEventListener("click", restoreTransferCode);
 
 themeSelect.addEventListener("change", () => {
   applyTheme(themeSelect.value);
