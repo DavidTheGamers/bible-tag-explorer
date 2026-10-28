@@ -219,58 +219,26 @@
       </section>
 
       <section class="settings-section">
-        <h3>Export data</h3>
+        <h3>Move study to another device</h3>
         <p class="settings-help">
-          Download a backup of your chapter tags or a separate descriptions file.
+          No files needed. Copy a transfer code here, then paste it on your other device.
         </p>
-
         <div class="settings-actions">
-          <button id="exportTagsButton" class="action-button" type="button">
-            Export chapter &amp; tag JSON
-          </button>
-
-          <button
-            id="exportDescriptionsButton"
-            class="action-button"
-            type="button"
-          >
-            Export descriptions JSON
+          <button id="copyTransferCodeButton" class="action-button" type="button">
+            Copy transfer code
           </button>
         </div>
-      </section>
-
-      <section class="settings-section">
-        <h3>Import data</h3>
-        <p class="settings-help">
-          Import a chapter/tag backup or a descriptions-only file. Importing
-          chapter data replaces the current chapter/tag dataset. Importing
-          descriptions updates descriptions without changing tags.
-        </p>
-
+        <label for="transferCodeInput"><strong>Restore a transfer code</strong></label>
+        <textarea id="transferCodeInput" rows="4" spellcheck="false"
+          placeholder="Paste the code from your other device here..."></textarea>
         <div class="settings-actions">
-          <label class="file-button action-button" for="importTagsInput">
-            Import chapter &amp; tag JSON
-          </label>
-          <input
-            id="importTagsInput"
-            class="visually-hidden"
-            type="file"
-            accept=".json,application/json"
-          >
-
-          <label
-            class="file-button action-button"
-            for="importDescriptionsInput"
-          >
-            Import descriptions JSON
-          </label>
-          <input
-            id="importDescriptionsInput"
-            class="visually-hidden"
-            type="file"
-            accept=".json,application/json"
-          >
+          <button id="restoreTransferCodeButton" class="action-button" type="button">
+            Restore study
+          </button>
         </div>
+        <p class="settings-help">
+          Restoring merges tags and descriptions with this device's data; it does not erase your existing study.
+        </p>
       </section>
 
       <p
@@ -292,7 +260,7 @@
     </section>
   </div>
 
-  <script src="./script.js?v=20261028" defer></script>
+  <script src="./script.js?v=20261029" defer></script>
   <script src="./reader-description.js?v=20261028" defer></script>
 </body>
 </html>
