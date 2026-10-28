@@ -1,4 +1,3 @@
-
 "use strict";
 
 const API_BASE = "https://api.midvash.com/v1";
@@ -47,12 +46,11 @@ let currentChapter = null;
 let selectedVerseButton = null;
 let chapterRequestNumber = 0;
 let lastSettingsFocus = null;
-
 let tagLogicFilter = null;
 
-/* -------------------------------------------------------
+/* =======================================================
    ADVANCED FILTER FIELD
-------------------------------------------------------- */
+======================================================= */
 
 function setupAdvancedFilter() {
   if (!chapterSearch || $("tagLogicFilter")) {
@@ -113,13 +111,12 @@ function setupAdvancedFilter() {
   `;
 
   document.head.appendChild(style);
-
   tagLogicFilter = filter;
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    STATUS AND SAVED DATA
-------------------------------------------------------- */
+======================================================= */
 
 function setStatus(message) {
   if (statusMessage) statusMessage.textContent = message;
@@ -144,7 +141,6 @@ function showChapterMessage(message) {
 function getSavedData() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-
     if (!raw) return null;
 
     const data = JSON.parse(raw);
@@ -307,9 +303,9 @@ async function loadBible() {
   }
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    TAG LIST
-------------------------------------------------------- */
+======================================================= */
 
 function getAllTags() {
   const tags = new Set(customTags);
@@ -375,7 +371,6 @@ function renderTags() {
 
     button.addEventListener("click", () => {
       selectedTag = selectedTag === tag ? null : tag;
-
       renderTags();
       renderChapters();
     });
@@ -392,35 +387,17 @@ function renderTags() {
   }
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    ADVANCED TAG FILTER PARSER
 
    ; = AND
    , = OR
    ( ) = grouping
-   / = exact tag set for the following AND group
-
-   Examples:
-
-   Creation; Man
-   Both tags required.
-
-   Creation, Man
-   Either tag required.
-
-   (Creation; Man), God's Wall
-   Both Creation and Man, OR God's Wall.
-
-   /Creation; Man
-   Exactly Creation and Man, with no additional tags.
-
-   /(Creation; Man), God's Wall
-   Exactly Creation and Man, OR any chapter with God's Wall.
-------------------------------------------------------- */
+   / = exact tag set for an AND group
+======================================================= */
 
 function parseTagLogicFilter(input) {
   const text = input.trim();
-
   if (!text) return null;
 
   let position = 0;
@@ -521,7 +498,6 @@ function parseTagLogicFilter(input) {
       }
 
       const expression = parseExpression();
-
       skipSpaces();
 
       if (text[position] !== ")") {
@@ -529,7 +505,6 @@ function parseTagLogicFilter(input) {
       }
 
       position++;
-
       return expression;
     }
 
@@ -557,14 +532,10 @@ function parseTagLogicFilter(input) {
       throw new Error("A tag name is missing.");
     }
 
-    return {
-      type: "tag",
-      name
-    };
+    return { type: "tag", name };
   }
 
   const expression = parseExpression();
-
   skipSpaces();
 
   if (position !== text.length) {
@@ -579,10 +550,7 @@ function parseTagLogicFilter(input) {
 function evaluateTagLogicFilter(expression, chapterTags) {
   if (!expression) return true;
 
-  const tags = Array.isArray(chapterTags)
-    ? chapterTags
-    : [];
-
+  const tags = Array.isArray(chapterTags) ? chapterTags : [];
   const normalizedTags = tags.map((tag) =>
     tag.toLocaleLowerCase()
   );
@@ -604,10 +572,7 @@ function evaluateTagLogicFilter(expression, chapterTags) {
       );
 
     case "exact":
-      return evaluateExactTagSet(
-        expression.expression,
-        tags
-      );
+      return evaluateExactTagSet(expression.expression, tags);
 
     default:
       return false;
@@ -649,9 +614,9 @@ function evaluateExactTagSet(expression, chapterTags) {
   );
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    CHAPTER SEARCH AND FILTERING
-------------------------------------------------------- */
+======================================================= */
 
 function getSearchTerms() {
   return chapterSearch
@@ -700,10 +665,7 @@ function renderChapters() {
     if (resultTitle) resultTitle.textContent = "Invalid tag filter";
     if (resultCount) resultCount.textContent = "Check filter syntax";
 
-    showChapterMessage(
-      `Filter error: ${filterError.message}`
-    );
-
+    showChapterMessage(`Filter error: ${filterError.message}`);
     return;
   }
 
@@ -715,30 +677,20 @@ function renderChapters() {
         selectedTag === null ||
         (chapter.tags || []).includes(selectedTag);
 
-      const matchesSearch = chapterMatchesSearch(
-        chapter,
-        terms
-      );
+      const matchesSearch = chapterMatchesSearch(chapter, terms);
 
       const matchesLogic = evaluateTagLogicFilter(
         parsedFilter,
         chapter.tags || []
       );
 
-      return (
-        matchesSelectedTag &&
-        matchesSearch &&
-        matchesLogic
-      );
+      return matchesSelectedTag && matchesSearch && matchesLogic;
     });
   } catch (error) {
     if (resultTitle) resultTitle.textContent = "Invalid tag filter";
     if (resultCount) resultCount.textContent = "Check filter syntax";
 
-    showChapterMessage(
-      `Filter error: ${error.message}`
-    );
-
+    showChapterMessage(`Filter error: ${error.message}`);
     return;
   }
 
@@ -757,7 +709,6 @@ function renderChapters() {
         ? "No matching chapters found. Try clearing your filters."
         : "No chapter data is available."
     );
-
     return;
   }
 
@@ -775,10 +726,7 @@ function renderChapters() {
     openButton.className = "chapter-open-button";
     openButton.textContent = `${chapter.book} ${chapter.chapter}`;
 
-    openButton.addEventListener("click", () => {
-      openChapter(chapter);
-    });
-
+    openButton.addEventListener("click", () => openChapter(chapter));
     heading.appendChild(openButton);
 
     const tagContainer = document.createElement("div");
@@ -788,19 +736,15 @@ function renderChapters() {
       const empty = document.createElement("span");
       empty.className = "chapter-tag empty-tag";
       empty.textContent = "No tags";
-
       tagContainer.appendChild(empty);
     } else {
       chapter.tags.forEach((tag) => {
         const chip = document.createElement("span");
         chip.className = "chapter-tag";
         chip.textContent = tag;
-
         tagContainer.appendChild(chip);
       });
     }
-
-    /* Chapter description */
 
     const descriptionArea = document.createElement("section");
     descriptionArea.className = "chapter-description-area";
@@ -869,8 +813,8 @@ function renderChapters() {
     editActions.append(saveDescription, cancelDescription);
     editArea.append(textarea, editActions);
     descriptionContent.append(descriptionText, editArea);
-
     descriptionToggle.append(arrow, toggleText);
+
     descriptionArea.append(
       descriptionToggle,
       editButton,
@@ -947,9 +891,9 @@ function renderChapters() {
   });
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    CHAPTER TAG EDITOR
-------------------------------------------------------- */
+======================================================= */
 
 function renderChapterTagEditor() {
   if (!chapterTagEditor || !currentChapter) return;
@@ -1026,9 +970,7 @@ function createTag(event) {
   const existing = findExistingTag(name);
   const tag = existing || name;
 
-  if (!existing) {
-    customTags.push(tag);
-  }
+  if (!existing) customTags.push(tag);
 
   if (!currentChapter.tags.includes(tag)) {
     currentChapter.tags.push(tag);
@@ -1048,9 +990,9 @@ function createTag(event) {
   );
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    SCRIPTURE READER
-------------------------------------------------------- */
+======================================================= */
 
 function getBookSlug(bookName) {
   return String(bookName)
@@ -1078,7 +1020,7 @@ async function openChapter(chapter) {
 
   const loading = document.createElement("p");
   loading.className = "muted-message";
-  loading.textContent = "Loading verses...";
+  loading.textContent = "Loading verses.";
 
   verseList.appendChild(loading);
 
@@ -1087,6 +1029,12 @@ async function openChapter(chapter) {
 
   setStatus("");
   renderChapterTagEditor();
+
+  window.dispatchEvent(
+    new CustomEvent("bte:chapter-opened", {
+      detail: { chapter }
+    })
+  );
 
   const url =
     `${API_BASE}/${BIBLE_VERSION}/` +
@@ -1148,7 +1096,6 @@ async function openChapter(chapter) {
       `Could not load ${chapter.book} ${chapter.chapter}. ${error.message}`;
 
     verseList.appendChild(p);
-
     resultCount.textContent = "Verse loading failed.";
   }
 }
@@ -1208,6 +1155,12 @@ function closeReader() {
   readerView.hidden = true;
   chapterView.hidden = false;
 
+  window.dispatchEvent(
+    new CustomEvent("bte:chapter-opened", {
+      detail: { chapter: null }
+    })
+  );
+
   verseDetail.hidden = true;
 
   setStatus("");
@@ -1223,9 +1176,9 @@ function closeVerseDetail() {
   }
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    FILTER CONTROLS
-------------------------------------------------------- */
+======================================================= */
 
 function clearFilters() {
   selectedTag = null;
@@ -1238,9 +1191,9 @@ function clearFilters() {
   renderChapters();
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    IMPORT AND EXPORT
-------------------------------------------------------- */
+======================================================= */
 
 function downloadJson(filename, data) {
   const blob = new Blob(
@@ -1314,7 +1267,6 @@ function exportDescriptions() {
 
 async function readJsonFile(input) {
   const file = input.files && input.files[0];
-
   if (!file) return null;
 
   try {
@@ -1329,7 +1281,6 @@ async function readJsonFile(input) {
 async function importChapterTags(event) {
   try {
     const data = await readJsonFile(event.target);
-
     if (!data) return;
 
     let importedChapters;
@@ -1339,7 +1290,6 @@ async function importChapterTags(event) {
       importedChapters = data;
     } else if (data && Array.isArray(data.chapters)) {
       importedChapters = data.chapters;
-
       importedCustomTags = Array.isArray(data.customTags)
         ? data.customTags
         : [];
@@ -1407,7 +1357,6 @@ async function importChapterTags(event) {
 async function importDescriptions(event) {
   try {
     const data = await readJsonFile(event.target);
-
     if (!data) return;
 
     let records;
@@ -1472,6 +1421,10 @@ async function importDescriptions(event) {
           (chapter) =>
             chapterKey(chapter) === chapterKey(currentChapter)
         ) || currentChapter;
+
+      window.dispatchEvent(
+        new CustomEvent("bte:descriptions-updated")
+      );
     }
 
     setSettingsStatus(
@@ -1488,9 +1441,9 @@ async function importDescriptions(event) {
   }
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    THEME AND SETTINGS
-------------------------------------------------------- */
+======================================================= */
 
 function applyTheme(theme) {
   const normalized = theme === "light" ? "light" : "dark";
@@ -1532,7 +1485,6 @@ function loadTheme() {
 
 function openSettings() {
   lastSettingsFocus = document.activeElement;
-
   settingsDialog.hidden = false;
   setSettingsStatus("");
 
@@ -1550,9 +1502,9 @@ function closeSettings() {
   }
 }
 
-/* -------------------------------------------------------
+/* =======================================================
    EVENT LISTENERS AND INITIALIZATION
-------------------------------------------------------- */
+======================================================= */
 
 if (tagSearch) {
   tagSearch.addEventListener("input", renderTags);
@@ -1636,3 +1588,43 @@ if ("serviceWorker" in navigator) {
       );
   });
 }
+
+/* =======================================================
+   PUBLIC BRIDGE FOR SEPARATE FEATURE MODULES
+======================================================= */
+
+function saveChapterDescription(chapter, description) {
+  if (!chapter || typeof description !== "string") return false;
+
+  const target = chapters.find(
+    (item) => chapterKey(item) === chapterKey(chapter)
+  );
+
+  if (!target) return false;
+
+  target.description = description;
+
+  if (
+    currentChapter &&
+    chapterKey(currentChapter) === chapterKey(target)
+  ) {
+    currentChapter = target;
+  }
+
+  const saved = saveLocalData(false);
+  if (!saved) return false;
+
+  renderChapters();
+  setStatus("Chapter description saved on this device.");
+
+  window.dispatchEvent(
+    new CustomEvent("bte:descriptions-updated")
+  );
+
+  return true;
+}
+
+window.BibleTagExplorerCore = {
+  getCurrentChapter: () => currentChapter,
+  saveChapterDescription
+};
