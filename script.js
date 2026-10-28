@@ -1625,22 +1625,38 @@ function saveChapterDescription(chapter, description) {
   return true;
 }
 
-window.BibleTagExplorerCore = {
-  getCurrentChapter: () => currentChapter,
-  saveChapterDescription
-};
 
 window.BibleTagExplorerCore = {
   getCurrentChapter() {
     return currentChapter;
   },
 
-  saveChapterDescription(description) {
-    if (!currentChapter) return false;
+  saveChapterDescription(chapter, description) {
+    if (!chapter || typeof description !== "string") {
+      return false;
+    }
 
-    currentChapter.description = description;
+    const target = chapters.find(
+      (item) => chapterKey(item) === chapterKey(chapter)
+    );
+
+    if (!target) return false;
+
+    target.description = description;
+
+    if (
+      currentChapter &&
+      chapterKey(currentChapter) === chapterKey(target)
+    ) {
+      currentChapter = target;
+    }
+
     const saved = saveLocalData(false);
-    renderChapters();
+
+    if (saved) {
+      renderChapters();
+    }
+
     return saved;
   }
 };
