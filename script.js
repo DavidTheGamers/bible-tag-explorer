@@ -195,8 +195,17 @@ function normalizeChapters(data) {
     }));
 }
 
+
 function saveLocalData(announce = true) {
   try {
+    // Chapter descriptions must always be plain strings.
+    // This also removes any circular object accidentally stored there.
+    for (const chapter of chapters) {
+      if (typeof chapter.description !== "string") {
+        chapter.description = "";
+      }
+    }
+
     localStorage.setItem(
       STORAGE_KEY,
       JSON.stringify({ chapters, customTags })
@@ -221,6 +230,7 @@ function saveLocalData(announce = true) {
     return false;
   }
 }
+
 
 async function loadBible() {
   if (resultCount) resultCount.textContent = "Loading...";
