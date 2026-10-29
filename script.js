@@ -1453,8 +1453,10 @@ async function importDescriptions(event) {
 }
 
 /* =======================================================
-   SIMPLE CROSS-DEVICE TRANSFER (NO FILES)
+   SHORT CROSS-DEVICE TRANSFER CODE (EXPIRES IN 24 HOURS)
 ======================================================= */
+
+const TRANSFER_STORAGE_URL = "https://aisenseapi.com/services/v1/storage";
 
 async function compressTransferData(data) {
   const stream = new Blob([JSON.stringify(data)]).stream()
@@ -1464,13 +1466,13 @@ async function compressTransferData(data) {
   for (let i = 0; i < bytes.length; i += 0x8000) {
     binary += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
   }
-  return "BTE1:" + btoa(binary).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+  return "BTE1:" + btoa(binary).replace(/\\+/g, "-").replace(/\\//g, "_").replace(/=+$/g, "");
 }
 
 async function decompressTransferCode(code) {
   const clean = code.trim();
   if (!clean.startsWith("BTE1:")) {
-    throw new Error("That doesn't look like a Bible Tag Explorer transfer code.");
+    throw new Error("That doesn't look like an older Bible Tag Explorer transfer code.");
   }
   const encoded = clean.slice(5).replace(/-/g, "+").replace(/_/g, "/");
   const binary = atob(encoded + "=".repeat((4 - encoded.length % 4) % 4));
@@ -1480,55 +1482,108 @@ async function decompressTransferCode(code) {
   return JSON.parse(await new Response(stream).text());
 }
 
+function getPersonalStudyData() {
+  const personalChapters = chapters
+    .filter((chapter) =>
+      (Array.isArray(chapter.tags) && chapter.tags.length > 0) ||
+      (typeof chapter.description === "string" && chapter.description.trim())
+    )
+    .map((chapter) => ({
+      book: chapter.book,
+      chapter: chapter.chapter,
+      tags: Array.isArray(chapter.tags) ? chapter.tags : [],
+      description: typeof chapter.description === "string" ? chapter.description : ""
+    }));
+
+  return {
+    format: "bible-tag-explorer-transfer-v3",
+    chapters: personalChapters,
+    customTags
+  };
+}
+
 async function copyTransferCode() {
   const button = $("copyTransferCodeButton");
   button.disabled = true;
-  setSettingsStatus("Preparing your small transfer code...");
+  setSettingsStatus("Creating your temporary code...");
   try {
-    // Export only personal edits, not the entire Bible chapter index.
-    const personalChapters = chapters
-      .filter((chapter) =>
-        (Array.isArray(chapter.tags) && chapter.tags.length > 0) ||
-        (typeof chapter.description === "string" && chapter.description.trim())
-      )
-      .map((chapter) => ({
-        book: chapter.book,
-        chapter: chapter.chapter,
-        tags: Array.isArray(chapter.tags) ? chapter.tags : [],
-        description: typeof chapter.description === "string" ? chapter.description : ""
-      }));
-    const code = await compressTransferData({
-      format: "bible-tag-explorer-transfer-v2",
-      chapters: personalChapters,
-      customTags
+    const payload = getPersonalStudyData();
+    const response = await fetch(TRANSFER_STORAGE_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
     });
-    await navigator.clipboard.writeText(code);
-    setSettingsStatus(`Copied! Includes only your ${personalChapters.length} edited chapters and custom tags—not the whole Bible.`);
+
+    if (!response.ok) {
+      throw new Error("The temporary storage service returned HTTP " + response.status + ".");
+    }
+
+    const result = await response.json();
+    if (!result.storage_id) {
+      throw new Error("The temporary storage service did not return a code.");
+    }
+
+    await navigator.clipboard.writeText(result.storage_id);
+    setSettingsStatus(
+      "Copied short code! It includes " + payload.chapters.length +
+      " edited chapters. Use it on your other device within 24 hours."
+    );
   } catch (error) {
     console.error("Could not create transfer code:", error);
-    setSettingsStatus("Couldn't copy automatically. Try opening the app in a modern browser and allow clipboard access.");
+    setSettingsStatus(
+      "Couldn't create/copy the code. Check your internet connection, allow clipboard access, and try again. " +
+      (error.message || "")
+    );
   } finally {
     button.disabled = false;
   }
+}
+
+async function readTransferInput(input) {
+  const value = input.trim();
+
+  // Keep support for codes made by the previous, offline transfer method.
+  if (value.startsWith("BTE1:")) {
+    return decompressTransferCode(value);
+  }
+
+  // Accept either the short UUID code or a full storage URL.
+  const match = value.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);
+  if (!match) {
+    throw new Error("Enter the short code you copied, or paste the older BTE1 transfer code.");
+  }
+
+  const response = await fetch(TRANSFER_STORAGE_URL + "/" + match[0]);
+  if (!response.ok) {
+    if (response.status === 404 || response.status === 410) {
+      throw new Error("That code was not found or has expired. Temporary codes last 24 hours.");
+    }
+    throw new Error("Could not retrieve the study (HTTP " + response.status + ").");
+  }
+
+  return response.json();
 }
 
 async function restoreTransferCode() {
   const input = $("transferCodeInput");
   const code = input.value.trim();
   if (!code) {
-    setSettingsStatus("Paste your transfer code into the box first.");
+    setSettingsStatus("Paste your short code into the box first.");
     input.focus();
     return;
   }
 
   const button = $("restoreTransferCodeButton");
   button.disabled = true;
-  setSettingsStatus("Restoring and merging your study...");
+  setSettingsStatus("Retrieving and merging your study...");
   try {
-    const data = await decompressTransferCode(code);
-    if (!["bible-tag-explorer-transfer-v1", "bible-tag-explorer-transfer-v2"].includes(data.format) ||
-        !Array.isArray(data.chapters)) {
-      throw new Error("The transfer code doesn't contain a valid study backup.");
+    const data = await readTransferInput(code);
+    if (![
+      "bible-tag-explorer-transfer-v1",
+      "bible-tag-explorer-transfer-v2",
+      "bible-tag-explorer-transfer-v3"
+    ].includes(data.format) || !Array.isArray(data.chapters)) {
+      throw new Error("The code doesn't contain a valid Bible Tag Explorer study.");
     }
 
     const incoming = normalizeChapters(data.chapters);
@@ -1539,8 +1594,6 @@ async function restoreTransferCode() {
       const key = chapterKey(incomingChapter);
       const existing = merged.get(key);
       if (!existing) {
-        // V2 contains only edited chapters; if a chapter isn't present locally,
-        // add the incoming record without affecting the rest of the index.
         merged.set(key, incomingChapter);
         updated++;
         continue;
@@ -1560,7 +1613,7 @@ async function restoreTransferCode() {
     ])];
 
     if (!saveLocalData(false)) {
-      throw new Error("The browser couldn't save the restored data. Your current data was not intentionally cleared.");
+      throw new Error("The browser couldn't save the restored data.");
     }
 
     renderTags();
@@ -1570,11 +1623,11 @@ async function restoreTransferCode() {
       if (currentChapter) renderChapterTagEditor();
     }
     input.value = "";
-    setSettingsStatus(`Study merged successfully across ${updated} edited chapters. Existing tags were preserved.`);
+    setSettingsStatus("Study merged successfully across " + updated + " edited chapters. Existing tags were preserved.");
     setStatus("Study restored on this device.");
   } catch (error) {
     console.error("Transfer restore failed:", error);
-    setSettingsStatus(`Could not restore: ${error.message}`);
+    setSettingsStatus("Could not restore: " + error.message);
   } finally {
     button.disabled = false;
   }
