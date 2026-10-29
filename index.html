@@ -221,16 +221,19 @@
       <section class="settings-section">
         <h3>Move study to another device</h3>
         <p class="settings-help">
-          No files needed. Copy a transfer code here, then paste it on your other device.
+          Create a short code, then enter it on your other device. The code expires after 24 hours.
+        </p>
+        <p class="settings-help">
+          <strong>Privacy:</strong> creating a code uploads your tags and descriptions to temporary third-party storage. Anyone with the code can read that copy until it expires, so only create one when you're ready to transfer.
         </p>
         <div class="settings-actions">
           <button id="copyTransferCodeButton" class="action-button" type="button">
-            Copy transfer code
+            Create &amp; copy short code
           </button>
         </div>
-        <label for="transferCodeInput"><strong>Restore a transfer code</strong></label>
-        <textarea id="transferCodeInput" rows="4" spellcheck="false"
-          placeholder="Paste the code from your other device here..."></textarea>
+        <label for="transferCodeInput"><strong>Enter short code</strong></label>
+        <textarea id="transferCodeInput" rows="2" spellcheck="false"
+          placeholder="Paste your short code here..."></textarea>
         <div class="settings-actions">
           <button id="restoreTransferCodeButton" class="action-button" type="button">
             Restore study
