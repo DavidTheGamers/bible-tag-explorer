@@ -47,6 +47,13 @@ let selectedVerseButton = null;
 let chapterRequestNumber = 0;
 let lastSettingsFocus = null;
 let tagLogicFilter = null;
+let bibleSearchModulePromise = null;
+let verseSearchTimer = null;
+let verseSearchRequestNumber = 0;
+let verseSearchChapters = new Set();
+let verseSearchTermsReady = "";
+let verseSearchPending = false;
+let verseSearchError = "";
 
 /* =======================================================
    ADVANCED FILTER FIELD
@@ -646,8 +653,156 @@ function chapterMatchesSearch(chapter, terms) {
     `${chapter.description || ""}`;
 
   const normalized = searchable.toLocaleLowerCase();
+  const matchesChapterDetails = terms.some((term) =>
+    normalized.includes(term)
+  );
+  const matchesVerseText =
+    verseSearchTermsReady === terms.join(",") &&
+    verseSearchChapters.has(chapterKey(chapter));
 
-  return terms.some((term) => normalized.includes(term));
+  return matchesChapterDetails || matchesVerseText;
+}
+
+function loadBibleSearchModule() {
+  if (!bibleSearchModulePromise) {
+    bibleSearchModulePromise = import("https://jsonbible.org/js/jsonBible.js")
+      .then((module) => {
+        if (!module.jsonBible || typeof module.jsonBible.lookup !== "function") {
+          throw new Error("The Bible keyword-search service is unavailable.");
+        }
+        return module.jsonBible;
+      });
+  }
+  return bibleSearchModulePromise;
+}
+
+function getReferenceFromSearchResult(result) {
+  if (typeof result === "string") return result;
+  if (!result || typeof result !== "object") return "";
+  const value =
+    result.reference ??
+    result.ref ??
+    result.referenceText ??
+    result.reference_text ??
+    result.label ??
+    "";
+  return typeof value === "string" ? value : "";
+}
+
+function getChapterKeyFromSearchResult(result) {
+  if (!result || typeof result !== "object") {
+    const reference = getReferenceFromSearchResult(result).trim().toLocaleLowerCase();
+    if (!reference) return null;
+    for (const book of [...new Set(chapters.map((item) => item.book))].sort((a, b) => b.length - a.length)) {
+      const prefix = book.toLocaleLowerCase() + " ";
+      if (!reference.startsWith(prefix)) continue;
+      const chapterMatch = reference.slice(prefix.length).match(/^[0-9]+/);
+      if (chapterMatch) return chapterKey({ book, chapter: chapterMatch[0] });
+    }
+    return null;
+  }
+
+  const bookValue = result.bookName ?? result.book_name ?? result.book;
+  const chapterValue = result.chapter ?? result.chapterNumber ?? result.chapter_number;
+
+  if (typeof bookValue === "string" && chapterValue !== undefined) {
+    const book = chapters.find(
+      (item) => item.book.toLocaleLowerCase() === bookValue.toLocaleLowerCase()
+    );
+    if (book) return chapterKey({ book: book.book, chapter: chapterValue });
+  }
+
+  const reference = getReferenceFromSearchResult(result).trim().toLocaleLowerCase();
+  if (!reference) return null;
+
+  for (const book of [...new Set(chapters.map((item) => item.book))].sort((a, b) => b.length - a.length)) {
+    const prefix = book.toLocaleLowerCase() + " ";
+    if (!reference.startsWith(prefix)) continue;
+    const chapterMatch = reference.slice(prefix.length).match(/^[0-9]+/);
+    if (chapterMatch) return chapterKey({ book, chapter: chapterMatch[0] });
+  }
+
+  return null;
+}
+
+async function searchVerseChapters(terms, requestNumber) {
+  const bibleSearch = await loadBibleSearchModule();
+  const matches = new Set();
+  const pageSize = 500;
+
+  for (const term of terms) {
+    let page = 1;
+
+    while (page <= 100) {
+      if (requestNumber !== verseSearchRequestNumber) return null;
+
+      const response = await bibleSearch.lookup(term, {
+        translation: "kjv",
+        page,
+        limit: pageSize,
+        as: "json"
+      });
+
+      const results = Array.isArray(response?.results)
+        ? response.results
+        : Array.isArray(response?.data)
+          ? response.data
+          : [];
+
+      for (const result of results) {
+        const key = getChapterKeyFromSearchResult(result);
+        if (key) matches.add(key);
+      }
+
+      if (results.length < pageSize) break;
+      page++;
+    }
+  }
+
+  return matches;
+}
+
+function scheduleVerseSearch() {
+  if (verseSearchTimer) clearTimeout(verseSearchTimer);
+
+  const terms = getSearchTerms();
+  const termSignature = terms.join(",");
+  verseSearchRequestNumber++;
+  const requestNumber = verseSearchRequestNumber;
+
+  if (!terms.length) {
+    verseSearchChapters = new Set();
+    verseSearchTermsReady = "";
+    verseSearchPending = false;
+    verseSearchError = "";
+    renderChapters();
+    return;
+  }
+
+  verseSearchPending = true;
+  verseSearchError = "";
+  renderChapters();
+
+  verseSearchTimer = setTimeout(async () => {
+    try {
+      const matches = await searchVerseChapters(terms, requestNumber);
+      if (!matches || requestNumber !== verseSearchRequestNumber) return;
+
+      verseSearchChapters = matches;
+      verseSearchTermsReady = termSignature;
+      verseSearchPending = false;
+      verseSearchError = "";
+      renderChapters();
+    } catch (error) {
+      if (requestNumber !== verseSearchRequestNumber) return;
+
+      console.error("Verse keyword search failed:", error);
+      verseSearchPending = false;
+      verseSearchError =
+        "Verse keyword search couldn't load. Check your connection and try again.";
+      renderChapters();
+    }
+  }, 300);
 }
 
 function renderChapters() {
@@ -709,8 +864,14 @@ function renderChapters() {
   }
 
   if (resultCount) {
-    resultCount.textContent =
-      `${filtered.length} chapter${filtered.length === 1 ? "" : "s"}`;
+    resultCount.textContent = verseSearchPending
+      ? "Searching KJV verses..."
+      : `${filtered.length} chapter${filtered.length === 1 ? "" : "s"}`;
+  }
+
+  if (verseSearchError) {
+    showChapterMessage(verseSearchError);
+    return;
   }
 
   if (!filtered.length) {
@@ -1197,6 +1358,12 @@ function clearFilters() {
   if (tagSearch) tagSearch.value = "";
   if (chapterSearch) chapterSearch.value = "";
   if (tagLogicFilter) tagLogicFilter.value = "";
+
+  verseSearchRequestNumber++;
+  verseSearchChapters = new Set();
+  verseSearchTermsReady = "";
+  verseSearchPending = false;
+  verseSearchError = "";
 
   renderTags();
   renderChapters();
@@ -1703,7 +1870,7 @@ if (tagSearch) {
 }
 
 if (chapterSearch) {
-  chapterSearch.addEventListener("input", renderChapters);
+  chapterSearch.addEventListener("input", scheduleVerseSearch);
 }
 
 setupAdvancedFilter();
