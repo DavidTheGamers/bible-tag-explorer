@@ -1483,15 +1483,27 @@ async function decompressTransferCode(code) {
 async function copyTransferCode() {
   const button = $("copyTransferCodeButton");
   button.disabled = true;
-  setSettingsStatus("Preparing your transfer code...");
+  setSettingsStatus("Preparing your small transfer code...");
   try {
+    // Export only personal edits, not the entire Bible chapter index.
+    const personalChapters = chapters
+      .filter((chapter) =>
+        (Array.isArray(chapter.tags) && chapter.tags.length > 0) ||
+        (typeof chapter.description === "string" && chapter.description.trim())
+      )
+      .map((chapter) => ({
+        book: chapter.book,
+        chapter: chapter.chapter,
+        tags: Array.isArray(chapter.tags) ? chapter.tags : [],
+        description: typeof chapter.description === "string" ? chapter.description : ""
+      }));
     const code = await compressTransferData({
-      format: "bible-tag-explorer-transfer-v1",
-      chapters,
+      format: "bible-tag-explorer-transfer-v2",
+      chapters: personalChapters,
       customTags
     });
     await navigator.clipboard.writeText(code);
-    setSettingsStatus("Transfer code copied! Send it to yourself, then paste it on your other device.");
+    setSettingsStatus(`Copied! Includes only your ${personalChapters.length} edited chapters and custom tags—not the whole Bible.`);
   } catch (error) {
     console.error("Could not create transfer code:", error);
     setSettingsStatus("Couldn't copy automatically. Try opening the app in a modern browser and allow clipboard access.");
@@ -1514,27 +1526,30 @@ async function restoreTransferCode() {
   setSettingsStatus("Restoring and merging your study...");
   try {
     const data = await decompressTransferCode(code);
-    if (data.format !== "bible-tag-explorer-transfer-v1" ||
+    if (!["bible-tag-explorer-transfer-v1", "bible-tag-explorer-transfer-v2"].includes(data.format) ||
         !Array.isArray(data.chapters)) {
       throw new Error("The transfer code doesn't contain a valid study backup.");
     }
 
     const incoming = normalizeChapters(data.chapters);
     const merged = new Map(chapters.map((chapter) => [chapterKey(chapter), chapter]));
-    let added = 0;
+    let updated = 0;
 
     for (const incomingChapter of incoming) {
       const key = chapterKey(incomingChapter);
       const existing = merged.get(key);
       if (!existing) {
+        // V2 contains only edited chapters; if a chapter isn't present locally,
+        // add the incoming record without affecting the rest of the index.
         merged.set(key, incomingChapter);
-        added++;
+        updated++;
         continue;
       }
       existing.tags = [...new Set([...(existing.tags || []), ...(incomingChapter.tags || [])])];
       if (incomingChapter.description.trim()) {
         existing.description = incomingChapter.description;
       }
+      updated++;
     }
 
     chapters = [...merged.values()];
@@ -1555,7 +1570,7 @@ async function restoreTransferCode() {
       if (currentChapter) renderChapterTagEditor();
     }
     input.value = "";
-    setSettingsStatus(`Study restored and merged successfully. Added ${added} chapter records; existing tags and descriptions were preserved.`);
+    setSettingsStatus(`Study merged successfully across ${updated} edited chapters. Existing tags were preserved.`);
     setStatus("Study restored on this device.");
   } catch (error) {
     console.error("Transfer restore failed:", error);
